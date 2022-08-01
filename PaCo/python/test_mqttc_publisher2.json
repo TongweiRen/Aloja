@@ -1,0 +1,526 @@
+{
+    "structToStructs_map": {
+        "mqtt_client": [
+            "mqtt_message_queue"
+        ],
+        "mqtt_response_publish": [],
+        "__pthread_mutex_s": [],
+        "mqtt_message_queue": [],
+        "mqtt_queued_message": [],
+        "mqtt_client.7": [],
+        "mqtt_response": [
+            "mqtt_fixed_header"
+        ],
+        "mqtt_fixed_header": [],
+        "mqtt_response_puback": [],
+        "pthread_mutexattr_t": [],
+        "addrinfo*": []
+    },
+    "structToFunctions_map": {
+        "mqtt_client": [
+            "main",
+            "mqtt_sync",
+            "__mqtt_recv",
+            "__mqtt_send",
+            "__mqtt_ping",
+            "__mqtt_pubcomp",
+            "__mqtt_next_pid",
+            "mqtt_init",
+            "mqtt_reconnect",
+            "mqtt_init_reconnect",
+            "mqtt_reinit",
+            "mqtt_connect",
+            "mqtt_publish",
+            "mqtt_unsubscribe",
+            "mqtt_subscribe",
+            "mqtt_ping",
+            "mqtt_disconnect"
+        ],
+        "mqtt_response_publish": [
+            "__mqtt_recv",
+            "mqtt_unpack_publish_response"
+        ],
+        "__pthread_mutex_s": [],
+        "mqtt_message_queue": [
+            "__mqtt_send",
+            "__mqtt_ping",
+            "mqtt_mq_clean",
+            "mqtt_mq_register",
+            "mqtt_mq_find",
+            "__mqtt_pubcomp",
+            "__mqtt_next_pid",
+            "mqtt_mq_init",
+            "mqtt_connect",
+            "mqtt_publish",
+            "mqtt_subscribe",
+            "mqtt_unsubscribe",
+            "mqtt_disconnect"
+        ],
+        "mqtt_queued_message": [
+            "__mqtt_recv",
+            "__mqtt_send",
+            "__mqtt_ping",
+            "mqtt_mq_clean",
+            "mqtt_mq_register",
+            "mqtt_mq_find",
+            "__mqtt_pubcomp",
+            "__mqtt_next_pid",
+            "mqtt_connect",
+            "mqtt_publish",
+            "mqtt_subscribe",
+            "mqtt_unsubscribe",
+            "mqtt_disconnect"
+        ],
+        "mqtt_client.7": [],
+        "mqtt_response": [
+            "__mqtt_recv",
+            "mqtt_unpack_response",
+            "mqtt_unpack_fixed_header",
+            "mqtt_unpack_connack_response",
+            "mqtt_unpack_publish_response",
+            "mqtt_unpack_pubxxx_response",
+            "mqtt_unpack_suback_response",
+            "mqtt_unpack_unsuback_response"
+        ],
+        "mqtt_fixed_header": [
+            "__mqtt_recv",
+            "mqtt_pack_disconnect",
+            "mqtt_pack_fixed_header",
+            "mqtt_fixed_header_rule_violation",
+            "mqtt_unpack_response",
+            "mqtt_pack_pubxxx_request",
+            "mqtt_unpack_fixed_header",
+            "mqtt_unpack_connack_response",
+            "mqtt_unpack_publish_response",
+            "mqtt_unpack_pubxxx_response",
+            "mqtt_unpack_suback_response",
+            "mqtt_unpack_unsuback_response",
+            "mqtt_pack_connection_request",
+            "mqtt_pack_publish_request",
+            "mqtt_pack_subscribe_request",
+            "mqtt_pack_unsubscribe_request"
+        ],
+        "mqtt_response_puback": [
+            "__mqtt_recv",
+            "mqtt_unpack_pubxxx_response",
+            "mqtt_unpack_unsuback_response"
+        ],
+        "pthread_mutexattr_t": []
+    },
+    "functionToStructs_map": {
+        "main": [
+            {
+                "mqtt_client": [
+                    "read"
+                ]
+            }
+        ],
+        "mqtt_sync": [
+            {
+                "mqtt_client": []
+            }
+        ],
+        "__mqtt_recv": [
+            {
+                "mqtt_client": []
+            },
+            {
+                "mqtt_response_publish": [
+                    "read"
+                ]
+            },
+            {
+                "mqtt_queued_message": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mqtt_response": []
+            },
+            {
+                "mqtt_fixed_header": [
+                    "read"
+                ]
+            },
+            {
+                "mqtt_response_puback": [
+                    "read"
+                ]
+            }
+        ],
+        "__mqtt_send": [
+            {
+                "mqtt_client": []
+            },
+            {
+                "mqtt_message_queue": [
+                    "read"
+                ]
+            },
+            {
+                "mqtt_queued_message": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "__mqtt_ping": [
+            {
+                "mqtt_client": []
+            },
+            {
+                "mqtt_message_queue": [
+                    "read"
+                ]
+            },
+            {
+                "mqtt_queued_message": [
+                    "write"
+                ]
+            }
+        ],
+        "__mqtt_pubcomp": [
+            {
+                "mqtt_client": []
+            },
+            {
+                "mqtt_message_queue": [
+                    "read"
+                ]
+            },
+            {
+                "mqtt_queued_message": [
+                    "write"
+                ]
+            }
+        ],
+        "__mqtt_next_pid": [
+            {
+                "mqtt_client": []
+            },
+            {
+                "mqtt_message_queue": [
+                    "read"
+                ]
+            },
+            {
+                "mqtt_queued_message": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "mqtt_init": [
+            {
+                "mqtt_client": []
+            }
+        ],
+        "mqtt_reconnect": [
+            {
+                "mqtt_client": []
+            }
+        ],
+        "mqtt_init_reconnect": [
+            {
+                "mqtt_client": []
+            }
+        ],
+        "mqtt_reinit": [
+            {
+                "mqtt_client": []
+            }
+        ],
+        "mqtt_connect": [
+            {
+                "mqtt_client": []
+            },
+            {
+                "mqtt_message_queue": [
+                    "read"
+                ]
+            },
+            {
+                "mqtt_queued_message": [
+                    "write"
+                ]
+            }
+        ],
+        "mqtt_publish": [
+            {
+                "mqtt_client": []
+            },
+            {
+                "mqtt_message_queue": [
+                    "read"
+                ]
+            },
+            {
+                "mqtt_queued_message": [
+                    "write"
+                ]
+            }
+        ],
+        "mqtt_unsubscribe": [
+            {
+                "mqtt_client": []
+            },
+            {
+                "mqtt_message_queue": [
+                    "read"
+                ]
+            },
+            {
+                "mqtt_queued_message": [
+                    "write"
+                ]
+            }
+        ],
+        "mqtt_subscribe": [
+            {
+                "mqtt_client": []
+            },
+            {
+                "mqtt_message_queue": [
+                    "read"
+                ]
+            },
+            {
+                "mqtt_queued_message": [
+                    "write"
+                ]
+            }
+        ],
+        "mqtt_ping": [
+            {
+                "mqtt_client": []
+            }
+        ],
+        "mqtt_disconnect": [
+            {
+                "mqtt_client": []
+            },
+            {
+                "mqtt_message_queue": [
+                    "read"
+                ]
+            },
+            {
+                "mqtt_queued_message": [
+                    "write"
+                ]
+            }
+        ],
+        "mqtt_unpack_publish_response": [
+            {
+                "mqtt_response_publish": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mqtt_response": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mqtt_fixed_header": [
+                    "read"
+                ]
+            }
+        ],
+        "mqtt_mq_clean": [
+            {
+                "mqtt_message_queue": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mqtt_queued_message": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "mqtt_mq_register": [
+            {
+                "mqtt_message_queue": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mqtt_queued_message": [
+                    "write"
+                ]
+            }
+        ],
+        "mqtt_mq_find": [
+            {
+                "mqtt_message_queue": [
+                    "read"
+                ]
+            },
+            {
+                "mqtt_queued_message": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "mqtt_mq_init": [
+            {
+                "mqtt_message_queue": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "mqtt_unpack_response": [
+            {
+                "mqtt_response": []
+            },
+            {
+                "mqtt_fixed_header": [
+                    "read"
+                ]
+            }
+        ],
+        "mqtt_unpack_fixed_header": [
+            {
+                "mqtt_response": [
+                    "write"
+                ]
+            },
+            {
+                "mqtt_fixed_header": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "mqtt_unpack_connack_response": [
+            {
+                "mqtt_response": []
+            },
+            {
+                "mqtt_fixed_header": [
+                    "read"
+                ]
+            }
+        ],
+        "mqtt_unpack_pubxxx_response": [
+            {
+                "mqtt_response": []
+            },
+            {
+                "mqtt_fixed_header": [
+                    "read"
+                ]
+            },
+            {
+                "mqtt_response_puback": [
+                    "write"
+                ]
+            }
+        ],
+        "mqtt_unpack_suback_response": [
+            {
+                "mqtt_response": []
+            },
+            {
+                "mqtt_fixed_header": [
+                    "read"
+                ]
+            }
+        ],
+        "mqtt_unpack_unsuback_response": [
+            {
+                "mqtt_response": []
+            },
+            {
+                "mqtt_fixed_header": [
+                    "read"
+                ]
+            },
+            {
+                "mqtt_response_puback": [
+                    "write"
+                ]
+            }
+        ],
+        "mqtt_pack_disconnect": [
+            {
+                "mqtt_fixed_header": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "mqtt_pack_fixed_header": [
+            {
+                "mqtt_fixed_header": [
+                    "read"
+                ]
+            }
+        ],
+        "mqtt_fixed_header_rule_violation": [
+            {
+                "mqtt_fixed_header": [
+                    "read"
+                ]
+            }
+        ],
+        "mqtt_pack_pubxxx_request": [
+            {
+                "mqtt_fixed_header": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "mqtt_pack_connection_request": [
+            {
+                "mqtt_fixed_header": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "mqtt_pack_publish_request": [
+            {
+                "mqtt_fixed_header": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "mqtt_pack_subscribe_request": [
+            {
+                "mqtt_fixed_header": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "mqtt_pack_unsubscribe_request": [
+            {
+                "mqtt_fixed_header": [
+                    "write",
+                    "read"
+                ]
+            }
+        ]
+    },
+    "TP_structs": [
+        "mqtt_client"
+    ],
+    "TP_functions": [
+        "__mqtt_pack_uint16",
+        "__mqtt_unpack_uint16",
+        "mqtt_pack_connection_request",
+        "mqtt_pack_publish_request"
+    ]
+}

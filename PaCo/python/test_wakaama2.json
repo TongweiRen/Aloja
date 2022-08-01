@@ -1,0 +1,3744 @@
+{
+    "TP_structs": [
+        "coap_packet_t"
+    ],
+    "functions_for_one_struct_server": {
+        "%14 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %13, i32 0, i32 18, !dbg !1711": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "handle_request"
+        },
+        "%17 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %16, i32 0, i32 3, !dbg !1713": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "handle_request"
+        },
+        "%35 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %34, i32 0, i32 5, !dbg !1732": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "prv_send_get_block2"
+        },
+        "%28 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %27, i32 0, i32 32, !dbg !1726": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "prv_send_next_block1"
+        },
+        "%38 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %37, i32 0, i32 32, !dbg !1733": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "prv_send_next_block1"
+        },
+        "%42 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %41, i32 0, i32 30, !dbg !1738": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "prv_send_next_block1"
+        },
+        "%47 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %46, i32 0, i32 32, !dbg !1743": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "prv_send_next_block1"
+        },
+        "%55 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %54, i32 0, i32 30, !dbg !1750": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "prv_send_next_block1"
+        },
+        "%27 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %26, i32 0, i32 5, !dbg !1724": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "prv_retry_block1"
+        },
+        "%43 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %42, i32 0, i32 32, !dbg !1735": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "prv_retry_block1"
+        },
+        "%60 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %59, i32 0, i32 32, !dbg !1746": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "prv_retry_block1"
+        },
+        "%71 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %70, i32 0, i32 30, !dbg !1754": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "prv_retry_block1"
+        },
+        "%113 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %112, i32 0, i32 14, !dbg !1803": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "prv_create_next_block_transaction"
+        },
+        "%118 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %117, i32 0, i32 5, !dbg !1805": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "prv_create_next_block_transaction"
+        },
+        "%154 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %153, i32 0, i32 6, !dbg !1844": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "prv_create_next_block_transaction"
+        },
+        "%159 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %158, i32 0, i32 5, !dbg !1846": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "prv_create_next_block_transaction"
+        },
+        "%178 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %177, i32 0, i32 18, !dbg !1859": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "prv_create_next_block_transaction"
+        },
+        "%183 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %182, i32 0, i32 5, !dbg !1861": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "prv_create_next_block_transaction"
+        },
+        "%247 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %246, i32 0, i32 35, !dbg !1915": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "prv_create_next_block_transaction"
+        },
+        "%252 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %251, i32 0, i32 5, !dbg !1917": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "prv_create_next_block_transaction"
+        },
+        "%35 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %34, i32 0, i32 3, !dbg !1770": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "registration_handleRequest"
+        },
+        "%40 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %39, i32 0, i32 35, !dbg !1799": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "registration_handleRequest"
+        },
+        "%47 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %46, i32 0, i32 6, !dbg !1807": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "registration_handleRequest"
+        },
+        "%52 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %51, i32 0, i32 6, !dbg !1811": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "registration_handleRequest"
+        },
+        "%58 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %57, i32 0, i32 38, !dbg !1817": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "registration_handleRequest"
+        },
+        "%61 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %60, i32 0, i32 37, !dbg !1819": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "registration_handleRequest"
+        },
+        "%122 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %121, i32 0, i32 5, !dbg !1895": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "registration_handleRequest"
+        },
+        "%41 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %40, i32 0, i32 3, !dbg !1728": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "prv_resultCallback"
+        },
+        "%47 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %46, i32 0, i32 14, !dbg !1732": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "prv_resultCallback"
+        },
+        "%52 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %51, i32 0, i32 14, !dbg !1743": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "prv_resultCallback"
+        },
+        "%131 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %130, i32 0, i32 3, !dbg !1827": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "prv_resultCallback"
+        },
+        "%135 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %134, i32 0, i32 6, !dbg !1829": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "prv_resultCallback"
+        },
+        "%139 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %138, i32 0, i32 38, !dbg !1832": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "prv_resultCallback"
+        },
+        "%142 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %141, i32 0, i32 37, !dbg !1834": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "prv_resultCallback"
+        },
+        "%159 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %158, i32 0, i32 3, !dbg !1847": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "prv_resultCallback"
+        },
+        "%163 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %162, i32 0, i32 6, !dbg !1849": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "prv_resultCallback"
+        },
+        "%167 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %166, i32 0, i32 38, !dbg !1852": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "prv_resultCallback"
+        },
+        "%170 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %169, i32 0, i32 37, !dbg !1854": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "prv_resultCallback"
+        },
+        "%136 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %135, i32 0, i32 35, !dbg !1848": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%159 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %158, i32 0, i32 35, !dbg !1872": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%164 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %163, i32 0, i32 5, !dbg !1877": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%192 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %191, i32 0, i32 35, !dbg !1904": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%197 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %196, i32 0, i32 5, !dbg !1909": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%224 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %223, i32 0, i32 35, !dbg !1936": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%229 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %228, i32 0, i32 5, !dbg !1941": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%256 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %255, i32 0, i32 35, !dbg !1968": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%261 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %260, i32 0, i32 5, !dbg !1973": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%288 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %287, i32 0, i32 35, !dbg !2000": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%293 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %292, i32 0, i32 5, !dbg !2005": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%308 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %307, i32 0, i32 35, !dbg !2017": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%310 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %309, i32 0, i32 5, !dbg !2019": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%325 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %324, i32 0, i32 35, !dbg !2031": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%327 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %326, i32 0, i32 5, !dbg !2033": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%342 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %341, i32 0, i32 35, !dbg !2045": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%344 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %343, i32 0, i32 5, !dbg !2047": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%359 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %358, i32 0, i32 35, !dbg !2059": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%361 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %360, i32 0, i32 5, !dbg !2061": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%376 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %375, i32 0, i32 35, !dbg !2073": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%378 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %377, i32 0, i32 5, !dbg !2075": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "lwm2m_dm_write_attributes"
+        },
+        "%104 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %103, i32 0, i32 3, !dbg !1807": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "prv_obsRequestCallback"
+        },
+        "%111 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %110, i32 0, i32 5, !dbg !1811": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "prv_obsRequestCallback"
+        },
+        "%121 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %120, i32 0, i32 3, !dbg !1817": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "prv_obsRequestCallback"
+        },
+        "%132 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %131, i32 0, i32 5, !dbg !1824": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "prv_obsRequestCallback"
+        },
+        "%141 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %140, i32 0, i32 27, !dbg !1826": {
+            "field": "27",
+            "field_name": "block2_more",
+            "parent_function": "prv_obsRequestCallback"
+        },
+        "%158 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %157, i32 0, i32 6, !dbg !1838": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "prv_obsRequestCallback"
+        },
+        "%162 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %161, i32 0, i32 38, !dbg !1841": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "prv_obsRequestCallback"
+        },
+        "%165 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %164, i32 0, i32 37, !dbg !1843": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "prv_obsRequestCallback"
+        },
+        "%264 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %263, i32 0, i32 6, !dbg !1927": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "prv_obsRequestCallback"
+        },
+        "%268 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %267, i32 0, i32 38, !dbg !1930": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "prv_obsRequestCallback"
+        },
+        "%271 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %270, i32 0, i32 37, !dbg !1932": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "prv_obsRequestCallback"
+        },
+        "%288 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %287, i32 0, i32 6, !dbg !1945": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "prv_obsRequestCallback"
+        },
+        "%292 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %291, i32 0, i32 38, !dbg !1948": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "prv_obsRequestCallback"
+        },
+        "%295 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %294, i32 0, i32 37, !dbg !1950": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "prv_obsRequestCallback"
+        },
+        "%67 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %66, i32 0, i32 6, !dbg !1764": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "prv_obsCancelRequestCallback"
+        },
+        "%84 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %83, i32 0, i32 6, !dbg !1778": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "prv_obsCancelRequestCallback"
+        },
+        "%101 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %100, i32 0, i32 3, !dbg !1798": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "prv_obsCancelRequestCallback"
+        },
+        "%123 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %122, i32 0, i32 6, !dbg !1818": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "prv_obsCancelRequestCallback"
+        },
+        "%142 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %141, i32 0, i32 6, !dbg !1833": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "prv_obsCancelRequestCallback"
+        },
+        "%163 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %162, i32 0, i32 6, !dbg !1854": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "prv_obsCancelRequestCallback"
+        },
+        "%167 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %166, i32 0, i32 38, !dbg !1857": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "prv_obsCancelRequestCallback"
+        },
+        "%170 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %169, i32 0, i32 37, !dbg !1859": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "prv_obsCancelRequestCallback"
+        },
+        "%187 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %186, i32 0, i32 6, !dbg !1872": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "prv_obsCancelRequestCallback"
+        },
+        "%191 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %190, i32 0, i32 38, !dbg !1875": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "prv_obsCancelRequestCallback"
+        },
+        "%194 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %193, i32 0, i32 37, !dbg !1877": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "prv_obsCancelRequestCallback"
+        },
+        "%81 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %80, i32 0, i32 4, !dbg !1769": {
+            "field": "4",
+            "field_name": "mid",
+            "parent_function": "observe_handleNotify"
+        },
+        "%89 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %88, i32 0, i32 2, !dbg !1779": {
+            "field": "2",
+            "field_name": "type",
+            "parent_function": "observe_handleNotify"
+        },
+        "%96 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %95, i32 0, i32 4, !dbg !1785": {
+            "field": "4",
+            "field_name": "mid",
+            "parent_function": "observe_handleNotify"
+        },
+        "%126 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %125, i32 0, i32 6, !dbg !1822": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "observe_handleNotify"
+        },
+        "%130 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %129, i32 0, i32 38, !dbg !1825": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "observe_handleNotify"
+        },
+        "%133 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %132, i32 0, i32 37, !dbg !1827": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "observe_handleNotify"
+        },
+        "%149 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %148, i32 0, i32 6, !dbg !1840": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "observe_handleNotify"
+        },
+        "%153 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %152, i32 0, i32 38, !dbg !1843": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "observe_handleNotify"
+        },
+        "%156 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %155, i32 0, i32 37, !dbg !1845": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "observe_handleNotify"
+        },
+        "%38 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %37, i32 0, i32 2, !dbg !1734": {
+            "field": "2",
+            "field_name": "type",
+            "parent_function": "transaction_handleResponse"
+        },
+        "%43 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %42, i32 0, i32 2, !dbg !1738": {
+            "field": "2",
+            "field_name": "type",
+            "parent_function": "transaction_handleResponse"
+        },
+        "%52 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %51, i32 0, i32 4, !dbg !1746": {
+            "field": "4",
+            "field_name": "mid",
+            "parent_function": "transaction_handleResponse"
+        },
+        "%60 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %59, i32 0, i32 2, !dbg !1755": {
+            "field": "2",
+            "field_name": "type",
+            "parent_function": "transaction_handleResponse"
+        },
+        "%79 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %78, i32 0, i32 2, !dbg !1775": {
+            "field": "2",
+            "field_name": "type",
+            "parent_function": "transaction_handleResponse"
+        },
+        "%89 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %88, i32 0, i32 4, !dbg !1784": {
+            "field": "4",
+            "field_name": "mid",
+            "parent_function": "transaction_handleResponse"
+        },
+        "%97 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %96, i32 0, i32 3, !dbg !1793": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "transaction_handleResponse"
+        },
+        "%14 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %13, i32 0, i32 3, !dbg !1711": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "prv_checkFinished"
+        },
+        "%29 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %28, i32 0, i32 5, !dbg !1719": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_accept"
+        },
+        "%49 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %48, i32 0, i32 20, !dbg !1730": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "prv_checkFinished"
+        },
+        "%56 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %55, i32 0, i32 21, !dbg !1737": {
+            "field": "21",
+            "field_name": "token",
+            "parent_function": "prv_checkFinished"
+        },
+        "%11 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %10, i32 0, i32 18, !dbg !1702": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_get_packet_uri_as_string"
+        },
+        "%17 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %16, i32 0, i32 35, !dbg !1711": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_get_packet_uri_as_string"
+        },
+        "%23 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %22, i32 0, i32 12, !dbg !1720": {
+            "field": "12",
+            "field_name": "uri_host_len",
+            "parent_function": "coap_get_packet_uri_as_string"
+        },
+        "%28 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %27, i32 0, i32 15, !dbg !1723": {
+            "field": "15",
+            "field_name": "uri_port",
+            "parent_function": "coap_get_packet_uri_as_string"
+        },
+        "%33 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %32, i32 0, i32 15, !dbg !1726": {
+            "field": "15",
+            "field_name": "uri_port",
+            "parent_function": "coap_get_packet_uri_as_string"
+        },
+        "%69 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %68, i32 0, i32 13, !dbg !1752": {
+            "field": "13",
+            "field_name": "uri_host",
+            "parent_function": "coap_get_packet_uri_as_string"
+        },
+        "%72 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %71, i32 0, i32 12, !dbg !1754": {
+            "field": "12",
+            "field_name": "uri_host_len",
+            "parent_function": "coap_get_packet_uri_as_string"
+        },
+        "%16 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %15, i32 0, i32 2, !dbg !1712": {
+            "field": "2",
+            "field_name": "type",
+            "parent_function": "coap_init_message"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 3, !dbg !1716": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "coap_init_message"
+        },
+        "%22 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %21, i32 0, i32 4, !dbg !1720": {
+            "field": "4",
+            "field_name": "mid",
+            "parent_function": "coap_init_message"
+        },
+        "%7 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %6, i32 0, i32 18, !dbg !1703": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_free_header"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 35, !dbg !1706": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_free_header"
+        },
+        "%13 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %12, i32 0, i32 14, !dbg !1709": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "coap_free_header"
+        },
+        "%16 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %15, i32 0, i32 18, !dbg !1712": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_free_header"
+        },
+        "%18 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %17, i32 0, i32 35, !dbg !1715": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_free_header"
+        },
+        "%20 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %19, i32 0, i32 14, !dbg !1718": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "coap_free_header"
+        },
+        "%11 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %10, i32 0, i32 37, !dbg !1705": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%16 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %15, i32 0, i32 20, !dbg !1708": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%23 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %22, i32 0, i32 5, !dbg !1713": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%32 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %31, i32 0, i32 24, !dbg !1717": {
+            "field": "24",
+            "field_name": "if_match_len",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%42 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %41, i32 0, i32 5, !dbg !1723": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%51 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %50, i32 0, i32 12, !dbg !1727": {
+            "field": "12",
+            "field_name": "uri_host_len",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%59 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %58, i32 0, i32 5, !dbg !1732": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%68 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %67, i32 0, i32 10, !dbg !1736": {
+            "field": "10",
+            "field_name": "etag_len",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%78 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %77, i32 0, i32 5, !dbg !1742": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%91 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %90, i32 0, i32 5, !dbg !1748": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%104 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %103, i32 0, i32 5, !dbg !1754": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%117 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %116, i32 0, i32 5, !dbg !1760": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%126 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %125, i32 0, i32 14, !dbg !1767": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%148 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %147, i32 0, i32 5, !dbg !1790": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%157 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %156, i32 0, i32 18, !dbg !1797": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%179 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %178, i32 0, i32 5, !dbg !1819": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%192 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %191, i32 0, i32 5, !dbg !1825": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%205 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %204, i32 0, i32 5, !dbg !1831": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%214 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %213, i32 0, i32 35, !dbg !1838": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%236 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %235, i32 0, i32 5, !dbg !1860": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%245 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %244, i32 0, i32 22, !dbg !1864": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%255 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %254, i32 0, i32 5, !dbg !1869": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%264 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %263, i32 0, i32 16, !dbg !1873": {
+            "field": "16",
+            "field_name": "location_query_len",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%272 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %271, i32 0, i32 5, !dbg !1878": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%285 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %284, i32 0, i32 5, !dbg !1884": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%298 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %297, i32 0, i32 5, !dbg !1890": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%311 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %310, i32 0, i32 5, !dbg !1896": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%320 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %319, i32 0, i32 8, !dbg !1900": {
+            "field": "8",
+            "field_name": "proxy_uri_len",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%327 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %326, i32 0, i32 37, !dbg !1906": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%15 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %14, i32 0, i32 0, !dbg !1710": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%17 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %16, i32 0, i32 1, !dbg !1713": {
+            "field": "1",
+            "field_name": "version",
+            "parent_function": "coap_serialize_message"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 0, !dbg !1716": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%23 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %22, i32 0, i32 1, !dbg !1719": {
+            "field": "1",
+            "field_name": "version",
+            "parent_function": "coap_serialize_message"
+        },
+        "%29 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %28, i32 0, i32 0, !dbg !1724": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%37 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %36, i32 0, i32 2, !dbg !1727": {
+            "field": "2",
+            "field_name": "type",
+            "parent_function": "coap_serialize_message"
+        },
+        "%42 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %41, i32 0, i32 0, !dbg !1731": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%50 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %49, i32 0, i32 20, !dbg !1734": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%56 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %55, i32 0, i32 0, !dbg !1739": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%64 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %63, i32 0, i32 3, !dbg !1742": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "coap_serialize_message"
+        },
+        "%67 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %66, i32 0, i32 0, !dbg !1744": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%71 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %70, i32 0, i32 4, !dbg !1747": {
+            "field": "4",
+            "field_name": "mid",
+            "parent_function": "coap_serialize_message"
+        },
+        "%77 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %76, i32 0, i32 0, !dbg !1752": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%81 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %80, i32 0, i32 4, !dbg !1755": {
+            "field": "4",
+            "field_name": "mid",
+            "parent_function": "coap_serialize_message"
+        },
+        "%85 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %84, i32 0, i32 0, !dbg !1758": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%89 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %88, i32 0, i32 0, !dbg !1761": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%95 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %94, i32 0, i32 20, !dbg !1770": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%101 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %100, i32 0, i32 21, !dbg !1775": {
+            "field": "21",
+            "field_name": "token",
+            "parent_function": "coap_serialize_message"
+        },
+        "%115 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %114, i32 0, i32 5, !dbg !1788": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%126 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %125, i32 0, i32 25, !dbg !1790": {
+            "field": "25",
+            "field_name": "if_match",
+            "parent_function": "coap_serialize_message"
+        },
+        "%129 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %128, i32 0, i32 24, !dbg !1790": {
+            "field": "24",
+            "field_name": "if_match_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%138 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %137, i32 0, i32 5, !dbg !1793": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%149 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %148, i32 0, i32 13, !dbg !1795": {
+            "field": "13",
+            "field_name": "uri_host",
+            "parent_function": "coap_serialize_message"
+        },
+        "%152 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %151, i32 0, i32 12, !dbg !1795": {
+            "field": "12",
+            "field_name": "uri_host_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%160 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %159, i32 0, i32 5, !dbg !1798": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%171 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %170, i32 0, i32 11, !dbg !1800": {
+            "field": "11",
+            "field_name": "etag",
+            "parent_function": "coap_serialize_message"
+        },
+        "%174 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %173, i32 0, i32 10, !dbg !1800": {
+            "field": "10",
+            "field_name": "etag_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%183 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %182, i32 0, i32 5, !dbg !1803": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%194 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %193, i32 0, i32 6, !dbg !1805": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "coap_serialize_message"
+        },
+        "%197 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %196, i32 0, i32 6, !dbg !1805": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "coap_serialize_message"
+        },
+        "%206 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %205, i32 0, i32 5, !dbg !1808": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%217 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %216, i32 0, i32 19, !dbg !1810": {
+            "field": "19",
+            "field_name": "observe",
+            "parent_function": "coap_serialize_message"
+        },
+        "%225 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %224, i32 0, i32 5, !dbg !1813": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%236 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %235, i32 0, i32 15, !dbg !1815": {
+            "field": "15",
+            "field_name": "uri_port",
+            "parent_function": "coap_serialize_message"
+        },
+        "%245 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %244, i32 0, i32 5, !dbg !1818": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%256 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %255, i32 0, i32 14, !dbg !1820": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "coap_serialize_message"
+        },
+        "%264 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %263, i32 0, i32 5, !dbg !1823": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%275 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %274, i32 0, i32 18, !dbg !1825": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_serialize_message"
+        },
+        "%283 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %282, i32 0, i32 5, !dbg !1828": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%294 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %293, i32 0, i32 6, !dbg !1830": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "coap_serialize_message"
+        },
+        "%302 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %301, i32 0, i32 5, !dbg !1833": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%313 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %312, i32 0, i32 7, !dbg !1835": {
+            "field": "7",
+            "field_name": "max_age",
+            "parent_function": "coap_serialize_message"
+        },
+        "%321 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %320, i32 0, i32 5, !dbg !1838": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%332 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %331, i32 0, i32 35, !dbg !1840": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_serialize_message"
+        },
+        "%340 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %339, i32 0, i32 5, !dbg !1843": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%351 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %350, i32 0, i32 22, !dbg !1850": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_serialize_message"
+        },
+        "%359 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %358, i32 0, i32 23, !dbg !1852": {
+            "field": "23",
+            "field_name": "accept",
+            "parent_function": "coap_serialize_message"
+        },
+        "%375 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %374, i32 0, i32 5, !dbg !1856": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%386 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %385, i32 0, i32 17, !dbg !1858": {
+            "field": "17",
+            "field_name": "location_query",
+            "parent_function": "coap_serialize_message"
+        },
+        "%389 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %388, i32 0, i32 16, !dbg !1858": {
+            "field": "16",
+            "field_name": "location_query_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%397 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %396, i32 0, i32 5, !dbg !1861": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%406 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %405, i32 0, i32 26, !dbg !1865": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_serialize_message"
+        },
+        "%410 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %409, i32 0, i32 27, !dbg !1866": {
+            "field": "27",
+            "field_name": "block2_more",
+            "parent_function": "coap_serialize_message"
+        },
+        "%418 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %417, i32 0, i32 28, !dbg !1865": {
+            "field": "28",
+            "field_name": "block2_size",
+            "parent_function": "coap_serialize_message"
+        },
+        "%437 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %436, i32 0, i32 5, !dbg !1869": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%446 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %445, i32 0, i32 30, !dbg !1873": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_serialize_message"
+        },
+        "%450 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %449, i32 0, i32 31, !dbg !1874": {
+            "field": "31",
+            "field_name": "block1_more",
+            "parent_function": "coap_serialize_message"
+        },
+        "%458 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %457, i32 0, i32 32, !dbg !1873": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "coap_serialize_message"
+        },
+        "%477 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %476, i32 0, i32 5, !dbg !1877": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%488 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %487, i32 0, i32 34, !dbg !1879": {
+            "field": "34",
+            "field_name": "size",
+            "parent_function": "coap_serialize_message"
+        },
+        "%496 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %495, i32 0, i32 5, !dbg !1882": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%507 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %506, i32 0, i32 9, !dbg !1884": {
+            "field": "9",
+            "field_name": "proxy_uri",
+            "parent_function": "coap_serialize_message"
+        },
+        "%510 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %509, i32 0, i32 8, !dbg !1884": {
+            "field": "8",
+            "field_name": "proxy_uri_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%518 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %517, i32 0, i32 37, !dbg !1890": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%528 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %527, i32 0, i32 38, !dbg !1899": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "coap_serialize_message"
+        },
+        "%531 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %530, i32 0, i32 37, !dbg !1901": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%540 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %539, i32 0, i32 37, !dbg !1907": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%20 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %19, i32 0, i32 0, !dbg !1721": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_parse_message"
+        },
+        "%22 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %21, i32 0, i32 0, !dbg !1724": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_parse_message"
+        },
+        "%31 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %30, i32 0, i32 1, !dbg !1729": {
+            "field": "1",
+            "field_name": "version",
+            "parent_function": "coap_parse_message"
+        },
+        "%33 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %32, i32 0, i32 0, !dbg !1732": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_parse_message"
+        },
+        "%41 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %40, i32 0, i32 2, !dbg !1736": {
+            "field": "2",
+            "field_name": "type",
+            "parent_function": "coap_parse_message"
+        },
+        "%43 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %42, i32 0, i32 0, !dbg !1738": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_parse_message"
+        },
+        "%54 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %53, i32 0, i32 0, !dbg !1738": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_parse_message"
+        },
+        "%65 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %64, i32 0, i32 20, !dbg !1740": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%67 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %66, i32 0, i32 0, !dbg !1743": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_parse_message"
+        },
+        "%72 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %71, i32 0, i32 3, !dbg !1745": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "coap_parse_message"
+        },
+        "%74 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %73, i32 0, i32 0, !dbg !1748": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_parse_message"
+        },
+        "%81 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %80, i32 0, i32 0, !dbg !1751": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_parse_message"
+        },
+        "%89 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %88, i32 0, i32 4, !dbg !1754": {
+            "field": "4",
+            "field_name": "mid",
+            "parent_function": "coap_parse_message"
+        },
+        "%91 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %90, i32 0, i32 1, !dbg !1758": {
+            "field": "1",
+            "field_name": "version",
+            "parent_function": "coap_parse_message"
+        },
+        "%100 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %99, i32 0, i32 20, !dbg !1769": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%106 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %105, i32 0, i32 21, !dbg !1774": {
+            "field": "21",
+            "field_name": "token",
+            "parent_function": "coap_parse_message"
+        },
+        "%110 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %109, i32 0, i32 20, !dbg !1778": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%114 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %113, i32 0, i32 5, !dbg !1779": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_parse_message"
+        },
+        "%122 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %121, i32 0, i32 20, !dbg !1785": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%147 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %146, i32 0, i32 38, !dbg !1802": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "coap_parse_message"
+        },
+        "%151 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %150, i32 0, i32 38, !dbg !1806": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "coap_parse_message"
+        },
+        "%160 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %159, i32 0, i32 37, !dbg !1811": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%251 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %250, i32 0, i32 5, !dbg !1881": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_parse_message"
+        },
+        "%268 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %267, i32 0, i32 6, !dbg !1890": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "coap_parse_message"
+        },
+        "%275 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %274, i32 0, i32 7, !dbg !1897": {
+            "field": "7",
+            "field_name": "max_age",
+            "parent_function": "coap_parse_message"
+        },
+        "%286 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %285, i32 0, i32 10, !dbg !1903": {
+            "field": "10",
+            "field_name": "etag_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%288 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %287, i32 0, i32 11, !dbg !1906": {
+            "field": "11",
+            "field_name": "etag",
+            "parent_function": "coap_parse_message"
+        },
+        "%292 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %291, i32 0, i32 10, !dbg !1910": {
+            "field": "10",
+            "field_name": "etag_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%297 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %296, i32 0, i32 22, !dbg !1914": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%308 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %307, i32 0, i32 23, !dbg !1922": {
+            "field": "23",
+            "field_name": "accept",
+            "parent_function": "coap_parse_message"
+        },
+        "%310 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %309, i32 0, i32 22, !dbg !1924": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%315 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %314, i32 0, i32 22, !dbg !1927": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%331 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %330, i32 0, i32 24, !dbg !1934": {
+            "field": "24",
+            "field_name": "if_match_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%333 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %332, i32 0, i32 25, !dbg !1937": {
+            "field": "25",
+            "field_name": "if_match",
+            "parent_function": "coap_parse_message"
+        },
+        "%337 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %336, i32 0, i32 24, !dbg !1941": {
+            "field": "24",
+            "field_name": "if_match_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%342 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %341, i32 0, i32 36, !dbg !1944": {
+            "field": "36",
+            "field_name": "if_none_match",
+            "parent_function": "coap_parse_message"
+        },
+        "%346 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %345, i32 0, i32 13, !dbg !1949": {
+            "field": "13",
+            "field_name": "uri_host",
+            "parent_function": "coap_parse_message"
+        },
+        "%350 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %349, i32 0, i32 12, !dbg !1953": {
+            "field": "12",
+            "field_name": "uri_host_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%358 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %357, i32 0, i32 15, !dbg !1960": {
+            "field": "15",
+            "field_name": "uri_port",
+            "parent_function": "coap_parse_message"
+        },
+        "%361 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %360, i32 0, i32 18, !dbg !1964": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_parse_message"
+        },
+        "%367 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %366, i32 0, i32 35, !dbg !1970": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_parse_message"
+        },
+        "%373 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %372, i32 0, i32 14, !dbg !1976": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "coap_parse_message"
+        },
+        "%379 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %378, i32 0, i32 17, !dbg !1982": {
+            "field": "17",
+            "field_name": "location_query",
+            "parent_function": "coap_parse_message"
+        },
+        "%381 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %380, i32 0, i32 16, !dbg !1984": {
+            "field": "16",
+            "field_name": "location_query_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%388 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %387, i32 0, i32 9, !dbg !1991": {
+            "field": "9",
+            "field_name": "proxy_uri",
+            "parent_function": "coap_parse_message"
+        },
+        "%392 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %391, i32 0, i32 8, !dbg !1995": {
+            "field": "8",
+            "field_name": "proxy_uri_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%399 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %398, i32 0, i32 19, !dbg !2003": {
+            "field": "19",
+            "field_name": "observe",
+            "parent_function": "coap_parse_message"
+        },
+        "%406 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %405, i32 0, i32 26, !dbg !2010": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%408 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %407, i32 0, i32 26, !dbg !2013": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%414 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %413, i32 0, i32 27, !dbg !2018": {
+            "field": "27",
+            "field_name": "block2_more",
+            "parent_function": "coap_parse_message"
+        },
+        "%416 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %415, i32 0, i32 26, !dbg !2021": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%422 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %421, i32 0, i32 28, !dbg !2026": {
+            "field": "28",
+            "field_name": "block2_size",
+            "parent_function": "coap_parse_message"
+        },
+        "%424 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %423, i32 0, i32 26, !dbg !2029": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%428 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %427, i32 0, i32 26, !dbg !2032": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%433 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %432, i32 0, i32 29, !dbg !2036": {
+            "field": "29",
+            "field_name": "block2_offset",
+            "parent_function": "coap_parse_message"
+        },
+        "%435 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %434, i32 0, i32 26, !dbg !2039": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%444 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %443, i32 0, i32 30, !dbg !2046": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%446 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %445, i32 0, i32 30, !dbg !2049": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%452 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %451, i32 0, i32 31, !dbg !2054": {
+            "field": "31",
+            "field_name": "block1_more",
+            "parent_function": "coap_parse_message"
+        },
+        "%454 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %453, i32 0, i32 30, !dbg !2057": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%460 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %459, i32 0, i32 32, !dbg !2062": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "coap_parse_message"
+        },
+        "%462 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %461, i32 0, i32 30, !dbg !2065": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%466 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %465, i32 0, i32 30, !dbg !2068": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%471 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %470, i32 0, i32 33, !dbg !2072": {
+            "field": "33",
+            "field_name": "block1_offset",
+            "parent_function": "coap_parse_message"
+        },
+        "%473 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %472, i32 0, i32 30, !dbg !2075": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%482 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %481, i32 0, i32 34, !dbg !2082": {
+            "field": "34",
+            "field_name": "size",
+            "parent_function": "coap_parse_message"
+        },
+        "%12 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %11, i32 0, i32 37, !dbg !1709": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_get_post_variable"
+        },
+        "%17 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %16, i32 0, i32 38, !dbg !1713": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "coap_get_post_variable"
+        },
+        "%20 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %19, i32 0, i32 37, !dbg !1715": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_get_post_variable"
+        },
+        "%13 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %12, i32 0, i32 3, !dbg !1708": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "coap_set_status_code"
+        },
+        "%9 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %8, i32 0, i32 5, !dbg !1703": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_get_header_uri_port"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 6, !dbg !1707": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "coap_get_header_content_type"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 6, !dbg !1706": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "coap_set_header_content_type"
+        },
+        "%12 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %11, i32 0, i32 5, !dbg !1708": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_size"
+        },
+        "%11 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %10, i32 0, i32 5, !dbg !1708": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_get_header_accept"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 23, !dbg !1712": {
+            "field": "23",
+            "field_name": "accept",
+            "parent_function": "coap_get_header_accept"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 22, !dbg !1716": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_get_header_accept"
+        },
+        "%9 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %8, i32 0, i32 22, !dbg !1706": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_set_header_accept"
+        },
+        "%16 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %15, i32 0, i32 23, !dbg !1712": {
+            "field": "23",
+            "field_name": "accept",
+            "parent_function": "coap_set_header_accept"
+        },
+        "%18 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %17, i32 0, i32 22, !dbg !1714": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_set_header_accept"
+        },
+        "%23 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %22, i32 0, i32 22, !dbg !1717": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_set_header_accept"
+        },
+        "%37 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %36, i32 0, i32 22, !dbg !1725": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_set_header_accept"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 5, !dbg !1706": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_get_header_max_age"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 7, !dbg !1714": {
+            "field": "7",
+            "field_name": "max_age",
+            "parent_function": "coap_get_header_max_age"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 7, !dbg !1706": {
+            "field": "7",
+            "field_name": "max_age",
+            "parent_function": "coap_set_header_max_age"
+        },
+        "%11 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %10, i32 0, i32 5, !dbg !1706": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_get_header_size"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 11, !dbg !1710": {
+            "field": "11",
+            "field_name": "etag",
+            "parent_function": "coap_get_header_etag"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 10, !dbg !1714": {
+            "field": "10",
+            "field_name": "etag_len",
+            "parent_function": "coap_get_header_etag"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 10, !dbg !1709": {
+            "field": "10",
+            "field_name": "etag_len",
+            "parent_function": "coap_set_header_etag"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 11, !dbg !1712": {
+            "field": "11",
+            "field_name": "etag",
+            "parent_function": "coap_set_header_etag"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 10, !dbg !1716": {
+            "field": "10",
+            "field_name": "etag_len",
+            "parent_function": "coap_set_header_etag"
+        },
+        "%29 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %28, i32 0, i32 5, !dbg !1717": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_token"
+        },
+        "%36 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %35, i32 0, i32 10, !dbg !1722": {
+            "field": "10",
+            "field_name": "etag_len",
+            "parent_function": "coap_set_header_etag"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 25, !dbg !1710": {
+            "field": "25",
+            "field_name": "if_match",
+            "parent_function": "coap_get_header_if_match"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 24, !dbg !1714": {
+            "field": "24",
+            "field_name": "if_match_len",
+            "parent_function": "coap_get_header_if_match"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 24, !dbg !1709": {
+            "field": "24",
+            "field_name": "if_match_len",
+            "parent_function": "coap_set_header_if_match"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 25, !dbg !1712": {
+            "field": "25",
+            "field_name": "if_match",
+            "parent_function": "coap_set_header_if_match"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 24, !dbg !1716": {
+            "field": "24",
+            "field_name": "if_match_len",
+            "parent_function": "coap_set_header_if_match"
+        },
+        "%36 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %35, i32 0, i32 24, !dbg !1722": {
+            "field": "24",
+            "field_name": "if_match_len",
+            "parent_function": "coap_set_header_if_match"
+        },
+        "%5 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %4, i32 0, i32 5, !dbg !1697": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_if_none_match"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 21, !dbg !1710": {
+            "field": "21",
+            "field_name": "token",
+            "parent_function": "coap_get_header_token"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 20, !dbg !1714": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_get_header_token"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 20, !dbg !1709": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_set_header_token"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 21, !dbg !1712": {
+            "field": "21",
+            "field_name": "token",
+            "parent_function": "coap_set_header_token"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 20, !dbg !1716": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_set_header_token"
+        },
+        "%36 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %35, i32 0, i32 20, !dbg !1722": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_set_header_token"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 9, !dbg !1710": {
+            "field": "9",
+            "field_name": "proxy_uri",
+            "parent_function": "coap_get_header_proxy_uri"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 8, !dbg !1714": {
+            "field": "8",
+            "field_name": "proxy_uri_len",
+            "parent_function": "coap_get_header_proxy_uri"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 9, !dbg !1706": {
+            "field": "9",
+            "field_name": "proxy_uri",
+            "parent_function": "coap_set_header_proxy_uri"
+        },
+        "%14 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %13, i32 0, i32 8, !dbg !1711": {
+            "field": "8",
+            "field_name": "proxy_uri_len",
+            "parent_function": "coap_set_header_proxy_uri"
+        },
+        "%16 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %15, i32 0, i32 5, !dbg !1713": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_uri_host"
+        },
+        "%23 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %22, i32 0, i32 8, !dbg !1718": {
+            "field": "8",
+            "field_name": "proxy_uri_len",
+            "parent_function": "coap_set_header_proxy_uri"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 13, !dbg !1710": {
+            "field": "13",
+            "field_name": "uri_host",
+            "parent_function": "coap_get_header_uri_host"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 12, !dbg !1714": {
+            "field": "12",
+            "field_name": "uri_host_len",
+            "parent_function": "coap_get_header_uri_host"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 13, !dbg !1706": {
+            "field": "13",
+            "field_name": "uri_host",
+            "parent_function": "coap_set_header_uri_host"
+        },
+        "%14 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %13, i32 0, i32 12, !dbg !1711": {
+            "field": "12",
+            "field_name": "uri_host_len",
+            "parent_function": "coap_set_header_uri_host"
+        },
+        "%23 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %22, i32 0, i32 12, !dbg !1718": {
+            "field": "12",
+            "field_name": "uri_host_len",
+            "parent_function": "coap_set_header_uri_host"
+        },
+        "%11 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %10, i32 0, i32 18, !dbg !1706": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_set_header_uri_path"
+        },
+        "%14 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %13, i32 0, i32 18, !dbg !1709": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_set_header_uri_path"
+        },
+        "%48 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %47, i32 0, i32 18, !dbg !1733": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_set_header_uri_path"
+        },
+        "%78 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %77, i32 0, i32 5, !dbg !1753": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_location_path"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 18, !dbg !1714": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_set_header_uri_path_segment"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 18, !dbg !1723": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_set_header_uri_path_segment"
+        },
+        "%31 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %30, i32 0, i32 5, !dbg !1727": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_uri_query_segment"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 15, !dbg !1707": {
+            "field": "15",
+            "field_name": "uri_port",
+            "parent_function": "coap_get_header_uri_port"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 15, !dbg !1706": {
+            "field": "15",
+            "field_name": "uri_port",
+            "parent_function": "coap_set_header_uri_port"
+        },
+        "%11 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %10, i32 0, i32 35, !dbg !1707": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_set_header_uri_query"
+        },
+        "%14 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %13, i32 0, i32 35, !dbg !1710": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_set_header_uri_query"
+        },
+        "%48 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %47, i32 0, i32 35, !dbg !1734": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_set_header_uri_query"
+        },
+        "%78 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %77, i32 0, i32 5, !dbg !1754": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_uri_query"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 35, !dbg !1714": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_set_header_uri_query_segment"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 35, !dbg !1723": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_set_header_uri_query_segment"
+        },
+        "%11 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %10, i32 0, i32 14, !dbg !1706": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "coap_set_header_location_path"
+        },
+        "%14 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %13, i32 0, i32 14, !dbg !1709": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "coap_set_header_location_path"
+        },
+        "%48 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %47, i32 0, i32 14, !dbg !1733": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "coap_set_header_location_path"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 17, !dbg !1710": {
+            "field": "17",
+            "field_name": "location_query",
+            "parent_function": "coap_get_header_location_query"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 16, !dbg !1714": {
+            "field": "16",
+            "field_name": "location_query_len",
+            "parent_function": "coap_get_header_location_query"
+        },
+        "%20 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %19, i32 0, i32 17, !dbg !1713": {
+            "field": "17",
+            "field_name": "location_query",
+            "parent_function": "coap_set_header_location_query"
+        },
+        "%24 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %23, i32 0, i32 16, !dbg !1718": {
+            "field": "16",
+            "field_name": "location_query_len",
+            "parent_function": "coap_set_header_location_query"
+        },
+        "%26 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %25, i32 0, i32 5, !dbg !1720": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_location_query"
+        },
+        "%33 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %32, i32 0, i32 16, !dbg !1725": {
+            "field": "16",
+            "field_name": "location_query_len",
+            "parent_function": "coap_set_header_location_query"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 19, !dbg !1710": {
+            "field": "19",
+            "field_name": "observe",
+            "parent_function": "coap_get_header_observe"
+        },
+        "%11 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %10, i32 0, i32 19, !dbg !1707": {
+            "field": "19",
+            "field_name": "observe",
+            "parent_function": "coap_set_header_observe"
+        },
+        "%13 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %12, i32 0, i32 5, !dbg !1709": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_observe"
+        },
+        "%17 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %16, i32 0, i32 5, !dbg !1713": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_get_header_block1"
+        },
+        "%30 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %29, i32 0, i32 26, !dbg !1721": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_get_header_block2"
+        },
+        "%38 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %37, i32 0, i32 27, !dbg !1730": {
+            "field": "27",
+            "field_name": "block2_more",
+            "parent_function": "coap_get_header_block2"
+        },
+        "%46 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %45, i32 0, i32 28, !dbg !1739": {
+            "field": "28",
+            "field_name": "block2_size",
+            "parent_function": "coap_get_header_block2"
+        },
+        "%54 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %53, i32 0, i32 29, !dbg !1748": {
+            "field": "29",
+            "field_name": "block2_offset",
+            "parent_function": "coap_get_header_block2"
+        },
+        "%29 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %28, i32 0, i32 26, !dbg !1725": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_set_header_block2"
+        },
+        "%37 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %36, i32 0, i32 27, !dbg !1729": {
+            "field": "27",
+            "field_name": "block2_more",
+            "parent_function": "coap_set_header_block2"
+        },
+        "%40 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %39, i32 0, i32 28, !dbg !1733": {
+            "field": "28",
+            "field_name": "block2_size",
+            "parent_function": "coap_set_header_block2"
+        },
+        "%42 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %41, i32 0, i32 5, !dbg !1735": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_block2"
+        },
+        "%30 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %29, i32 0, i32 30, !dbg !1721": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_get_header_block1"
+        },
+        "%38 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %37, i32 0, i32 31, !dbg !1730": {
+            "field": "31",
+            "field_name": "block1_more",
+            "parent_function": "coap_get_header_block1"
+        },
+        "%46 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %45, i32 0, i32 32, !dbg !1739": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "coap_get_header_block1"
+        },
+        "%54 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %53, i32 0, i32 33, !dbg !1748": {
+            "field": "33",
+            "field_name": "block1_offset",
+            "parent_function": "coap_get_header_block1"
+        },
+        "%29 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %28, i32 0, i32 30, !dbg !1725": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_set_header_block1"
+        },
+        "%32 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %31, i32 0, i32 31, !dbg !1729": {
+            "field": "31",
+            "field_name": "block1_more",
+            "parent_function": "coap_set_header_block1"
+        },
+        "%35 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %34, i32 0, i32 32, !dbg !1733": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "coap_set_header_block1"
+        },
+        "%37 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %36, i32 0, i32 5, !dbg !1735": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_block1"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 34, !dbg !1710": {
+            "field": "34",
+            "field_name": "size",
+            "parent_function": "coap_get_header_size"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 34, !dbg !1706": {
+            "field": "34",
+            "field_name": "size",
+            "parent_function": "coap_set_header_size"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 38, !dbg !1707": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "coap_get_payload"
+        },
+        "%15 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %14, i32 0, i32 38, !dbg !1711": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "coap_get_payload"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 37, !dbg !1715": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_get_payload"
+        },
+        "%12 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %11, i32 0, i32 38, !dbg !1710": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "coap_set_payload"
+        },
+        "%16 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %15, i32 0, i32 37, !dbg !1715": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_set_payload"
+        },
+        "%18 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %17, i32 0, i32 37, !dbg !1718": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_set_payload"
+        }
+    },
+    "functions_for_one_struct_client": {
+        "%18 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %17, i32 0, i32 18, !dbg !2913": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "handle_request"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 3, !dbg !2915": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "handle_request"
+        },
+        "%35 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %34, i32 0, i32 5, !dbg !2932": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "prv_send_get_block2"
+        },
+        "%9 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %8, i32 0, i32 4, !dbg !2903": {
+            "field": "4",
+            "field_name": "mid",
+            "parent_function": "handle_reset"
+        },
+        "%28 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %27, i32 0, i32 32, !dbg !2926": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "prv_send_next_block1"
+        },
+        "%38 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %37, i32 0, i32 32, !dbg !2933": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "prv_send_next_block1"
+        },
+        "%42 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %41, i32 0, i32 30, !dbg !2938": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "prv_send_next_block1"
+        },
+        "%47 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %46, i32 0, i32 32, !dbg !2943": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "prv_send_next_block1"
+        },
+        "%55 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %54, i32 0, i32 30, !dbg !2950": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "prv_send_next_block1"
+        },
+        "%27 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %26, i32 0, i32 5, !dbg !2924": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "prv_retry_block1"
+        },
+        "%43 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %42, i32 0, i32 32, !dbg !2935": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "prv_retry_block1"
+        },
+        "%60 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %59, i32 0, i32 32, !dbg !2946": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "prv_retry_block1"
+        },
+        "%71 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %70, i32 0, i32 30, !dbg !2954": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "prv_retry_block1"
+        },
+        "%113 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %112, i32 0, i32 14, !dbg !3003": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "prv_create_next_block_transaction"
+        },
+        "%118 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %117, i32 0, i32 5, !dbg !3005": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "prv_create_next_block_transaction"
+        },
+        "%154 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %153, i32 0, i32 6, !dbg !3044": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "prv_create_next_block_transaction"
+        },
+        "%159 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %158, i32 0, i32 5, !dbg !3046": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "prv_create_next_block_transaction"
+        },
+        "%178 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %177, i32 0, i32 18, !dbg !3059": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "prv_create_next_block_transaction"
+        },
+        "%183 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %182, i32 0, i32 5, !dbg !3061": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "prv_create_next_block_transaction"
+        },
+        "%247 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %246, i32 0, i32 35, !dbg !3115": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "prv_create_next_block_transaction"
+        },
+        "%252 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %251, i32 0, i32 5, !dbg !3117": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "prv_create_next_block_transaction"
+        },
+        "%38 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %37, i32 0, i32 3, !dbg !2935": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "prv_handleRegistrationUpdateReply"
+        },
+        "%44 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %43, i32 0, i32 3, !dbg !2939": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "prv_handleRegistrationUpdateReply"
+        },
+        "%51 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %50, i32 0, i32 5, !dbg !2943": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "prv_handleRegistrationUpdateReply"
+        },
+        "%60 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %59, i32 0, i32 30, !dbg !2945": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "prv_handleRegistrationUpdateReply"
+        },
+        "%72 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %71, i32 0, i32 3, !dbg !2958": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "prv_handleRegistrationUpdateReply"
+        },
+        "%92 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %91, i32 0, i32 3, !dbg !2978": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "prv_handleRegistrationUpdateReply"
+        },
+        "%43 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %42, i32 0, i32 3, !dbg !2934": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "prv_handleRegistrationReply"
+        },
+        "%49 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %48, i32 0, i32 3, !dbg !2938": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "prv_handleRegistrationReply"
+        },
+        "%56 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %55, i32 0, i32 5, !dbg !2942": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "prv_handleRegistrationReply"
+        },
+        "%65 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %64, i32 0, i32 30, !dbg !2944": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "prv_handleRegistrationReply"
+        },
+        "%77 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %76, i32 0, i32 3, !dbg !2957": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "prv_handleRegistrationReply"
+        },
+        "%100 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %99, i32 0, i32 14, !dbg !2978": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "prv_handleRegistrationReply"
+        },
+        "%23 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %22, i32 0, i32 5, !dbg !3158": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "dm_handleRequest"
+        },
+        "%32 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %31, i32 0, i32 6, !dbg !3162": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "dm_handleRequest"
+        },
+        "%66 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %65, i32 0, i32 3, !dbg !3195": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "dm_handleRequest"
+        },
+        "%72 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %71, i32 0, i32 5, !dbg !3206": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "dm_handleRequest"
+        },
+        "%88 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %87, i32 0, i32 22, !dbg !3223": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "dm_handleRequest"
+        },
+        "%91 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %90, i32 0, i32 23, !dbg !3225": {
+            "field": "23",
+            "field_name": "accept",
+            "parent_function": "dm_handleRequest"
+        },
+        "%140 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %139, i32 0, i32 5, !dbg !3278": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "dm_handleRequest"
+        },
+        "%149 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %148, i32 0, i32 22, !dbg !3280": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "dm_handleRequest"
+        },
+        "%155 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %154, i32 0, i32 23, !dbg !3284": {
+            "field": "23",
+            "field_name": "accept",
+            "parent_function": "dm_handleRequest"
+        },
+        "%169 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %168, i32 0, i32 23, !dbg !3299": {
+            "field": "23",
+            "field_name": "accept",
+            "parent_function": "dm_handleRequest"
+        },
+        "%172 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %171, i32 0, i32 22, !dbg !3301": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "dm_handleRequest"
+        },
+        "%204 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %203, i32 0, i32 38, !dbg !3330": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "dm_handleRequest"
+        },
+        "%207 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %206, i32 0, i32 37, !dbg !3332": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "dm_handleRequest"
+        },
+        "%246 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %245, i32 0, i32 5, !dbg !3372": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "dm_handleRequest"
+        },
+        "%273 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %272, i32 0, i32 38, !dbg !3389": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "dm_handleRequest"
+        },
+        "%276 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %275, i32 0, i32 37, !dbg !3391": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "dm_handleRequest"
+        },
+        "%286 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %285, i32 0, i32 38, !dbg !3400": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "dm_handleRequest"
+        },
+        "%289 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %288, i32 0, i32 37, !dbg !3402": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "dm_handleRequest"
+        },
+        "%298 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %297, i32 0, i32 5, !dbg !3408": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "dm_handleRequest"
+        },
+        "%307 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %306, i32 0, i32 35, !dbg !3415": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "dm_handleRequest"
+        },
+        "%329 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %328, i32 0, i32 38, !dbg !3437": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "dm_handleRequest"
+        },
+        "%332 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %331, i32 0, i32 37, !dbg !3439": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "dm_handleRequest"
+        },
+        "%40 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %39, i32 0, i32 20, !dbg !3089": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "observe_handleRequest"
+        },
+        "%55 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %54, i32 0, i32 20, !dbg !3104": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "observe_handleRequest"
+        },
+        "%64 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %63, i32 0, i32 21, !dbg !3112": {
+            "field": "21",
+            "field_name": "token",
+            "parent_function": "observe_handleRequest"
+        },
+        "%67 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %66, i32 0, i32 20, !dbg !3114": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "observe_handleRequest"
+        },
+        "%76 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %75, i32 0, i32 4, !dbg !3123": {
+            "field": "4",
+            "field_name": "mid",
+            "parent_function": "observe_handleRequest"
+        },
+        "%81 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %80, i32 0, i32 6, !dbg !3128": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "observe_handleRequest"
+        },
+        "%673 = getelementptr inbounds [1 x %struct.coap_packet_t], [1 x %struct.coap_packet_t]* %18, i64 0, i64 0, !dbg !3694": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "observe_step"
+        },
+        "%675 = getelementptr inbounds [1 x %struct.coap_packet_t], [1 x %struct.coap_packet_t]* %18, i64 0, i64 0, !dbg !3696": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "observe_step"
+        },
+        "%681 = getelementptr inbounds [1 x %struct.coap_packet_t], [1 x %struct.coap_packet_t]* %18, i64 0, i64 0, !dbg !3700": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "observe_step"
+        },
+        "%699 = getelementptr inbounds [1 x %struct.coap_packet_t], [1 x %struct.coap_packet_t]* %18, i64 0, i64 0, !dbg !3717": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "observe_step"
+        },
+        "%700 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %699, i32 0, i32 4, !dbg !3717": {
+            "field": "4",
+            "field_name": "mid",
+            "parent_function": "observe_step"
+        },
+        "%701 = getelementptr inbounds [1 x %struct.coap_packet_t], [1 x %struct.coap_packet_t]* %18, i64 0, i64 0, !dbg !3719": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "observe_step"
+        },
+        "%710 = getelementptr inbounds [1 x %struct.coap_packet_t], [1 x %struct.coap_packet_t]* %18, i64 0, i64 0, !dbg !3725": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "observe_step"
+        },
+        "%718 = getelementptr inbounds [1 x %struct.coap_packet_t], [1 x %struct.coap_packet_t]* %18, i64 0, i64 0, !dbg !3731": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "observe_step"
+        },
+        "%38 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %37, i32 0, i32 2, !dbg !2934": {
+            "field": "2",
+            "field_name": "type",
+            "parent_function": "transaction_handleResponse"
+        },
+        "%43 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %42, i32 0, i32 2, !dbg !2938": {
+            "field": "2",
+            "field_name": "type",
+            "parent_function": "transaction_handleResponse"
+        },
+        "%52 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %51, i32 0, i32 4, !dbg !2946": {
+            "field": "4",
+            "field_name": "mid",
+            "parent_function": "transaction_handleResponse"
+        },
+        "%60 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %59, i32 0, i32 2, !dbg !2955": {
+            "field": "2",
+            "field_name": "type",
+            "parent_function": "transaction_handleResponse"
+        },
+        "%79 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %78, i32 0, i32 2, !dbg !2975": {
+            "field": "2",
+            "field_name": "type",
+            "parent_function": "transaction_handleResponse"
+        },
+        "%89 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %88, i32 0, i32 4, !dbg !2984": {
+            "field": "4",
+            "field_name": "mid",
+            "parent_function": "transaction_handleResponse"
+        },
+        "%97 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %96, i32 0, i32 3, !dbg !2993": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "transaction_handleResponse"
+        },
+        "%14 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %13, i32 0, i32 3, !dbg !2911": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "prv_checkFinished"
+        },
+        "%29 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %28, i32 0, i32 5, !dbg !2919": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_accept"
+        },
+        "%49 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %48, i32 0, i32 20, !dbg !2930": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "prv_checkFinished"
+        },
+        "%56 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %55, i32 0, i32 21, !dbg !2937": {
+            "field": "21",
+            "field_name": "token",
+            "parent_function": "prv_checkFinished"
+        },
+        "%11 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %10, i32 0, i32 18, !dbg !2902": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_get_packet_uri_as_string"
+        },
+        "%17 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %16, i32 0, i32 35, !dbg !2911": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_get_packet_uri_as_string"
+        },
+        "%23 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %22, i32 0, i32 12, !dbg !2920": {
+            "field": "12",
+            "field_name": "uri_host_len",
+            "parent_function": "coap_get_packet_uri_as_string"
+        },
+        "%28 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %27, i32 0, i32 15, !dbg !2923": {
+            "field": "15",
+            "field_name": "uri_port",
+            "parent_function": "coap_get_packet_uri_as_string"
+        },
+        "%33 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %32, i32 0, i32 15, !dbg !2926": {
+            "field": "15",
+            "field_name": "uri_port",
+            "parent_function": "coap_get_packet_uri_as_string"
+        },
+        "%69 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %68, i32 0, i32 13, !dbg !2952": {
+            "field": "13",
+            "field_name": "uri_host",
+            "parent_function": "coap_get_packet_uri_as_string"
+        },
+        "%72 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %71, i32 0, i32 12, !dbg !2954": {
+            "field": "12",
+            "field_name": "uri_host_len",
+            "parent_function": "coap_get_packet_uri_as_string"
+        },
+        "%16 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %15, i32 0, i32 2, !dbg !2912": {
+            "field": "2",
+            "field_name": "type",
+            "parent_function": "coap_init_message"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 3, !dbg !2916": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "coap_init_message"
+        },
+        "%22 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %21, i32 0, i32 4, !dbg !2920": {
+            "field": "4",
+            "field_name": "mid",
+            "parent_function": "coap_init_message"
+        },
+        "%7 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %6, i32 0, i32 18, !dbg !2903": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_free_header"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 35, !dbg !2906": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_free_header"
+        },
+        "%13 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %12, i32 0, i32 14, !dbg !2909": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "coap_free_header"
+        },
+        "%16 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %15, i32 0, i32 18, !dbg !2912": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_free_header"
+        },
+        "%18 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %17, i32 0, i32 35, !dbg !2915": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_free_header"
+        },
+        "%20 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %19, i32 0, i32 14, !dbg !2918": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "coap_free_header"
+        },
+        "%11 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %10, i32 0, i32 37, !dbg !2905": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%16 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %15, i32 0, i32 20, !dbg !2908": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%23 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %22, i32 0, i32 5, !dbg !2913": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%32 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %31, i32 0, i32 24, !dbg !2917": {
+            "field": "24",
+            "field_name": "if_match_len",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%42 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %41, i32 0, i32 5, !dbg !2923": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%51 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %50, i32 0, i32 12, !dbg !2927": {
+            "field": "12",
+            "field_name": "uri_host_len",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%59 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %58, i32 0, i32 5, !dbg !2932": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%68 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %67, i32 0, i32 10, !dbg !2936": {
+            "field": "10",
+            "field_name": "etag_len",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%78 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %77, i32 0, i32 5, !dbg !2942": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%91 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %90, i32 0, i32 5, !dbg !2948": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%104 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %103, i32 0, i32 5, !dbg !2954": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%117 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %116, i32 0, i32 5, !dbg !2960": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%126 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %125, i32 0, i32 14, !dbg !2967": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%148 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %147, i32 0, i32 5, !dbg !2990": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%157 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %156, i32 0, i32 18, !dbg !2997": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%179 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %178, i32 0, i32 5, !dbg !3019": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%192 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %191, i32 0, i32 5, !dbg !3025": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%205 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %204, i32 0, i32 5, !dbg !3031": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%214 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %213, i32 0, i32 35, !dbg !3038": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%236 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %235, i32 0, i32 5, !dbg !3060": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%245 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %244, i32 0, i32 22, !dbg !3064": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%255 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %254, i32 0, i32 5, !dbg !3069": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%264 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %263, i32 0, i32 16, !dbg !3073": {
+            "field": "16",
+            "field_name": "location_query_len",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%272 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %271, i32 0, i32 5, !dbg !3078": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%285 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %284, i32 0, i32 5, !dbg !3084": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%298 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %297, i32 0, i32 5, !dbg !3090": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%311 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %310, i32 0, i32 5, !dbg !3096": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%320 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %319, i32 0, i32 8, !dbg !3100": {
+            "field": "8",
+            "field_name": "proxy_uri_len",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%327 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %326, i32 0, i32 37, !dbg !3106": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_serialize_get_size"
+        },
+        "%15 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %14, i32 0, i32 0, !dbg !2910": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%17 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %16, i32 0, i32 1, !dbg !2913": {
+            "field": "1",
+            "field_name": "version",
+            "parent_function": "coap_serialize_message"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 0, !dbg !2916": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%23 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %22, i32 0, i32 1, !dbg !2919": {
+            "field": "1",
+            "field_name": "version",
+            "parent_function": "coap_serialize_message"
+        },
+        "%29 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %28, i32 0, i32 0, !dbg !2924": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%37 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %36, i32 0, i32 2, !dbg !2927": {
+            "field": "2",
+            "field_name": "type",
+            "parent_function": "coap_serialize_message"
+        },
+        "%42 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %41, i32 0, i32 0, !dbg !2931": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%50 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %49, i32 0, i32 20, !dbg !2934": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%56 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %55, i32 0, i32 0, !dbg !2939": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%64 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %63, i32 0, i32 3, !dbg !2942": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "coap_serialize_message"
+        },
+        "%67 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %66, i32 0, i32 0, !dbg !2944": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%71 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %70, i32 0, i32 4, !dbg !2947": {
+            "field": "4",
+            "field_name": "mid",
+            "parent_function": "coap_serialize_message"
+        },
+        "%77 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %76, i32 0, i32 0, !dbg !2952": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%81 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %80, i32 0, i32 4, !dbg !2955": {
+            "field": "4",
+            "field_name": "mid",
+            "parent_function": "coap_serialize_message"
+        },
+        "%85 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %84, i32 0, i32 0, !dbg !2958": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%89 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %88, i32 0, i32 0, !dbg !2961": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_serialize_message"
+        },
+        "%95 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %94, i32 0, i32 20, !dbg !2970": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%101 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %100, i32 0, i32 21, !dbg !2975": {
+            "field": "21",
+            "field_name": "token",
+            "parent_function": "coap_serialize_message"
+        },
+        "%115 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %114, i32 0, i32 5, !dbg !2988": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%126 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %125, i32 0, i32 25, !dbg !2990": {
+            "field": "25",
+            "field_name": "if_match",
+            "parent_function": "coap_serialize_message"
+        },
+        "%129 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %128, i32 0, i32 24, !dbg !2990": {
+            "field": "24",
+            "field_name": "if_match_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%138 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %137, i32 0, i32 5, !dbg !2993": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%149 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %148, i32 0, i32 13, !dbg !2995": {
+            "field": "13",
+            "field_name": "uri_host",
+            "parent_function": "coap_serialize_message"
+        },
+        "%152 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %151, i32 0, i32 12, !dbg !2995": {
+            "field": "12",
+            "field_name": "uri_host_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%160 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %159, i32 0, i32 5, !dbg !2998": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%171 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %170, i32 0, i32 11, !dbg !3000": {
+            "field": "11",
+            "field_name": "etag",
+            "parent_function": "coap_serialize_message"
+        },
+        "%174 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %173, i32 0, i32 10, !dbg !3000": {
+            "field": "10",
+            "field_name": "etag_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%183 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %182, i32 0, i32 5, !dbg !3003": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%194 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %193, i32 0, i32 6, !dbg !3005": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "coap_serialize_message"
+        },
+        "%197 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %196, i32 0, i32 6, !dbg !3005": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "coap_serialize_message"
+        },
+        "%206 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %205, i32 0, i32 5, !dbg !3008": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%217 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %216, i32 0, i32 19, !dbg !3010": {
+            "field": "19",
+            "field_name": "observe",
+            "parent_function": "coap_serialize_message"
+        },
+        "%225 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %224, i32 0, i32 5, !dbg !3013": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%236 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %235, i32 0, i32 15, !dbg !3015": {
+            "field": "15",
+            "field_name": "uri_port",
+            "parent_function": "coap_serialize_message"
+        },
+        "%245 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %244, i32 0, i32 5, !dbg !3018": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%256 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %255, i32 0, i32 14, !dbg !3020": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "coap_serialize_message"
+        },
+        "%264 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %263, i32 0, i32 5, !dbg !3023": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%275 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %274, i32 0, i32 18, !dbg !3025": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_serialize_message"
+        },
+        "%283 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %282, i32 0, i32 5, !dbg !3028": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%294 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %293, i32 0, i32 6, !dbg !3030": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "coap_serialize_message"
+        },
+        "%302 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %301, i32 0, i32 5, !dbg !3033": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%313 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %312, i32 0, i32 7, !dbg !3035": {
+            "field": "7",
+            "field_name": "max_age",
+            "parent_function": "coap_serialize_message"
+        },
+        "%321 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %320, i32 0, i32 5, !dbg !3038": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%332 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %331, i32 0, i32 35, !dbg !3040": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_serialize_message"
+        },
+        "%340 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %339, i32 0, i32 5, !dbg !3043": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%351 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %350, i32 0, i32 22, !dbg !3050": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_serialize_message"
+        },
+        "%359 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %358, i32 0, i32 23, !dbg !3052": {
+            "field": "23",
+            "field_name": "accept",
+            "parent_function": "coap_serialize_message"
+        },
+        "%375 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %374, i32 0, i32 5, !dbg !3056": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%386 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %385, i32 0, i32 17, !dbg !3058": {
+            "field": "17",
+            "field_name": "location_query",
+            "parent_function": "coap_serialize_message"
+        },
+        "%389 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %388, i32 0, i32 16, !dbg !3058": {
+            "field": "16",
+            "field_name": "location_query_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%397 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %396, i32 0, i32 5, !dbg !3061": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%406 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %405, i32 0, i32 26, !dbg !3065": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_serialize_message"
+        },
+        "%410 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %409, i32 0, i32 27, !dbg !3066": {
+            "field": "27",
+            "field_name": "block2_more",
+            "parent_function": "coap_serialize_message"
+        },
+        "%418 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %417, i32 0, i32 28, !dbg !3065": {
+            "field": "28",
+            "field_name": "block2_size",
+            "parent_function": "coap_serialize_message"
+        },
+        "%437 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %436, i32 0, i32 5, !dbg !3069": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%446 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %445, i32 0, i32 30, !dbg !3073": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_serialize_message"
+        },
+        "%450 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %449, i32 0, i32 31, !dbg !3074": {
+            "field": "31",
+            "field_name": "block1_more",
+            "parent_function": "coap_serialize_message"
+        },
+        "%458 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %457, i32 0, i32 32, !dbg !3073": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "coap_serialize_message"
+        },
+        "%477 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %476, i32 0, i32 5, !dbg !3077": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%488 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %487, i32 0, i32 34, !dbg !3079": {
+            "field": "34",
+            "field_name": "size",
+            "parent_function": "coap_serialize_message"
+        },
+        "%496 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %495, i32 0, i32 5, !dbg !3082": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_serialize_message"
+        },
+        "%507 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %506, i32 0, i32 9, !dbg !3084": {
+            "field": "9",
+            "field_name": "proxy_uri",
+            "parent_function": "coap_serialize_message"
+        },
+        "%510 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %509, i32 0, i32 8, !dbg !3084": {
+            "field": "8",
+            "field_name": "proxy_uri_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%518 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %517, i32 0, i32 37, !dbg !3090": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%528 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %527, i32 0, i32 38, !dbg !3099": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "coap_serialize_message"
+        },
+        "%531 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %530, i32 0, i32 37, !dbg !3101": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%540 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %539, i32 0, i32 37, !dbg !3107": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_serialize_message"
+        },
+        "%20 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %19, i32 0, i32 0, !dbg !2920": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_parse_message"
+        },
+        "%22 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %21, i32 0, i32 0, !dbg !2923": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_parse_message"
+        },
+        "%31 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %30, i32 0, i32 1, !dbg !2928": {
+            "field": "1",
+            "field_name": "version",
+            "parent_function": "coap_parse_message"
+        },
+        "%33 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %32, i32 0, i32 0, !dbg !2931": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_parse_message"
+        },
+        "%41 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %40, i32 0, i32 2, !dbg !2935": {
+            "field": "2",
+            "field_name": "type",
+            "parent_function": "coap_parse_message"
+        },
+        "%43 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %42, i32 0, i32 0, !dbg !2937": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_parse_message"
+        },
+        "%54 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %53, i32 0, i32 0, !dbg !2937": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_parse_message"
+        },
+        "%65 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %64, i32 0, i32 20, !dbg !2939": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%67 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %66, i32 0, i32 0, !dbg !2942": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_parse_message"
+        },
+        "%72 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %71, i32 0, i32 3, !dbg !2944": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "coap_parse_message"
+        },
+        "%74 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %73, i32 0, i32 0, !dbg !2947": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_parse_message"
+        },
+        "%81 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %80, i32 0, i32 0, !dbg !2950": {
+            "field": "0",
+            "field_name": "buffer",
+            "parent_function": "coap_parse_message"
+        },
+        "%89 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %88, i32 0, i32 4, !dbg !2953": {
+            "field": "4",
+            "field_name": "mid",
+            "parent_function": "coap_parse_message"
+        },
+        "%91 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %90, i32 0, i32 1, !dbg !2957": {
+            "field": "1",
+            "field_name": "version",
+            "parent_function": "coap_parse_message"
+        },
+        "%100 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %99, i32 0, i32 20, !dbg !2968": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%106 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %105, i32 0, i32 21, !dbg !2973": {
+            "field": "21",
+            "field_name": "token",
+            "parent_function": "coap_parse_message"
+        },
+        "%110 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %109, i32 0, i32 20, !dbg !2977": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%114 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %113, i32 0, i32 5, !dbg !2978": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_parse_message"
+        },
+        "%122 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %121, i32 0, i32 20, !dbg !2984": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%147 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %146, i32 0, i32 38, !dbg !3001": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "coap_parse_message"
+        },
+        "%151 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %150, i32 0, i32 38, !dbg !3005": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "coap_parse_message"
+        },
+        "%160 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %159, i32 0, i32 37, !dbg !3010": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%251 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %250, i32 0, i32 5, !dbg !3080": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_parse_message"
+        },
+        "%268 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %267, i32 0, i32 6, !dbg !3089": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "coap_parse_message"
+        },
+        "%275 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %274, i32 0, i32 7, !dbg !3096": {
+            "field": "7",
+            "field_name": "max_age",
+            "parent_function": "coap_parse_message"
+        },
+        "%286 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %285, i32 0, i32 10, !dbg !3102": {
+            "field": "10",
+            "field_name": "etag_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%288 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %287, i32 0, i32 11, !dbg !3105": {
+            "field": "11",
+            "field_name": "etag",
+            "parent_function": "coap_parse_message"
+        },
+        "%292 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %291, i32 0, i32 10, !dbg !3109": {
+            "field": "10",
+            "field_name": "etag_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%297 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %296, i32 0, i32 22, !dbg !3113": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%308 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %307, i32 0, i32 23, !dbg !3121": {
+            "field": "23",
+            "field_name": "accept",
+            "parent_function": "coap_parse_message"
+        },
+        "%310 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %309, i32 0, i32 22, !dbg !3123": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%315 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %314, i32 0, i32 22, !dbg !3126": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%331 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %330, i32 0, i32 24, !dbg !3133": {
+            "field": "24",
+            "field_name": "if_match_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%333 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %332, i32 0, i32 25, !dbg !3136": {
+            "field": "25",
+            "field_name": "if_match",
+            "parent_function": "coap_parse_message"
+        },
+        "%337 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %336, i32 0, i32 24, !dbg !3140": {
+            "field": "24",
+            "field_name": "if_match_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%342 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %341, i32 0, i32 36, !dbg !3143": {
+            "field": "36",
+            "field_name": "if_none_match",
+            "parent_function": "coap_parse_message"
+        },
+        "%346 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %345, i32 0, i32 13, !dbg !3148": {
+            "field": "13",
+            "field_name": "uri_host",
+            "parent_function": "coap_parse_message"
+        },
+        "%350 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %349, i32 0, i32 12, !dbg !3152": {
+            "field": "12",
+            "field_name": "uri_host_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%358 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %357, i32 0, i32 15, !dbg !3159": {
+            "field": "15",
+            "field_name": "uri_port",
+            "parent_function": "coap_parse_message"
+        },
+        "%361 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %360, i32 0, i32 18, !dbg !3163": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_parse_message"
+        },
+        "%367 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %366, i32 0, i32 35, !dbg !3169": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_parse_message"
+        },
+        "%373 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %372, i32 0, i32 14, !dbg !3175": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "coap_parse_message"
+        },
+        "%379 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %378, i32 0, i32 17, !dbg !3181": {
+            "field": "17",
+            "field_name": "location_query",
+            "parent_function": "coap_parse_message"
+        },
+        "%381 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %380, i32 0, i32 16, !dbg !3183": {
+            "field": "16",
+            "field_name": "location_query_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%388 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %387, i32 0, i32 9, !dbg !3190": {
+            "field": "9",
+            "field_name": "proxy_uri",
+            "parent_function": "coap_parse_message"
+        },
+        "%392 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %391, i32 0, i32 8, !dbg !3194": {
+            "field": "8",
+            "field_name": "proxy_uri_len",
+            "parent_function": "coap_parse_message"
+        },
+        "%399 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %398, i32 0, i32 19, !dbg !3202": {
+            "field": "19",
+            "field_name": "observe",
+            "parent_function": "coap_parse_message"
+        },
+        "%406 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %405, i32 0, i32 26, !dbg !3209": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%408 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %407, i32 0, i32 26, !dbg !3212": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%414 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %413, i32 0, i32 27, !dbg !3217": {
+            "field": "27",
+            "field_name": "block2_more",
+            "parent_function": "coap_parse_message"
+        },
+        "%416 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %415, i32 0, i32 26, !dbg !3220": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%422 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %421, i32 0, i32 28, !dbg !3225": {
+            "field": "28",
+            "field_name": "block2_size",
+            "parent_function": "coap_parse_message"
+        },
+        "%424 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %423, i32 0, i32 26, !dbg !3228": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%428 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %427, i32 0, i32 26, !dbg !3231": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%433 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %432, i32 0, i32 29, !dbg !3235": {
+            "field": "29",
+            "field_name": "block2_offset",
+            "parent_function": "coap_parse_message"
+        },
+        "%435 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %434, i32 0, i32 26, !dbg !3238": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%444 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %443, i32 0, i32 30, !dbg !3245": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%446 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %445, i32 0, i32 30, !dbg !3248": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%452 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %451, i32 0, i32 31, !dbg !3253": {
+            "field": "31",
+            "field_name": "block1_more",
+            "parent_function": "coap_parse_message"
+        },
+        "%454 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %453, i32 0, i32 30, !dbg !3256": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%460 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %459, i32 0, i32 32, !dbg !3261": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "coap_parse_message"
+        },
+        "%462 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %461, i32 0, i32 30, !dbg !3264": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%466 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %465, i32 0, i32 30, !dbg !3267": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%471 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %470, i32 0, i32 33, !dbg !3271": {
+            "field": "33",
+            "field_name": "block1_offset",
+            "parent_function": "coap_parse_message"
+        },
+        "%473 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %472, i32 0, i32 30, !dbg !3274": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_parse_message"
+        },
+        "%482 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %481, i32 0, i32 34, !dbg !3281": {
+            "field": "34",
+            "field_name": "size",
+            "parent_function": "coap_parse_message"
+        },
+        "%12 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %11, i32 0, i32 37, !dbg !2909": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_get_post_variable"
+        },
+        "%17 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %16, i32 0, i32 38, !dbg !2913": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "coap_get_post_variable"
+        },
+        "%20 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %19, i32 0, i32 37, !dbg !2915": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_get_post_variable"
+        },
+        "%13 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %12, i32 0, i32 3, !dbg !2908": {
+            "field": "3",
+            "field_name": "code",
+            "parent_function": "coap_set_status_code"
+        },
+        "%9 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %8, i32 0, i32 5, !dbg !2903": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_get_header_uri_port"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 6, !dbg !2907": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "coap_get_header_content_type"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 6, !dbg !2906": {
+            "field": "6",
+            "field_name": "content_type",
+            "parent_function": "coap_set_header_content_type"
+        },
+        "%12 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %11, i32 0, i32 5, !dbg !2908": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_size"
+        },
+        "%11 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %10, i32 0, i32 5, !dbg !2908": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_get_header_accept"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 23, !dbg !2912": {
+            "field": "23",
+            "field_name": "accept",
+            "parent_function": "coap_get_header_accept"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 22, !dbg !2916": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_get_header_accept"
+        },
+        "%9 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %8, i32 0, i32 22, !dbg !2906": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_set_header_accept"
+        },
+        "%16 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %15, i32 0, i32 23, !dbg !2912": {
+            "field": "23",
+            "field_name": "accept",
+            "parent_function": "coap_set_header_accept"
+        },
+        "%18 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %17, i32 0, i32 22, !dbg !2914": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_set_header_accept"
+        },
+        "%23 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %22, i32 0, i32 22, !dbg !2917": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_set_header_accept"
+        },
+        "%37 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %36, i32 0, i32 22, !dbg !2925": {
+            "field": "22",
+            "field_name": "accept_num",
+            "parent_function": "coap_set_header_accept"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 5, !dbg !2905": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_get_header_max_age"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 7, !dbg !2913": {
+            "field": "7",
+            "field_name": "max_age",
+            "parent_function": "coap_get_header_max_age"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 7, !dbg !2906": {
+            "field": "7",
+            "field_name": "max_age",
+            "parent_function": "coap_set_header_max_age"
+        },
+        "%11 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %10, i32 0, i32 5, !dbg !2906": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_get_header_location_query"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 11, !dbg !2910": {
+            "field": "11",
+            "field_name": "etag",
+            "parent_function": "coap_get_header_etag"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 10, !dbg !2914": {
+            "field": "10",
+            "field_name": "etag_len",
+            "parent_function": "coap_get_header_etag"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 10, !dbg !2909": {
+            "field": "10",
+            "field_name": "etag_len",
+            "parent_function": "coap_set_header_etag"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 11, !dbg !2912": {
+            "field": "11",
+            "field_name": "etag",
+            "parent_function": "coap_set_header_etag"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 10, !dbg !2916": {
+            "field": "10",
+            "field_name": "etag_len",
+            "parent_function": "coap_set_header_etag"
+        },
+        "%29 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %28, i32 0, i32 5, !dbg !2917": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_token"
+        },
+        "%36 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %35, i32 0, i32 10, !dbg !2922": {
+            "field": "10",
+            "field_name": "etag_len",
+            "parent_function": "coap_set_header_etag"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 25, !dbg !2910": {
+            "field": "25",
+            "field_name": "if_match",
+            "parent_function": "coap_get_header_if_match"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 24, !dbg !2914": {
+            "field": "24",
+            "field_name": "if_match_len",
+            "parent_function": "coap_get_header_if_match"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 24, !dbg !2909": {
+            "field": "24",
+            "field_name": "if_match_len",
+            "parent_function": "coap_set_header_if_match"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 25, !dbg !2912": {
+            "field": "25",
+            "field_name": "if_match",
+            "parent_function": "coap_set_header_if_match"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 24, !dbg !2916": {
+            "field": "24",
+            "field_name": "if_match_len",
+            "parent_function": "coap_set_header_if_match"
+        },
+        "%36 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %35, i32 0, i32 24, !dbg !2922": {
+            "field": "24",
+            "field_name": "if_match_len",
+            "parent_function": "coap_set_header_if_match"
+        },
+        "%5 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %4, i32 0, i32 5, !dbg !2897": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_if_none_match"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 21, !dbg !2910": {
+            "field": "21",
+            "field_name": "token",
+            "parent_function": "coap_get_header_token"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 20, !dbg !2914": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_get_header_token"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 20, !dbg !2909": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_set_header_token"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 21, !dbg !2912": {
+            "field": "21",
+            "field_name": "token",
+            "parent_function": "coap_set_header_token"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 20, !dbg !2916": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_set_header_token"
+        },
+        "%36 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %35, i32 0, i32 20, !dbg !2922": {
+            "field": "20",
+            "field_name": "token_len",
+            "parent_function": "coap_set_header_token"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 9, !dbg !2910": {
+            "field": "9",
+            "field_name": "proxy_uri",
+            "parent_function": "coap_get_header_proxy_uri"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 8, !dbg !2914": {
+            "field": "8",
+            "field_name": "proxy_uri_len",
+            "parent_function": "coap_get_header_proxy_uri"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 9, !dbg !2906": {
+            "field": "9",
+            "field_name": "proxy_uri",
+            "parent_function": "coap_set_header_proxy_uri"
+        },
+        "%14 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %13, i32 0, i32 8, !dbg !2911": {
+            "field": "8",
+            "field_name": "proxy_uri_len",
+            "parent_function": "coap_set_header_proxy_uri"
+        },
+        "%16 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %15, i32 0, i32 5, !dbg !2913": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_uri_host"
+        },
+        "%23 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %22, i32 0, i32 8, !dbg !2918": {
+            "field": "8",
+            "field_name": "proxy_uri_len",
+            "parent_function": "coap_set_header_proxy_uri"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 13, !dbg !2910": {
+            "field": "13",
+            "field_name": "uri_host",
+            "parent_function": "coap_get_header_uri_host"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 12, !dbg !2914": {
+            "field": "12",
+            "field_name": "uri_host_len",
+            "parent_function": "coap_get_header_uri_host"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 13, !dbg !2906": {
+            "field": "13",
+            "field_name": "uri_host",
+            "parent_function": "coap_set_header_uri_host"
+        },
+        "%14 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %13, i32 0, i32 12, !dbg !2911": {
+            "field": "12",
+            "field_name": "uri_host_len",
+            "parent_function": "coap_set_header_uri_host"
+        },
+        "%23 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %22, i32 0, i32 12, !dbg !2918": {
+            "field": "12",
+            "field_name": "uri_host_len",
+            "parent_function": "coap_set_header_uri_host"
+        },
+        "%11 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %10, i32 0, i32 18, !dbg !2906": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_set_header_uri_path"
+        },
+        "%14 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %13, i32 0, i32 18, !dbg !2909": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_set_header_uri_path"
+        },
+        "%48 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %47, i32 0, i32 18, !dbg !2933": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_set_header_uri_path"
+        },
+        "%78 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %77, i32 0, i32 5, !dbg !2953": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_location_path"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 18, !dbg !2914": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_set_header_uri_path_segment"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 18, !dbg !2923": {
+            "field": "18",
+            "field_name": "uri_path",
+            "parent_function": "coap_set_header_uri_path_segment"
+        },
+        "%31 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %30, i32 0, i32 5, !dbg !2927": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_uri_query_segment"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 15, !dbg !2907": {
+            "field": "15",
+            "field_name": "uri_port",
+            "parent_function": "coap_get_header_uri_port"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 15, !dbg !2906": {
+            "field": "15",
+            "field_name": "uri_port",
+            "parent_function": "coap_set_header_uri_port"
+        },
+        "%11 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %10, i32 0, i32 35, !dbg !2907": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_set_header_uri_query"
+        },
+        "%14 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %13, i32 0, i32 35, !dbg !2910": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_set_header_uri_query"
+        },
+        "%48 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %47, i32 0, i32 35, !dbg !2934": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_set_header_uri_query"
+        },
+        "%78 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %77, i32 0, i32 5, !dbg !2954": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_uri_query"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 35, !dbg !2914": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_set_header_uri_query_segment"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 35, !dbg !2923": {
+            "field": "35",
+            "field_name": "uri_query",
+            "parent_function": "coap_set_header_uri_query_segment"
+        },
+        "%11 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %10, i32 0, i32 14, !dbg !2906": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "coap_set_header_location_path"
+        },
+        "%14 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %13, i32 0, i32 14, !dbg !2909": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "coap_set_header_location_path"
+        },
+        "%48 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %47, i32 0, i32 14, !dbg !2933": {
+            "field": "14",
+            "field_name": "location_path",
+            "parent_function": "coap_set_header_location_path"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 17, !dbg !2910": {
+            "field": "17",
+            "field_name": "location_query",
+            "parent_function": "coap_get_header_location_query"
+        },
+        "%25 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %24, i32 0, i32 16, !dbg !2914": {
+            "field": "16",
+            "field_name": "location_query_len",
+            "parent_function": "coap_get_header_location_query"
+        },
+        "%20 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %19, i32 0, i32 17, !dbg !2913": {
+            "field": "17",
+            "field_name": "location_query",
+            "parent_function": "coap_set_header_location_query"
+        },
+        "%24 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %23, i32 0, i32 16, !dbg !2918": {
+            "field": "16",
+            "field_name": "location_query_len",
+            "parent_function": "coap_set_header_location_query"
+        },
+        "%26 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %25, i32 0, i32 5, !dbg !2920": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_location_query"
+        },
+        "%33 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %32, i32 0, i32 16, !dbg !2925": {
+            "field": "16",
+            "field_name": "location_query_len",
+            "parent_function": "coap_set_header_location_query"
+        },
+        "%11 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %10, i32 0, i32 5, !dbg !2905": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_get_header_size"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 19, !dbg !2909": {
+            "field": "19",
+            "field_name": "observe",
+            "parent_function": "coap_get_header_observe"
+        },
+        "%11 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %10, i32 0, i32 19, !dbg !2907": {
+            "field": "19",
+            "field_name": "observe",
+            "parent_function": "coap_set_header_observe"
+        },
+        "%13 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %12, i32 0, i32 5, !dbg !2909": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_observe"
+        },
+        "%17 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %16, i32 0, i32 5, !dbg !2912": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_get_header_block1"
+        },
+        "%30 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %29, i32 0, i32 26, !dbg !2920": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_get_header_block2"
+        },
+        "%38 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %37, i32 0, i32 27, !dbg !2929": {
+            "field": "27",
+            "field_name": "block2_more",
+            "parent_function": "coap_get_header_block2"
+        },
+        "%46 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %45, i32 0, i32 28, !dbg !2938": {
+            "field": "28",
+            "field_name": "block2_size",
+            "parent_function": "coap_get_header_block2"
+        },
+        "%54 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %53, i32 0, i32 29, !dbg !2947": {
+            "field": "29",
+            "field_name": "block2_offset",
+            "parent_function": "coap_get_header_block2"
+        },
+        "%29 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %28, i32 0, i32 26, !dbg !2925": {
+            "field": "26",
+            "field_name": "block2_num",
+            "parent_function": "coap_set_header_block2"
+        },
+        "%37 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %36, i32 0, i32 27, !dbg !2929": {
+            "field": "27",
+            "field_name": "block2_more",
+            "parent_function": "coap_set_header_block2"
+        },
+        "%40 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %39, i32 0, i32 28, !dbg !2933": {
+            "field": "28",
+            "field_name": "block2_size",
+            "parent_function": "coap_set_header_block2"
+        },
+        "%42 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %41, i32 0, i32 5, !dbg !2935": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_block2"
+        },
+        "%30 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %29, i32 0, i32 30, !dbg !2920": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_get_header_block1"
+        },
+        "%38 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %37, i32 0, i32 31, !dbg !2929": {
+            "field": "31",
+            "field_name": "block1_more",
+            "parent_function": "coap_get_header_block1"
+        },
+        "%46 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %45, i32 0, i32 32, !dbg !2938": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "coap_get_header_block1"
+        },
+        "%54 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %53, i32 0, i32 33, !dbg !2947": {
+            "field": "33",
+            "field_name": "block1_offset",
+            "parent_function": "coap_get_header_block1"
+        },
+        "%29 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %28, i32 0, i32 30, !dbg !2925": {
+            "field": "30",
+            "field_name": "block1_num",
+            "parent_function": "coap_set_header_block1"
+        },
+        "%32 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %31, i32 0, i32 31, !dbg !2929": {
+            "field": "31",
+            "field_name": "block1_more",
+            "parent_function": "coap_set_header_block1"
+        },
+        "%35 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %34, i32 0, i32 32, !dbg !2933": {
+            "field": "32",
+            "field_name": "block1_size",
+            "parent_function": "coap_set_header_block1"
+        },
+        "%37 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %36, i32 0, i32 5, !dbg !2935": {
+            "field": "5",
+            "field_name": "options",
+            "parent_function": "coap_set_header_block1"
+        },
+        "%21 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %20, i32 0, i32 34, !dbg !2909": {
+            "field": "34",
+            "field_name": "size",
+            "parent_function": "coap_get_header_size"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 34, !dbg !2906": {
+            "field": "34",
+            "field_name": "size",
+            "parent_function": "coap_set_header_size"
+        },
+        "%10 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %9, i32 0, i32 38, !dbg !2907": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "coap_get_payload"
+        },
+        "%15 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %14, i32 0, i32 38, !dbg !2911": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "coap_get_payload"
+        },
+        "%19 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %18, i32 0, i32 37, !dbg !2915": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_get_payload"
+        },
+        "%12 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %11, i32 0, i32 38, !dbg !2910": {
+            "field": "38",
+            "field_name": "payload",
+            "parent_function": "coap_set_payload"
+        },
+        "%16 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %15, i32 0, i32 37, !dbg !2915": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_set_payload"
+        },
+        "%18 = getelementptr inbounds %struct.coap_packet_t, %struct.coap_packet_t* %17, i32 0, i32 37, !dbg !2918": {
+            "field": "37",
+            "field_name": "payload_len",
+            "parent_function": "coap_set_payload"
+        }
+    }
+}

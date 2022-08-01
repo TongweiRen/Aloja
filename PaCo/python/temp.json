@@ -1,0 +1,1906 @@
+{
+    "mosquitto": {
+        "sock": [
+            "int",
+            "i32"
+        ],
+        "protocol": [
+            "mosquitto__protocol",
+            "i32"
+        ],
+        "address": [
+            "char",
+            "i8*"
+        ],
+        "id": [
+            "char",
+            "i8*"
+        ],
+        "username": [
+            "char",
+            "i8*"
+        ],
+        "password": [
+            "char",
+            "i8*"
+        ],
+        "keepalive": [
+            "uint16_t",
+            "i16"
+        ],
+        "last_mid": [
+            "uint16_t",
+            "i16"
+        ],
+        "state": [
+            "mosquitto_client_state",
+            "i32"
+        ],
+        "last_msg_in": [
+            "time_t",
+            "i64"
+        ],
+        "next_msg_out": [
+            "time_t",
+            "i64"
+        ],
+        "ping_t": [
+            "time_t",
+            "i64"
+        ],
+        "in_packet": [
+            "mosquitto__packet",
+            "%struct.mosquitto__packet = type { i8*, %struct.mosquitto__packet*, i32, i32, i32, i32, i32, i16, i8, i8 }"
+        ],
+        "current_out_packet": [
+            "mosquitto__packet",
+            "%struct.mosquitto__packet*"
+        ],
+        "out_packet": [
+            "mosquitto__packet",
+            "%struct.mosquitto__packet*"
+        ],
+        "will": [
+            "mosquitto_message_all",
+            "%struct.mosquitto_message_all*"
+        ],
+        "aliases": [
+            "mosquitto__alias",
+            "%struct.mosquitto__alias*"
+        ],
+        "will_delay_entry": [
+            "will_delay_list",
+            "%struct.will_delay_list*"
+        ],
+        "maximum_packet_size": [
+            "uint32_t",
+            "i32"
+        ],
+        "alias_count": [
+            "int",
+            "i32"
+        ],
+        "will_delay_interval": [
+            "uint32_t",
+            "i32"
+        ],
+        "will_delay_time": [
+            "time_t",
+            "i64"
+        ],
+        "want_write": [
+            "_Bool",
+            "i8"
+        ],
+        "want_connect": [
+            "_Bool",
+            "i8"
+        ],
+        "clean_start": [
+            "_Bool",
+            "i8"
+        ],
+        "session_expiry_interval": [
+            "uint32_t",
+            "i32"
+        ],
+        "session_expiry_time": [
+            "time_t",
+            "i64"
+        ],
+        "removed_from_by_id": [
+            "_Bool",
+            "i8"
+        ],
+        "is_dropping": [
+            "_Bool",
+            "i8"
+        ],
+        "is_bridge": [
+            "_Bool",
+            "i8"
+        ],
+        "bridge": [
+            "mosquitto__bridge",
+            "%struct.mosquitto__bridge*"
+        ],
+        "msgs_in": [
+            "mosquitto_msg_data",
+            "%struct.mosquitto_msg_data = type { %struct.mosquitto_client_msg*, %struct.mosquitto_client_msg*, i64, i64, i32, i32, i32, i16 }"
+        ],
+        "msgs_out": [
+            "mosquitto_msg_data",
+            "%struct.mosquitto_msg_data = type { %struct.mosquitto_client_msg*, %struct.mosquitto_client_msg*, i64, i64, i32, i32, i32, i16 }"
+        ],
+        "acl_list": [
+            "mosquitto__acl_user",
+            "%struct.mosquitto__acl_user*"
+        ],
+        "listener": [
+            "mosquitto__listener",
+            "%struct.mosquitto__listener*"
+        ],
+        "out_packet_last": [
+            "mosquitto__packet",
+            "%struct.mosquitto__packet*"
+        ],
+        "subs": [
+            "mosquitto__subhier",
+            "%struct.mosquitto__subhier**"
+        ],
+        "shared_subs": [
+            "mosquitto__subshared_ref",
+            "%struct.mosquitto__subshared_ref**"
+        ],
+        "auth_method": [
+            "char",
+            "i8*"
+        ],
+        "sub_count": [
+            "int",
+            "i32"
+        ],
+        "shared_sub_count": [
+            "int",
+            "i32"
+        ],
+        "pollfd_index": [
+            "int",
+            "i32"
+        ],
+        "ws_want_write": [
+            "_Bool",
+            "i8"
+        ],
+        "assigned_id": [
+            "_Bool",
+            "i8"
+        ],
+        "maximum_qos": [
+            "uint8_t",
+            "i8"
+        ],
+        "hh_id": [
+            "UT_hash_handle",
+            "%struct.UT_hash_handle = type { %struct.UT_hash_table*, i8*, i8*, %struct.UT_hash_handle*, %struct.UT_hash_handle*, i8*, i32, i32 }"
+        ],
+        "hh_sock": [
+            "UT_hash_handle",
+            "%struct.UT_hash_handle = type { %struct.UT_hash_table*, i8*, i8*, %struct.UT_hash_handle*, %struct.UT_hash_handle*, i8*, i32, i32 }"
+        ],
+        "for_free_next": [
+            "mosquitto",
+            "%struct.mosquitto*"
+        ],
+        "expiry_list_item": [
+            "session_expiry_list",
+            "%struct.session_expiry_list*"
+        ],
+        "nonce": [
+            "int",
+            "i32"
+        ]
+    },
+    "mosquitto__packet": {
+        "payload": [
+            "uint8_t",
+            "i8*"
+        ],
+        "next": [
+            "mosquitto__packet",
+            "%struct.mosquitto__packet*"
+        ],
+        "remaining_mult": [
+            "uint32_t",
+            "i32"
+        ],
+        "remaining_length": [
+            "uint32_t",
+            "i32"
+        ],
+        "packet_length": [
+            "uint32_t",
+            "i32"
+        ],
+        "to_process": [
+            "uint32_t",
+            "i32"
+        ],
+        "pos": [
+            "uint32_t",
+            "i32"
+        ],
+        "mid": [
+            "uint16_t",
+            "i16"
+        ],
+        "command": [
+            "uint8_t",
+            "i8"
+        ],
+        "remaining_count": [
+            "int8_t",
+            "i8"
+        ]
+    },
+    "mosquitto_message_all": {
+        "next": [
+            "mosquitto_message_all",
+            "%struct.mosquitto_message_all*"
+        ],
+        "prev": [
+            "mosquitto_message_all",
+            "%struct.mosquitto_message_all*"
+        ],
+        "properties": [
+            "mosquitto_property",
+            "%struct.mqtt5__property*"
+        ],
+        "timestamp": [
+            "time_t",
+            "i64"
+        ],
+        "state": [
+            "mosquitto_msg_state",
+            "i32"
+        ],
+        "dup": [
+            "_Bool",
+            "i8"
+        ],
+        "msg": [
+            "mosquitto_message",
+            "%struct.mosquitto_message = type { i32, i8*, i8*, i32, i32, i8 }"
+        ],
+        "expiry_interval": [
+            "uint32_t",
+            "i32"
+        ]
+    },
+    "mosquitto_message": {
+        "mid": [
+            "int",
+            "i32"
+        ],
+        "topic": [
+            "char",
+            "i8*"
+        ],
+        "payload": [
+            "null",
+            "i8*"
+        ],
+        "payloadlen": [
+            "int",
+            "i32"
+        ],
+        "qos": [
+            "int",
+            "i32"
+        ],
+        "retain": [
+            "_Bool",
+            "i8"
+        ]
+    },
+    "mosquitto__alias": {
+        "topic": [
+            "char",
+            "i8*"
+        ],
+        "alias": [
+            "uint16_t",
+            "i16"
+        ]
+    },
+    "will_delay_list": {
+        "context": [
+            "mosquitto",
+            "%struct.mosquitto*"
+        ],
+        "prev": [
+            "will_delay_list",
+            "%struct.will_delay_list*"
+        ],
+        "next": [
+            "will_delay_list",
+            "%struct.will_delay_list*"
+        ]
+    },
+    "mosquitto__bridge": {
+        "name": [
+            "char",
+            "i8*"
+        ],
+        "addresses": [
+            "bridge_address",
+            "%struct.bridge_address*"
+        ],
+        "cur_address": [
+            "int",
+            "i32"
+        ],
+        "address_count": [
+            "int",
+            "i32"
+        ],
+        "primary_retry": [
+            "time_t",
+            "i64"
+        ],
+        "primary_retry_sock": [
+            "int",
+            "i32"
+        ],
+        "round_robin": [
+            "_Bool",
+            "i8"
+        ],
+        "try_private": [
+            "_Bool",
+            "i8"
+        ],
+        "try_private_accepted": [
+            "_Bool",
+            "i8"
+        ],
+        "clean_start": [
+            "_Bool",
+            "i8"
+        ],
+        "keepalive": [
+            "int",
+            "i32"
+        ],
+        "topics": [
+            "mosquitto__bridge_topic",
+            "%struct.mosquitto__bridge_topic*"
+        ],
+        "topic_count": [
+            "int",
+            "i32"
+        ],
+        "topic_remapping": [
+            "_Bool",
+            "i8"
+        ],
+        "protocol_version": [
+            "mosquitto__protocol",
+            "i32"
+        ],
+        "restart_t": [
+            "time_t",
+            "i64"
+        ],
+        "remote_clientid": [
+            "char",
+            "i8*"
+        ],
+        "remote_username": [
+            "char",
+            "i8*"
+        ],
+        "remote_password": [
+            "char",
+            "i8*"
+        ],
+        "local_clientid": [
+            "char",
+            "i8*"
+        ],
+        "local_username": [
+            "char",
+            "i8*"
+        ],
+        "local_password": [
+            "char",
+            "i8*"
+        ],
+        "notification_topic": [
+            "char",
+            "i8*"
+        ],
+        "notifications": [
+            "_Bool",
+            "i8"
+        ],
+        "notifications_local_only": [
+            "_Bool",
+            "i8"
+        ],
+        "start_type": [
+            "mosquitto_bridge_start_type",
+            "i32"
+        ],
+        "idle_timeout": [
+            "int",
+            "i32"
+        ],
+        "restart_timeout": [
+            "int",
+            "i32"
+        ],
+        "backoff_base": [
+            "int",
+            "i32"
+        ],
+        "backoff_cap": [
+            "int",
+            "i32"
+        ],
+        "threshold": [
+            "int",
+            "i32"
+        ],
+        "lazy_reconnect": [
+            "_Bool",
+            "i8"
+        ],
+        "attempt_unsubscribe": [
+            "_Bool",
+            "i8"
+        ],
+        "initial_notification_done": [
+            "_Bool",
+            "i8"
+        ]
+    },
+    "bridge_address": {
+        "address": [
+            "char",
+            "i8*"
+        ],
+        "port": [
+            "int",
+            "i32"
+        ]
+    },
+    "mosquitto__bridge_topic": {
+        "topic": [
+            "char",
+            "i8*"
+        ],
+        "qos": [
+            "int",
+            "i32"
+        ],
+        "direction": [
+            "mosquitto__bridge_direction",
+            "i32"
+        ],
+        "local_prefix": [
+            "char",
+            "i8*"
+        ],
+        "remote_prefix": [
+            "char",
+            "i8*"
+        ],
+        "local_topic": [
+            "char",
+            "i8*"
+        ],
+        "remote_topic": [
+            "char",
+            "i8*"
+        ]
+    },
+    "mosquitto_msg_data": {
+        "inflight": [
+            "mosquitto_client_msg",
+            "%struct.mosquitto_client_msg*"
+        ],
+        "queued": [
+            "mosquitto_client_msg",
+            "%struct.mosquitto_client_msg*"
+        ],
+        "msg_bytes": [
+            "long unsigned int",
+            "i64"
+        ],
+        "msg_bytes12": [
+            "long unsigned int",
+            "i64"
+        ],
+        "msg_count": [
+            "int",
+            "i32"
+        ],
+        "msg_count12": [
+            "int",
+            "i32"
+        ],
+        "inflight_quota": [
+            "int",
+            "i32"
+        ],
+        "inflight_maximum": [
+            "uint16_t",
+            "i16"
+        ]
+    },
+    "mosquitto_client_msg": {
+        "prev": [
+            "mosquitto_client_msg",
+            "%struct.mosquitto_client_msg*"
+        ],
+        "next": [
+            "mosquitto_client_msg",
+            "%struct.mosquitto_client_msg*"
+        ],
+        "store": [
+            "mosquitto_msg_store",
+            "%struct.mosquitto_msg_store*"
+        ],
+        "properties": [
+            "mosquitto_property",
+            "%struct.mqtt5__property*"
+        ],
+        "timestamp": [
+            "time_t",
+            "i64"
+        ],
+        "mid": [
+            "uint16_t",
+            "i16"
+        ],
+        "qos": [
+            "uint8_t",
+            "i8"
+        ],
+        "retain": [
+            "_Bool",
+            "i8"
+        ],
+        "direction": [
+            "mosquitto_msg_direction",
+            "i32"
+        ],
+        "state": [
+            "mosquitto_msg_state",
+            "i32"
+        ],
+        "dup": [
+            "_Bool",
+            "i8"
+        ]
+    },
+    "mosquitto_msg_store": {
+        "next": [
+            "mosquitto_msg_store",
+            "%struct.mosquitto_msg_store*"
+        ],
+        "prev": [
+            "mosquitto_msg_store",
+            "%struct.mosquitto_msg_store*"
+        ],
+        "db_id": [
+            "dbid_t",
+            "i64"
+        ],
+        "source_id": [
+            "char",
+            "i8*"
+        ],
+        "source_username": [
+            "char",
+            "i8*"
+        ],
+        "source_listener": [
+            "mosquitto__listener",
+            "%struct.mosquitto__listener*"
+        ],
+        "dest_ids": [
+            "char",
+            "i8**"
+        ],
+        "dest_id_count": [
+            "int",
+            "i32"
+        ],
+        "ref_count": [
+            "int",
+            "i32"
+        ],
+        "topic": [
+            "char",
+            "i8*"
+        ],
+        "properties": [
+            "mosquitto_property",
+            "%struct.mqtt5__property*"
+        ],
+        "payload": [
+            "mosquitto__payload_uhpa",
+            "%union.mosquitto__payload_uhpa = type { i8* }"
+        ],
+        "message_expiry_time": [
+            "time_t",
+            "i64"
+        ],
+        "payloadlen": [
+            "uint32_t",
+            "i32"
+        ],
+        "source_mid": [
+            "uint16_t",
+            "i16"
+        ],
+        "mid": [
+            "uint16_t",
+            "i16"
+        ],
+        "qos": [
+            "uint8_t",
+            "i8"
+        ],
+        "retain": [
+            "_Bool",
+            "i8"
+        ],
+        "origin": [
+            "uint8_t",
+            "i8"
+        ]
+    },
+    "mosquitto__listener": {
+        "fd": [
+            "int",
+            "i32"
+        ],
+        "port": [
+            "uint16_t",
+            "i16"
+        ],
+        "host": [
+            "char",
+            "i8*"
+        ],
+        "bind_interface": [
+            "char",
+            "i8*"
+        ],
+        "max_connections": [
+            "int",
+            "i32"
+        ],
+        "mount_point": [
+            "char",
+            "i8*"
+        ],
+        "socks": [
+            "mosq_sock_t",
+            "i32*"
+        ],
+        "sock_count": [
+            "int",
+            "i32"
+        ],
+        "client_count": [
+            "int",
+            "i32"
+        ],
+        "protocol": [
+            "mosquitto_protocol",
+            "i32"
+        ],
+        "socket_domain": [
+            "int",
+            "i32"
+        ],
+        "use_username_as_clientid": [
+            "_Bool",
+            "i8"
+        ],
+        "maximum_qos": [
+            "uint8_t",
+            "i8"
+        ],
+        "max_topic_alias": [
+            "uint16_t",
+            "i16"
+        ],
+        "security_options": [
+            "mosquitto__security_options",
+            "%struct.mosquitto__security_options = type { %struct.mosquitto__acl_user*, %struct.mosquitto__acl*, i8*, i8*, i8*, %struct.mosquitto__auth_plugin_config*, i32, i8, i8, i8*, i32 }"
+        ],
+        "unpwd": [
+            "mosquitto__unpwd",
+            "%struct.mosquitto__unpwd*"
+        ],
+        "psk_id": [
+            "mosquitto__unpwd",
+            "%struct.mosquitto__unpwd*"
+        ]
+    },
+    "mosquitto__security_options": {
+        "acl_list": [
+            "mosquitto__acl_user",
+            "%struct.mosquitto__acl_user*"
+        ],
+        "acl_patterns": [
+            "mosquitto__acl",
+            "%struct.mosquitto__acl*"
+        ],
+        "password_file": [
+            "char",
+            "i8*"
+        ],
+        "psk_file": [
+            "char",
+            "i8*"
+        ],
+        "acl_file": [
+            "char",
+            "i8*"
+        ],
+        "auth_plugin_configs": [
+            "mosquitto__auth_plugin_config",
+            "%struct.mosquitto__auth_plugin_config*"
+        ],
+        "auth_plugin_config_count": [
+            "int",
+            "i32"
+        ],
+        "allow_anonymous": [
+            "int8_t",
+            "i8"
+        ],
+        "allow_zero_length_clientid": [
+            "_Bool",
+            "i8"
+        ],
+        "auto_id_prefix": [
+            "char",
+            "i8*"
+        ],
+        "auto_id_prefix_len": [
+            "int",
+            "i32"
+        ]
+    },
+    "mosquitto__acl_user": {
+        "next": [
+            "mosquitto__acl_user",
+            "%struct.mosquitto__acl_user*"
+        ],
+        "username": [
+            "char",
+            "i8*"
+        ],
+        "acl": [
+            "mosquitto__acl",
+            "%struct.mosquitto__acl*"
+        ]
+    },
+    "mosquitto__acl": {
+        "next": [
+            "mosquitto__acl",
+            "%struct.mosquitto__acl*"
+        ],
+        "topic": [
+            "char",
+            "i8*"
+        ],
+        "access": [
+            "int",
+            "i32"
+        ],
+        "ucount": [
+            "int",
+            "i32"
+        ],
+        "ccount": [
+            "int",
+            "i32"
+        ]
+    },
+    "mosquitto__auth_plugin_config": {
+        "path": [
+            "char",
+            "i8*"
+        ],
+        "options": [
+            "mosquitto_opt",
+            "%struct.mosquitto_opt*"
+        ],
+        "option_count": [
+            "int",
+            "i32"
+        ],
+        "deny_special_chars": [
+            "_Bool",
+            "i8"
+        ],
+        "plugin": [
+            "mosquitto__auth_plugin",
+            "%struct.mosquitto__auth_plugin = type { i8*, i8*, i32 ()*, i32 (i8**, %struct.mosquitto_opt*, i32)*, i32 (i8*, %struct.mosquitto_opt*, i32)*, i32 (i8*, %struct.mosquitto_opt*, i32, i1)*, i32 (i8*, %struct.mosquitto_opt*, i32, i1)*, i32 (i8*, i32, %struct.mosquitto*, %struct.mosquitto_acl_msg*)*, i32 (i8*, %struct.mosquitto*, i8*, i8*)*, i32 (i8*, %struct.mosquitto*, i8*, i8*, i8*, i32)*, i32 (i8*, %struct.mosquitto*, i8*, i1, i8*, i16, i8**, i16*)*, i32 (i8*, %struct.mosquitto*, i8*, i8*, i16, i8**, i16*)*, i32 (i8**, %struct.mosquitto_opt*, i32)*, i32 (i8*, %struct.mosquitto_opt*, i32)*, i32 (i8*, %struct.mosquitto_opt*, i32, i1)*, i32 (i8*, %struct.mosquitto_opt*, i32, i1)*, i32 (i8*, i32, %struct.mosquitto*, %struct.mosquitto_acl_msg*)*, i32 (i8*, %struct.mosquitto*, i8*, i8*)*, i32 (i8*, %struct.mosquitto*, i8*, i8*, i8*, i32)*, i32 (i8**, %struct.mosquitto_opt*, i32)*, i32 (i8*, %struct.mosquitto_opt*, i32)*, i32 (i8*, %struct.mosquitto_opt*, i32, i1)*, i32 (i8*, %struct.mosquitto_opt*, i32, i1)*, i32 (i8*, i8*, i8*, i8*, i32)*, i32 (i8*, i8*, i8*)*, i32 (i8*, i8*, i8*, i8*, i32)*, i32 }"
+        ]
+    },
+    "mosquitto_opt": {
+        "key": [
+            "char",
+            "i8*"
+        ],
+        "value": [
+            "char",
+            "i8*"
+        ]
+    },
+    "mosquitto__auth_plugin": {
+        "lib": [
+            "null",
+            "i8*"
+        ],
+        "user_data": [
+            "null",
+            "i8*"
+        ],
+        "plugin_version": [
+            "int",
+            "i32 ()*"
+        ],
+        "plugin_init_v4": [
+            "FUNC_auth_plugin_init_v4",
+            "i32 (i8**, %struct.mosquitto_opt*, i32)*"
+        ],
+        "plugin_cleanup_v4": [
+            "FUNC_auth_plugin_cleanup_v4",
+            "i32 (i8*, %struct.mosquitto_opt*, i32)*"
+        ],
+        "security_init_v4": [
+            "FUNC_auth_plugin_security_init_v4",
+            "i32 (i8*, %struct.mosquitto_opt*, i32, i1)*"
+        ],
+        "security_cleanup_v4": [
+            "FUNC_auth_plugin_security_cleanup_v4",
+            "i32 (i8*, %struct.mosquitto_opt*, i32, i1)*"
+        ],
+        "acl_check_v4": [
+            "FUNC_auth_plugin_acl_check_v4",
+            "i32 (i8*, i32, %struct.mosquitto*, %struct.mosquitto_acl_msg*)*"
+        ],
+        "unpwd_check_v4": [
+            "FUNC_auth_plugin_unpwd_check_v4",
+            "i32 (i8*, %struct.mosquitto*, i8*, i8*)*"
+        ],
+        "psk_key_get_v4": [
+            "FUNC_auth_plugin_psk_key_get_v4",
+            "i32 (i8*, %struct.mosquitto*, i8*, i8*, i8*, i32)*"
+        ],
+        "auth_start_v4": [
+            "FUNC_auth_plugin_auth_start_v4",
+            "i32 (i8*, %struct.mosquitto*, i8*, i1, i8*, i16, i8**, i16*)*"
+        ],
+        "auth_continue_v4": [
+            "FUNC_auth_plugin_auth_continue_v4",
+            "i32 (i8*, %struct.mosquitto*, i8*, i8*, i16, i8**, i16*)*"
+        ],
+        "plugin_init_v3": [
+            "FUNC_auth_plugin_init_v3",
+            "i32 (i8**, %struct.mosquitto_opt*, i32)*"
+        ],
+        "plugin_cleanup_v3": [
+            "FUNC_auth_plugin_cleanup_v3",
+            "i32 (i8*, %struct.mosquitto_opt*, i32)*"
+        ],
+        "security_init_v3": [
+            "FUNC_auth_plugin_security_init_v3",
+            "i32 (i8*, %struct.mosquitto_opt*, i32, i1)*"
+        ],
+        "security_cleanup_v3": [
+            "FUNC_auth_plugin_security_cleanup_v3",
+            "i32 (i8*, %struct.mosquitto_opt*, i32, i1)*"
+        ],
+        "acl_check_v3": [
+            "FUNC_auth_plugin_acl_check_v3",
+            "i32 (i8*, i32, %struct.mosquitto*, %struct.mosquitto_acl_msg*)*"
+        ],
+        "unpwd_check_v3": [
+            "FUNC_auth_plugin_unpwd_check_v3",
+            "i32 (i8*, %struct.mosquitto*, i8*, i8*)*"
+        ],
+        "psk_key_get_v3": [
+            "FUNC_auth_plugin_psk_key_get_v3",
+            "i32 (i8*, %struct.mosquitto*, i8*, i8*, i8*, i32)*"
+        ],
+        "plugin_init_v2": [
+            "FUNC_auth_plugin_init_v2",
+            "i32 (i8**, %struct.mosquitto_opt*, i32)*"
+        ],
+        "plugin_cleanup_v2": [
+            "FUNC_auth_plugin_cleanup_v2",
+            "i32 (i8*, %struct.mosquitto_opt*, i32)*"
+        ],
+        "security_init_v2": [
+            "FUNC_auth_plugin_security_init_v2",
+            "i32 (i8*, %struct.mosquitto_opt*, i32, i1)*"
+        ],
+        "security_cleanup_v2": [
+            "FUNC_auth_plugin_security_cleanup_v2",
+            "i32 (i8*, %struct.mosquitto_opt*, i32, i1)*"
+        ],
+        "acl_check_v2": [
+            "FUNC_auth_plugin_acl_check_v2",
+            "i32 (i8*, i8*, i8*, i8*, i32)*"
+        ],
+        "unpwd_check_v2": [
+            "FUNC_auth_plugin_unpwd_check_v2",
+            "i32 (i8*, i8*, i8*)*"
+        ],
+        "psk_key_get_v2": [
+            "FUNC_auth_plugin_psk_key_get_v2",
+            "i32 (i8*, i8*, i8*, i8*, i32)*"
+        ],
+        "version": [
+            "int",
+            "i32"
+        ]
+    },
+    "mosquitto_acl_msg": {
+        "topic": [
+            "char",
+            "i8*"
+        ],
+        "payload": [
+            "null",
+            "i8*"
+        ],
+        "payloadlen": [
+            "long int",
+            "i64"
+        ],
+        "qos": [
+            "int",
+            "i32"
+        ],
+        "retain": [
+            "_Bool",
+            "i8"
+        ]
+    },
+    "mosquitto__unpwd": {
+        "username": [
+            "char",
+            "i8*"
+        ],
+        "password": [
+            "char",
+            "i8*"
+        ],
+        "hh": [
+            "UT_hash_handle",
+            "%struct.UT_hash_handle = type { %struct.UT_hash_table*, i8*, i8*, %struct.UT_hash_handle*, %struct.UT_hash_handle*, i8*, i32, i32 }"
+        ]
+    },
+    "UT_hash_handle": {
+        "tbl": [
+            "UT_hash_table",
+            "%struct.UT_hash_table*"
+        ],
+        "prev": [
+            "null",
+            "i8*"
+        ],
+        "next": [
+            "null",
+            "i8*"
+        ],
+        "hh_prev": [
+            "UT_hash_handle",
+            "%struct.UT_hash_handle*"
+        ],
+        "hh_next": [
+            "UT_hash_handle",
+            "%struct.UT_hash_handle*"
+        ],
+        "key": [
+            "null",
+            "i8*"
+        ],
+        "keylen": [
+            "unsigned int",
+            "i32"
+        ],
+        "hashv": [
+            "unsigned int",
+            "i32"
+        ]
+    },
+    "UT_hash_table": {
+        "buckets": [
+            "UT_hash_bucket",
+            "%struct.UT_hash_bucket*"
+        ],
+        "num_buckets": [
+            "unsigned int",
+            "i32"
+        ],
+        "log2_num_buckets": [
+            "unsigned int",
+            "i32"
+        ],
+        "num_items": [
+            "unsigned int",
+            "i32"
+        ],
+        "tail": [
+            "UT_hash_handle",
+            "%struct.UT_hash_handle*"
+        ],
+        "hho": [
+            "long int",
+            "i64"
+        ],
+        "ideal_chain_maxlen": [
+            "unsigned int",
+            "i32"
+        ],
+        "nonideal_items": [
+            "unsigned int",
+            "i32"
+        ],
+        "ineff_expands": [
+            "unsigned int",
+            "i32"
+        ],
+        "noexpand": [
+            "unsigned int",
+            "i32"
+        ],
+        "signature": [
+            "uint32_t",
+            "i32"
+        ]
+    },
+    "UT_hash_bucket": {
+        "hh_head": [
+            "UT_hash_handle",
+            "%struct.UT_hash_handle*"
+        ],
+        "count": [
+            "unsigned int",
+            "i32"
+        ],
+        "expand_mult": [
+            "unsigned int",
+            "i32"
+        ]
+    },
+    "mosquitto__subhier": {
+        "hh": [
+            "UT_hash_handle",
+            "%struct.UT_hash_handle = type { %struct.UT_hash_table*, i8*, i8*, %struct.UT_hash_handle*, %struct.UT_hash_handle*, i8*, i32, i32 }"
+        ],
+        "parent": [
+            "mosquitto__subhier",
+            "%struct.mosquitto__subhier*"
+        ],
+        "children": [
+            "mosquitto__subhier",
+            "%struct.mosquitto__subhier*"
+        ],
+        "subs": [
+            "mosquitto__subleaf",
+            "%struct.mosquitto__subleaf*"
+        ],
+        "shared": [
+            "mosquitto__subshared",
+            "%struct.mosquitto__subshared*"
+        ],
+        "retained": [
+            "mosquitto_msg_store",
+            "%struct.mosquitto_msg_store*"
+        ],
+        "topic": [
+            "char",
+            "i8*"
+        ],
+        "topic_len": [
+            "uint16_t",
+            "i16"
+        ]
+    },
+    "mosquitto__subleaf": {
+        "prev": [
+            "mosquitto__subleaf",
+            "%struct.mosquitto__subleaf*"
+        ],
+        "next": [
+            "mosquitto__subleaf",
+            "%struct.mosquitto__subleaf*"
+        ],
+        "context": [
+            "mosquitto",
+            "%struct.mosquitto*"
+        ],
+        "identifier": [
+            "uint32_t",
+            "i32"
+        ],
+        "qos": [
+            "uint8_t",
+            "i8"
+        ],
+        "no_local": [
+            "_Bool",
+            "i8"
+        ],
+        "retain_as_published": [
+            "_Bool",
+            "i8"
+        ]
+    },
+    "mosquitto__subshared": {
+        "hh": [
+            "UT_hash_handle",
+            "%struct.UT_hash_handle = type { %struct.UT_hash_table*, i8*, i8*, %struct.UT_hash_handle*, %struct.UT_hash_handle*, i8*, i32, i32 }"
+        ],
+        "name": [
+            "char",
+            "i8*"
+        ],
+        "subs": [
+            "mosquitto__subleaf",
+            "%struct.mosquitto__subleaf*"
+        ]
+    },
+    "mosquitto__subshared_ref": {
+        "hier": [
+            "mosquitto__subhier",
+            "%struct.mosquitto__subhier*"
+        ],
+        "shared": [
+            "mosquitto__subshared",
+            "%struct.mosquitto__subshared*"
+        ]
+    },
+    "session_expiry_list": {
+        "context": [
+            "mosquitto",
+            "%struct.mosquitto*"
+        ],
+        "prev": [
+            "session_expiry_list",
+            "%struct.session_expiry_list*"
+        ],
+        "next": [
+            "session_expiry_list",
+            "%struct.session_expiry_list*"
+        ]
+    },
+    "mosquitto_db": {
+        "last_db_id": [
+            "dbid_t",
+            "i64"
+        ],
+        "subs": [
+            "mosquitto__subhier",
+            "%struct.mosquitto__subhier*"
+        ],
+        "unpwd": [
+            "mosquitto__unpwd",
+            "%struct.mosquitto__unpwd*"
+        ],
+        "psk_id": [
+            "mosquitto__unpwd",
+            "%struct.mosquitto__unpwd*"
+        ],
+        "contexts_by_id": [
+            "mosquitto",
+            "%struct.mosquitto*"
+        ],
+        "contexts_by_sock": [
+            "mosquitto",
+            "%struct.mosquitto*"
+        ],
+        "contexts_for_free": [
+            "mosquitto",
+            "%struct.mosquitto*"
+        ],
+        "clientid_index_hash": [
+            "clientid__index_hash",
+            "%struct.clientid__index_hash*"
+        ],
+        "msg_store": [
+            "mosquitto_msg_store",
+            "%struct.mosquitto_msg_store*"
+        ],
+        "msg_store_load": [
+            "mosquitto_msg_store_load",
+            "%struct.mosquitto_msg_store_load*"
+        ],
+        "msg_store_count": [
+            "int",
+            "i32"
+        ],
+        "msg_store_bytes": [
+            "long unsigned int",
+            "i64"
+        ],
+        "config_file": [
+            "char",
+            "i8*"
+        ],
+        "config": [
+            "mosquitto__config",
+            "%struct.mosquitto__config*"
+        ],
+        "auth_plugin_count": [
+            "int",
+            "i32"
+        ],
+        "verbose": [
+            "_Bool",
+            "i8"
+        ],
+        "persistence_changes": [
+            "int",
+            "i32"
+        ],
+        "ll_for_free": [
+            "mosquitto",
+            "%struct.mosquitto*"
+        ]
+    },
+    "mosquitto_msg_store_load": {
+        "hh": [
+            "UT_hash_handle",
+            "%struct.UT_hash_handle = type { %struct.UT_hash_table*, i8*, i8*, %struct.UT_hash_handle*, %struct.UT_hash_handle*, i8*, i32, i32 }"
+        ],
+        "db_id": [
+            "dbid_t",
+            "i64"
+        ],
+        "store": [
+            "mosquitto_msg_store",
+            "%struct.mosquitto_msg_store*"
+        ]
+    },
+    "mosquitto__config": {
+        "allow_duplicate_messages": [
+            "_Bool",
+            "i8"
+        ],
+        "autosave_interval": [
+            "int",
+            "i32"
+        ],
+        "autosave_on_changes": [
+            "_Bool",
+            "i8"
+        ],
+        "check_retain_source": [
+            "_Bool",
+            "i8"
+        ],
+        "clientid_prefixes": [
+            "char",
+            "i8*"
+        ],
+        "connection_messages": [
+            "_Bool",
+            "i8"
+        ],
+        "daemon": [
+            "_Bool",
+            "i8"
+        ],
+        "default_listener": [
+            "mosquitto__listener",
+            "%struct.mosquitto__listener = type { i32, i16, i8*, i8*, i32, i8*, i32*, i32, i32, i32, i32, i8, i8, i16, %struct.mosquitto__security_options, %struct.mosquitto__unpwd*, %struct.mosquitto__unpwd* }"
+        ],
+        "listeners": [
+            "mosquitto__listener",
+            "%struct.mosquitto__listener*"
+        ],
+        "listener_count": [
+            "int",
+            "i32"
+        ],
+        "log_dest": [
+            "int",
+            "i32"
+        ],
+        "log_facility": [
+            "int",
+            "i32"
+        ],
+        "log_type": [
+            "int",
+            "i32"
+        ],
+        "log_timestamp": [
+            "_Bool",
+            "i8"
+        ],
+        "log_timestamp_format": [
+            "char",
+            "i8*"
+        ],
+        "log_file": [
+            "char",
+            "i8*"
+        ],
+        "log_fptr": [
+            "FILE",
+            "%struct._IO_FILE*"
+        ],
+        "max_inflight_messages": [
+            "uint16_t",
+            "i16"
+        ],
+        "max_keepalive": [
+            "uint16_t",
+            "i16"
+        ],
+        "max_packet_size": [
+            "uint32_t",
+            "i32"
+        ],
+        "message_size_limit": [
+            "uint32_t",
+            "i32"
+        ],
+        "persistence": [
+            "_Bool",
+            "i8"
+        ],
+        "persistence_location": [
+            "char",
+            "i8*"
+        ],
+        "persistence_file": [
+            "char",
+            "i8*"
+        ],
+        "persistence_filepath": [
+            "char",
+            "i8*"
+        ],
+        "persistent_client_expiration": [
+            "time_t",
+            "i64"
+        ],
+        "pid_file": [
+            "char",
+            "i8*"
+        ],
+        "queue_qos0_messages": [
+            "_Bool",
+            "i8"
+        ],
+        "per_listener_settings": [
+            "_Bool",
+            "i8"
+        ],
+        "retain_available": [
+            "_Bool",
+            "i8"
+        ],
+        "set_tcp_nodelay": [
+            "_Bool",
+            "i8"
+        ],
+        "sys_interval": [
+            "int",
+            "i32"
+        ],
+        "upgrade_outgoing_qos": [
+            "_Bool",
+            "i8"
+        ],
+        "user": [
+            "char",
+            "i8*"
+        ],
+        "security_options": [
+            "mosquitto__security_options",
+            "%struct.mosquitto__security_options = type { %struct.mosquitto__acl_user*, %struct.mosquitto__acl*, i8*, i8*, i8*, %struct.mosquitto__auth_plugin_config*, i32, i8, i8, i8*, i32 }"
+        ]
+    },
+    "_IO_FILE": {
+        "_flags": [
+            "int",
+            "i32"
+        ],
+        "_IO_read_ptr": [
+            "char",
+            "i8*"
+        ],
+        "_IO_read_end": [
+            "char",
+            "i8*"
+        ],
+        "_IO_read_base": [
+            "char",
+            "i8*"
+        ],
+        "_IO_write_base": [
+            "char",
+            "i8*"
+        ],
+        "_IO_write_ptr": [
+            "char",
+            "i8*"
+        ],
+        "_IO_write_end": [
+            "char",
+            "i8*"
+        ],
+        "_IO_buf_base": [
+            "char",
+            "i8*"
+        ],
+        "_IO_buf_end": [
+            "char",
+            "i8*"
+        ],
+        "_IO_save_base": [
+            "char",
+            "i8*"
+        ],
+        "_IO_backup_base": [
+            "char",
+            "i8*"
+        ],
+        "_IO_save_end": [
+            "char",
+            "i8*"
+        ],
+        "_markers": [
+            "_IO_marker",
+            "%struct._IO_marker*"
+        ],
+        "_chain": [
+            "_IO_FILE",
+            "%struct._IO_FILE*"
+        ],
+        "_fileno": [
+            "int",
+            "i32"
+        ],
+        "_flags2": [
+            "int",
+            "i32"
+        ],
+        "_old_offset": [
+            "long int",
+            "i64"
+        ],
+        "_cur_column": [
+            "unsigned short",
+            "i16"
+        ],
+        "_vtable_offset": [
+            "signed char",
+            "i8"
+        ],
+        "_shortbuf": [
+            "char",
+            "[1 x i8]"
+        ],
+        "_lock": [
+            "_IO_lock_t",
+            "i8*"
+        ],
+        "_offset": [
+            "long int",
+            "i64"
+        ],
+        "__pad1": [
+            "null",
+            "i8*"
+        ],
+        "__pad2": [
+            "null",
+            "i8*"
+        ],
+        "__pad3": [
+            "null",
+            "i8*"
+        ],
+        "__pad4": [
+            "null",
+            "i8*"
+        ],
+        "__pad5": [
+            "long unsigned int",
+            "i64"
+        ],
+        "_mode": [
+            "int",
+            "i32"
+        ],
+        "_unused2": [
+            "char",
+            "[20 x i8]"
+        ]
+    },
+    "_IO_marker": {
+        "_next": [
+            "_IO_marker",
+            "%struct._IO_marker*"
+        ],
+        "_sbuf": [
+            "_IO_FILE",
+            "%struct._IO_FILE*"
+        ],
+        "_pos": [
+            "int",
+            "i32"
+        ]
+    },
+    "mqtt5__property": {
+        "next": [
+            "mqtt5__property",
+            "%struct.mqtt5__property*"
+        ],
+        "value": [
+            "Not Sure!",
+            "%union.anon = type { %struct.bridge_address }"
+        ],
+        "name": [
+            "mqtt__string",
+            "%struct.bridge_address = type { i8*, i32 }"
+        ],
+        "identifier": [
+            "int32_t",
+            "i32"
+        ],
+        "client_generated": [
+            "_Bool",
+            "i8"
+        ]
+    },
+    "__va_list_tag": {
+        "gp_offset": [
+            "unsigned int",
+            "i32"
+        ],
+        "fp_offset": [
+            "unsigned int",
+            "i32"
+        ],
+        "overflow_arg_area": [
+            "null",
+            "i8*"
+        ],
+        "reg_save_area": [
+            "null",
+            "i8*"
+        ]
+    },
+    "sockaddr_in": {
+        "sin_family": [
+            "unsigned short",
+            "i16"
+        ],
+        "sin_port": [
+            "in_port_t",
+            "i16"
+        ],
+        "sin_addr": [
+            "in_addr",
+            "%struct.in_addr = type { i32 }"
+        ],
+        "sin_zero": [
+            "unsigned char",
+            "[8 x i8]"
+        ]
+    },
+    "in_addr": {
+        "s_addr": [
+            "in_addr_t",
+            "i32"
+        ]
+    },
+    "sockaddr_in6": {
+        "sin6_family": [
+            "unsigned short",
+            "i16"
+        ],
+        "sin6_port": [
+            "in_port_t",
+            "i16"
+        ],
+        "sin6_flowinfo": [
+            "uint32_t",
+            "i32"
+        ],
+        "sin6_addr": [
+            "in6_addr",
+            "%struct.in6_addr = type { %union.anon.751 }"
+        ],
+        "sin6_scope_id": [
+            "uint32_t",
+            "i32"
+        ]
+    },
+    "in6_addr": {
+        "__in6_u": [
+            "Not Sure!",
+            "%union.anon.751 = type { [4 x i32] }"
+        ]
+    },
+    "sockaddr": {
+        "sa_family": [
+            "unsigned short",
+            "i16"
+        ],
+        "sa_data": [
+            "char",
+            "[14 x i8]"
+        ]
+    },
+    "passwd": {
+        "pw_name": [
+            "char",
+            "i8*"
+        ],
+        "pw_passwd": [
+            "char",
+            "i8*"
+        ],
+        "pw_uid": [
+            "unsigned int",
+            "i32"
+        ],
+        "pw_gid": [
+            "unsigned int",
+            "i32"
+        ],
+        "pw_gecos": [
+            "char",
+            "i8*"
+        ],
+        "pw_dir": [
+            "char",
+            "i8*"
+        ],
+        "pw_shell": [
+            "char",
+            "i8*"
+        ]
+    },
+    "timeval": {
+        "tv_sec": [
+            "long int",
+            "i64"
+        ],
+        "tv_usec": [
+            "long int",
+            "i64"
+        ]
+    },
+    "config_recurse": {
+        "log_dest": [
+            "int",
+            "i32"
+        ],
+        "log_dest_set": [
+            "int",
+            "i32"
+        ],
+        "log_type": [
+            "int",
+            "i32"
+        ],
+        "log_type_set": [
+            "int",
+            "i32"
+        ],
+        "max_inflight_bytes": [
+            "long unsigned int",
+            "i64"
+        ],
+        "max_queued_bytes": [
+            "long unsigned int",
+            "i64"
+        ],
+        "max_queued_messages": [
+            "int",
+            "i32"
+        ]
+    },
+    "addrinfo": {
+        "ai_flags": [
+            "int",
+            "i32"
+        ],
+        "ai_family": [
+            "int",
+            "i32"
+        ],
+        "ai_socktype": [
+            "int",
+            "i32"
+        ],
+        "ai_protocol": [
+            "int",
+            "i32"
+        ],
+        "ai_addrlen": [
+            "socklen_t",
+            "i32"
+        ],
+        "ai_addr": [
+            "sockaddr",
+            "%struct.sockaddr*"
+        ],
+        "ai_canonname": [
+            "char",
+            "i8*"
+        ],
+        "ai_next": [
+            "addrinfo",
+            "%struct.addrinfo*"
+        ]
+    },
+    "dirent": {
+        "d_ino": [
+            "long unsigned int",
+            "i64"
+        ],
+        "d_off": [
+            "long int",
+            "i64"
+        ],
+        "d_reclen": [
+            "unsigned short",
+            "i16"
+        ],
+        "d_type": [
+            "unsigned char",
+            "i8"
+        ],
+        "d_name": [
+            "char",
+            "[256 x i8]"
+        ]
+    },
+    "tm": {
+        "tm_sec": [
+            "int",
+            "i32"
+        ],
+        "tm_min": [
+            "int",
+            "i32"
+        ],
+        "tm_hour": [
+            "int",
+            "i32"
+        ],
+        "tm_mday": [
+            "int",
+            "i32"
+        ],
+        "tm_mon": [
+            "int",
+            "i32"
+        ],
+        "tm_year": [
+            "int",
+            "i32"
+        ],
+        "tm_wday": [
+            "int",
+            "i32"
+        ],
+        "tm_yday": [
+            "int",
+            "i32"
+        ],
+        "tm_isdst": [
+            "int",
+            "i32"
+        ],
+        "tm_gmtoff": [
+            "long int",
+            "i64"
+        ],
+        "tm_zone": [
+            "char",
+            "i8*"
+        ]
+    },
+    "pollfd": {
+        "fd": [
+            "int",
+            "i32"
+        ],
+        "events": [
+            "short",
+            "i16"
+        ],
+        "revents": [
+            "short",
+            "i16"
+        ]
+    },
+    "ifreq": {
+        "ifr_ifrn": [
+            "Not Sure!",
+            "%union.anon.0 = type { [16 x i8] }"
+        ],
+        "ifr_ifru": [
+            "Not Sure!",
+            "%union.anon.1 = type { %struct.ifmap }"
+        ]
+    },
+    "ifmap": {
+        "mem_start": [
+            "long unsigned int",
+            "i64"
+        ],
+        "mem_end": [
+            "long unsigned int",
+            "i64"
+        ],
+        "base_addr": [
+            "unsigned short",
+            "i16"
+        ],
+        "irq": [
+            "unsigned char",
+            "i8"
+        ],
+        "dma": [
+            "unsigned char",
+            "i8"
+        ],
+        "port": [
+            "unsigned char",
+            "i8"
+        ]
+    },
+    "sockaddr_storage": {
+        "ss_family": [
+            "unsigned short",
+            "i16"
+        ],
+        "__ss_padding": [
+            "char",
+            "[118 x i8]"
+        ],
+        "__ss_align": [
+            "long unsigned int",
+            "i64"
+        ]
+    },
+    "sub__token": {
+        "next": [
+            "sub__token",
+            "%struct.sub__token*"
+        ],
+        "topic": [
+            "char",
+            "i8*"
+        ],
+        "topic_len": [
+            "uint16_t",
+            "i1"
+        ]
+    }
+}

@@ -1,0 +1,321 @@
+{
+    "TP_structs": [
+        "Context_"
+    ],
+    "Context_": {
+        "functions_for_one_struct_server": {
+            "%31 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 13, !dbg !652": {
+                "field": "13",
+                "field_name": "is_server",
+                "parent_function": "main"
+            },
+            "%61 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 5, !dbg !691": {
+                "field": "5",
+                "field_name": "server_ip_or_name",
+                "parent_function": "main"
+            },
+            "%70 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 6, !dbg !703": {
+                "field": "6",
+                "field_name": "server_port",
+                "parent_function": "main"
+            },
+            "%77 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 6, !dbg !703": {
+                "field": "6",
+                "field_name": "server_port",
+                "parent_function": "main"
+            },
+            "%81 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 0, !dbg !712": {
+                "field": "0",
+                "field_name": "wanted_if_name",
+                "parent_function": "main"
+            },
+            "%88 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 0, !dbg !712": {
+                "field": "0",
+                "field_name": "wanted_if_name",
+                "parent_function": "main"
+            },
+            "%103 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 1, !dbg !726": {
+                "field": "1",
+                "field_name": "local_tun_ip",
+                "parent_function": "main"
+            },
+            "%114 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 2, !dbg !736": {
+                "field": "2",
+                "field_name": "remote_tun_ip",
+                "parent_function": "main"
+            },
+            "%122 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 8, !dbg !744": {
+                "field": "8",
+                "field_name": "wanted_ext_gw_ip",
+                "parent_function": "main"
+            },
+            "%124 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 8, !dbg !744": {
+                "field": "8",
+                "field_name": "wanted_ext_gw_ip",
+                "parent_function": "main"
+            },
+            "%142 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 7, !dbg !763": {
+                "field": "7",
+                "field_name": "ext_if_name",
+                "parent_function": "main"
+            },
+            "%155 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 3, !dbg !780": {
+                "field": "3",
+                "field_name": "local_tun_ip6",
+                "parent_function": "main"
+            },
+            "%156 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 4, !dbg !783": {
+                "field": "4",
+                "field_name": "remote_tun_ip6",
+                "parent_function": "main"
+            },
+            "%160 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 14, !dbg !789": {
+                "field": "14",
+                "field_name": "tun_fd",
+                "parent_function": "main"
+            },
+            "%169 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 18, !dbg !806": {
+                "field": "18",
+                "field_name": "firewall_rules_set",
+                "parent_function": "main"
+            },
+            "%209 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 16, !dbg !861": {
+                "field": "16",
+                "field_name": "listen_fd",
+                "parent_function": "main"
+            },
+            "%210 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 15, !dbg !864": {
+                "field": "15",
+                "field_name": "client_fd",
+                "parent_function": "main"
+            },
+            "%301 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 17, !dbg !967": {
+                "field": "17",
+                "field_name": "congestion",
+                "parent_function": "main"
+            },
+            "%9 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 3, !dbg !509": {
+                "field": "3",
+                "field_name": "local_tun_ip6",
+                "parent_function": "firewall_rules"
+            },
+            "%15 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 4, !dbg !516": {
+                "field": "4",
+                "field_name": "remote_tun_ip6",
+                "parent_function": "firewall_rules"
+            },
+            "%21 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 1, !dbg !519": {
+                "field": "1",
+                "field_name": "local_tun_ip",
+                "parent_function": "firewall_rules"
+            },
+            "%27 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 2, !dbg !522": {
+                "field": "2",
+                "field_name": "remote_tun_ip",
+                "parent_function": "firewall_rules"
+            },
+            "%36 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 6, !dbg !527": {
+                "field": "6",
+                "field_name": "server_port",
+                "parent_function": "firewall_rules"
+            },
+            "%42 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 7, !dbg !530": {
+                "field": "7",
+                "field_name": "ext_if_name",
+                "parent_function": "firewall_rules"
+            },
+            "%53 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 18, !dbg !537": {
+                "field": "18",
+                "field_name": "firewall_rules_set",
+                "parent_function": "firewall_rules"
+            },
+            "%59 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 13, !dbg !544": {
+                "field": "13",
+                "field_name": "is_server",
+                "parent_function": "firewall_rules"
+            },
+            "%10 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 15, !dbg !551": {
+                "field": "15",
+                "field_name": "client_fd",
+                "parent_function": "client_reconnect"
+            },
+            "%21 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 13, !dbg !572": {
+                "field": "13",
+                "field_name": "is_server",
+                "parent_function": "client_reconnect"
+            },
+            "%29 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 8, !dbg !581": {
+                "field": "8",
+                "field_name": "wanted_ext_gw_ip",
+                "parent_function": "client_reconnect"
+            },
+            "%34 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 6, !dbg !580": {
+                "field": "6",
+                "field_name": "server_port",
+                "parent_function": "client_reconnect"
+            },
+            "%39 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 17, !dbg !580": {
+                "field": "17",
+                "field_name": "congestion",
+                "parent_function": "client_reconnect"
+            }
+        },
+        "functions_for_one_struct_client": {
+            "%31 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 13, !dbg !652": {
+                "field": "13",
+                "field_name": "is_server",
+                "parent_function": "main"
+            },
+            "%61 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 5, !dbg !691": {
+                "field": "5",
+                "field_name": "server_ip_or_name",
+                "parent_function": "main"
+            },
+            "%70 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 6, !dbg !703": {
+                "field": "6",
+                "field_name": "server_port",
+                "parent_function": "main"
+            },
+            "%77 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 6, !dbg !703": {
+                "field": "6",
+                "field_name": "server_port",
+                "parent_function": "main"
+            },
+            "%81 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 0, !dbg !712": {
+                "field": "0",
+                "field_name": "wanted_if_name",
+                "parent_function": "main"
+            },
+            "%88 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 0, !dbg !712": {
+                "field": "0",
+                "field_name": "wanted_if_name",
+                "parent_function": "main"
+            },
+            "%103 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 1, !dbg !726": {
+                "field": "1",
+                "field_name": "local_tun_ip",
+                "parent_function": "main"
+            },
+            "%114 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 2, !dbg !736": {
+                "field": "2",
+                "field_name": "remote_tun_ip",
+                "parent_function": "main"
+            },
+            "%122 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 8, !dbg !744": {
+                "field": "8",
+                "field_name": "wanted_ext_gw_ip",
+                "parent_function": "main"
+            },
+            "%124 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 8, !dbg !744": {
+                "field": "8",
+                "field_name": "wanted_ext_gw_ip",
+                "parent_function": "main"
+            },
+            "%142 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 7, !dbg !763": {
+                "field": "7",
+                "field_name": "ext_if_name",
+                "parent_function": "main"
+            },
+            "%155 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 3, !dbg !780": {
+                "field": "3",
+                "field_name": "local_tun_ip6",
+                "parent_function": "main"
+            },
+            "%156 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 4, !dbg !783": {
+                "field": "4",
+                "field_name": "remote_tun_ip6",
+                "parent_function": "main"
+            },
+            "%160 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 14, !dbg !789": {
+                "field": "14",
+                "field_name": "tun_fd",
+                "parent_function": "main"
+            },
+            "%169 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 18, !dbg !806": {
+                "field": "18",
+                "field_name": "firewall_rules_set",
+                "parent_function": "main"
+            },
+            "%209 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 16, !dbg !861": {
+                "field": "16",
+                "field_name": "listen_fd",
+                "parent_function": "main"
+            },
+            "%210 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 15, !dbg !864": {
+                "field": "15",
+                "field_name": "client_fd",
+                "parent_function": "main"
+            },
+            "%301 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i64 0, i32 17, !dbg !967": {
+                "field": "17",
+                "field_name": "congestion",
+                "parent_function": "main"
+            },
+            "%9 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 3, !dbg !509": {
+                "field": "3",
+                "field_name": "local_tun_ip6",
+                "parent_function": "firewall_rules"
+            },
+            "%15 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 4, !dbg !516": {
+                "field": "4",
+                "field_name": "remote_tun_ip6",
+                "parent_function": "firewall_rules"
+            },
+            "%21 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 1, !dbg !519": {
+                "field": "1",
+                "field_name": "local_tun_ip",
+                "parent_function": "firewall_rules"
+            },
+            "%27 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 2, !dbg !522": {
+                "field": "2",
+                "field_name": "remote_tun_ip",
+                "parent_function": "firewall_rules"
+            },
+            "%36 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 6, !dbg !527": {
+                "field": "6",
+                "field_name": "server_port",
+                "parent_function": "firewall_rules"
+            },
+            "%42 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 7, !dbg !530": {
+                "field": "7",
+                "field_name": "ext_if_name",
+                "parent_function": "firewall_rules"
+            },
+            "%53 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 18, !dbg !537": {
+                "field": "18",
+                "field_name": "firewall_rules_set",
+                "parent_function": "firewall_rules"
+            },
+            "%59 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 13, !dbg !544": {
+                "field": "13",
+                "field_name": "is_server",
+                "parent_function": "firewall_rules"
+            },
+            "%10 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 15, !dbg !551": {
+                "field": "15",
+                "field_name": "client_fd",
+                "parent_function": "client_reconnect"
+            },
+            "%21 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 13, !dbg !572": {
+                "field": "13",
+                "field_name": "is_server",
+                "parent_function": "client_reconnect"
+            },
+            "%29 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 8, !dbg !581": {
+                "field": "8",
+                "field_name": "wanted_ext_gw_ip",
+                "parent_function": "client_reconnect"
+            },
+            "%34 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 6, !dbg !580": {
+                "field": "6",
+                "field_name": "server_port",
+                "parent_function": "client_reconnect"
+            },
+            "%39 = getelementptr inbounds %struct.Context_, %struct.Context_* %0, i64 0, i32 17, !dbg !580": {
+                "field": "17",
+                "field_name": "congestion",
+                "parent_function": "client_reconnect"
+            }
+        }
+    }
+}

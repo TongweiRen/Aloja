@@ -1,0 +1,185 @@
+{
+    "mqtt_client.7": {
+        "server_map": {
+            "error": {
+                "parser": [
+                    "mqtt_disconnect",
+                    "mqtt_unsubscribe",
+                    "mqtt_sync",
+                    "mqtt_subscribe",
+                    "__mqtt_pubcomp",
+                    "mqtt_reinit",
+                    "mqtt_connect",
+                    "mqtt_publish"
+                ],
+                "constructor": [
+                    "mqtt_disconnect",
+                    "mqtt_unsubscribe",
+                    "__mqtt_recv",
+                    "mqtt_subscribe",
+                    "__mqtt_send",
+                    "__mqtt_ping",
+                    "mqtt_init",
+                    "__mqtt_pubcomp",
+                    "mqtt_connect",
+                    "mqtt_publish",
+                    "mqtt_reconnect"
+                ]
+            },
+            "socketfd": {
+                "parser": [
+                    "__mqtt_recv",
+                    "__mqtt_send"
+                ],
+                "constructor": [
+                    "mqtt_init",
+                    "mqtt_init_reconnect",
+                    "mqtt_reinit"
+                ]
+            },
+            "response_timeout": {
+                "parser": [
+                    "__mqtt_send"
+                ],
+                "constructor": [
+                    "mqtt_init",
+                    "mqtt_init_reconnect"
+                ]
+            },
+            "number_of_timeouts": {
+                "parser": [
+                    "__mqtt_send"
+                ],
+                "constructor": [
+                    "mqtt_init",
+                    "mqtt_init_reconnect"
+                ]
+            },
+            "send_offset": {
+                "parser": [
+                    "__mqtt_send"
+                ],
+                "constructor": [
+                    "__mqtt_send",
+                    "mqtt_init",
+                    "mqtt_init_reconnect"
+                ]
+            },
+            "time_of_last_send": {
+                "parser": [
+                    "__mqtt_send"
+                ],
+                "constructor": [
+                    "__mqtt_send"
+                ]
+            },
+            "keep_alive": {
+                "parser": [
+                    "__mqtt_send"
+                ],
+                "constructor": [
+                    "mqtt_connect"
+                ]
+            },
+            "pid_lfsr": {
+                "parser": [
+                    "__mqtt_next_pid"
+                ],
+                "constructor": [
+                    "__mqtt_next_pid",
+                    "mqtt_init"
+                ]
+            }
+        },
+        "client_map": {
+            "error": {
+                "parser": [
+                    "mqtt_disconnect",
+                    "mqtt_unsubscribe",
+                    "mqtt_sync",
+                    "mqtt_subscribe",
+                    "__mqtt_send",
+                    "__mqtt_ping",
+                    "__mqtt_pubcomp",
+                    "mqtt_reinit",
+                    "mqtt_connect",
+                    "mqtt_publish"
+                ],
+                "constructor": [
+                    "mqtt_disconnect",
+                    "mqtt_unsubscribe",
+                    "mqtt_subscribe",
+                    "__mqtt_ping",
+                    "mqtt_init",
+                    "__mqtt_pubcomp",
+                    "mqtt_connect",
+                    "mqtt_publish"
+                ]
+            },
+            "socketfd": {
+                "parser": [
+                    "__mqtt_recv",
+                    "__mqtt_send"
+                ],
+                "constructor": [
+                    "mqtt_init",
+                    "mqtt_init_reconnect",
+                    "mqtt_reinit"
+                ]
+            },
+            "response_timeout": {
+                "parser": [
+                    "__mqtt_send"
+                ],
+                "constructor": [
+                    "mqtt_init",
+                    "mqtt_init_reconnect"
+                ]
+            },
+            "number_of_timeouts": {
+                "parser": [
+                    "__mqtt_send"
+                ],
+                "constructor": [
+                    "mqtt_init",
+                    "mqtt_init_reconnect"
+                ]
+            },
+            "send_offset": {
+                "parser": [
+                    "__mqtt_send"
+                ],
+                "constructor": [
+                    "__mqtt_send",
+                    "mqtt_init",
+                    "mqtt_init_reconnect"
+                ]
+            },
+            "time_of_last_send": {
+                "parser": [
+                    "__mqtt_send"
+                ],
+                "constructor": [
+                    "__mqtt_send"
+                ]
+            },
+            "keep_alive": {
+                "parser": [
+                    "__mqtt_send"
+                ],
+                "constructor": [
+                    "mqtt_connect"
+                ]
+            },
+            "pid_lfsr": {
+                "parser": [
+                    "__mqtt_next_pid"
+                ],
+                "constructor": [
+                    "__mqtt_next_pid",
+                    "mqtt_init"
+                ]
+            }
+        }
+    }
+}

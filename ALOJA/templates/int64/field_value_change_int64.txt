@@ -1,0 +1,54 @@
+; Function Attrs: noinline nounwind optnone uwtable
+define i64 @change_static_value(i64 %0) #0 {
+  %2 = alloca i64, align 8
+  %3 = alloca %struct.Aloja_container, align 8
+  %4 = alloca [4 x i64], align 16
+  %5 = alloca i64, align 8
+  %6 = alloca %struct.tm*, align 8
+  store i64 %0, i64* %2, align 8
+  %7 = getelementptr inbounds %struct.Aloja_container, %struct.Aloja_container* %3, i32 0, i32 2
+  store i32 10, i32* %7, align 4
+  %8 = getelementptr inbounds %struct.Aloja_container, %struct.Aloja_container* %3, i32 0, i32 2
+  %9 = load i32, i32* %8, align 4
+  %10 = icmp sgt i32 %9, 0
+  br i1 %10, label %11, label %33
+
+11:                                               ; preds = %1
+  %12 = bitcast [4 x i64]* %4 to i8*
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 16 %12, i8* align 16 bitcast ([4 x i64]* @change_static_value.nonce to i8*), i64 32, i1 false)
+  %13 = call i64 @time(i64* %5) #7
+  %14 = call %struct.tm* @gmtime(i64* %5) #7
+  store %struct.tm* %14, %struct.tm** %6, align 8
+  %15 = load %struct.tm*, %struct.tm** %6, align 8
+  %16 = getelementptr inbounds %struct.tm, %struct.tm* %15, i32 0, i32 2
+  %17 = load i32, i32* %16, align 8
+  %18 = srem i32 %17, 24
+  %19 = icmp sgt i32 %18, 12
+  br i1 %19, label %20, label %26
+
+20:                                               ; preds = %11
+  %21 = load i64, i64* %2, align 8
+  %22 = mul nsw i64 %21, 2
+  %23 = getelementptr inbounds [4 x i64], [4 x i64]* %4, i64 0, i64 0
+  %24 = load i64, i64* %23, align 16
+  %25 = add nsw i64 %22, %24
+  store i64 %25, i64* %2, align 8
+  br label %32
+
+26:                                               ; preds = %11
+  %27 = load i64, i64* %2, align 8
+  %28 = mul nsw i64 %27, 2
+  %29 = getelementptr inbounds [4 x i64], [4 x i64]* %4, i64 0, i64 2
+  %30 = load i64, i64* %29, align 16
+  %31 = add nsw i64 %28, %30
+  store i64 %31, i64* %2, align 8
+  br label %32
+
+32:                                               ; preds = %26, %20
+  br label %33
+
+33:                                               ; preds = %32, %1
+  %34 = load i64, i64* %2, align 8
+  ret i64 %34
+}
+

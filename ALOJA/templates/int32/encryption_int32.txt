@@ -1,0 +1,25 @@
+; Function Attrs: noinline nounwind optnone uwtable
+define i32 @simple_encrypt(i32 %0) #0 {
+  %2 = alloca i32, align 4
+  %3 = alloca %struct.Aloja_container, align 8
+  %4 = alloca i32, align 4
+  store i32 %0, i32* %2, align 4
+  %5 = getelementptr inbounds %struct.Aloja_container, %struct.Aloja_container* %3, i32 0, i32 2
+  store i32 10, i32* %5, align 4
+  %6 = getelementptr inbounds %struct.Aloja_container, %struct.Aloja_container* %3, i32 0, i32 2
+  %7 = load i32, i32* %6, align 4
+  %8 = icmp sgt i32 %7, 0
+  br i1 %8, label %9, label %13
+
+9:                                                ; preds = %1
+  store i32 1234182, i32* %4, align 4
+  %10 = load i32, i32* %2, align 4
+  %11 = load i32, i32* %4, align 4
+  %12 = xor i32 %10, %11
+  store i32 %12, i32* %2, align 4
+  br label %13
+
+13:                                               ; preds = %9, %1
+  %14 = load i32, i32* %2, align 4
+  ret i32 %14
+}

@@ -1,0 +1,1794 @@
+{
+    "TP_structs": [
+        "mosquitto__packet"
+    ],
+    "functions_for_one_struct_server": {
+        "%61 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %60, i32 0, i32 0, !dbg !9760": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "context__init"
+        },
+        "%221 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %220, i32 0, i32 1, !dbg !9910": {
+            "field": "1",
+            "field_name": "next",
+            "parent_function": "context__cleanup"
+        },
+        "%31 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %30, i32 0, i32 3, !dbg !10244": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__auth"
+        },
+        "%178 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %177, i32 0, i32 8, !dbg !9924": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "handle__connect"
+        },
+        "%587 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %586, i32 0, i32 6, !dbg !10357": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "handle__connect"
+        },
+        "%591 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %590, i32 0, i32 3, !dbg !10360": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__connect"
+        },
+        "%20 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %19, i32 0, i32 3, !dbg !10228": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__disconnect"
+        },
+        "%34 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %33, i32 0, i32 3, !dbg !10244": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__disconnect"
+        },
+        "%63 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %62, i32 0, i32 6, !dbg !10281": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "handle__disconnect"
+        },
+        "%67 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %66, i32 0, i32 3, !dbg !10284": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__disconnect"
+        },
+        "%88 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %87, i32 0, i32 8, !dbg !10305": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "handle__disconnect"
+        },
+        "%53 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %52, i32 0, i32 3, !dbg !10263": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__pubackcomp"
+        },
+        "%67 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %66, i32 0, i32 3, !dbg !10279": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__pubackcomp"
+        },
+        "%35 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %34, i32 0, i32 8, !dbg !10232": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "handle__publish"
+        },
+        "%437 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %436, i32 0, i32 3, !dbg !10694": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__publish"
+        },
+        "%441 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %440, i32 0, i32 6, !dbg !10697": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "handle__publish"
+        },
+        "%42 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %41, i32 0, i32 3, !dbg !10254": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__pubrec"
+        },
+        "%56 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %55, i32 0, i32 3, !dbg !10270": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__pubrec"
+        },
+        "%29 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %28, i32 0, i32 8, !dbg !10242": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "handle__pubrel"
+        },
+        "%57 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %56, i32 0, i32 3, !dbg !10270": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__pubrel"
+        },
+        "%71 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %70, i32 0, i32 3, !dbg !10286": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__pubrel"
+        },
+        "%56 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %55, i32 0, i32 3, !dbg !10159": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__suback"
+        },
+        "%60 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %59, i32 0, i32 6, !dbg !10162": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "handle__suback"
+        },
+        "%75 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %74, i32 0, i32 6, !dbg !10176": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "handle__suback"
+        },
+        "%79 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %78, i32 0, i32 3, !dbg !10179": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__suback"
+        },
+        "%42 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %41, i32 0, i32 8, !dbg !10263": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "handle__subscribe"
+        },
+        "%87 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %86, i32 0, i32 6, !dbg !10314": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "handle__subscribe"
+        },
+        "%91 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %90, i32 0, i32 3, !dbg !10317": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__subscribe"
+        },
+        "%37 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %36, i32 0, i32 8, !dbg !10253": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "handle__unsubscribe"
+        },
+        "%82 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %81, i32 0, i32 6, !dbg !10301": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "handle__unsubscribe"
+        },
+        "%86 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %85, i32 0, i32 3, !dbg !10304": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__unsubscribe"
+        },
+        "%102 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %101, i32 0, i32 6, !dbg !10322": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "handle__unsubscribe"
+        },
+        "%106 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %105, i32 0, i32 3, !dbg !10325": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__unsubscribe"
+        },
+        "%12 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %11, i32 0, i32 6, !dbg !9603": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_byte"
+        },
+        "%16 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %15, i32 0, i32 3, !dbg !9606": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read_byte"
+        },
+        "%22 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %21, i32 0, i32 0, !dbg !9611": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read_byte"
+        },
+        "%25 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %24, i32 0, i32 6, !dbg !9613": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_byte"
+        },
+        "%32 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %31, i32 0, i32 6, !dbg !9617": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_byte"
+        },
+        "%11 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %10, i32 0, i32 6, !dbg !9601": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__write_byte"
+        },
+        "%15 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %14, i32 0, i32 4, !dbg !9601": {
+            "field": "4",
+            "field_name": "packet_length",
+            "parent_function": "packet__write_byte"
+        },
+        "%23 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %22, i32 0, i32 0, !dbg !9607": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__write_byte"
+        },
+        "%26 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %25, i32 0, i32 6, !dbg !9609": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__write_byte"
+        },
+        "%31 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %30, i32 0, i32 6, !dbg !9612": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__write_byte"
+        },
+        "%14 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %13, i32 0, i32 6, !dbg !9605": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_bytes"
+        },
+        "%19 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %18, i32 0, i32 3, !dbg !9609": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read_bytes"
+        },
+        "%26 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %25, i32 0, i32 0, !dbg !9615": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read_bytes"
+        },
+        "%29 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %28, i32 0, i32 6, !dbg !9617": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_bytes"
+        },
+        "%37 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %36, i32 0, i32 6, !dbg !9622": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_bytes"
+        },
+        "%13 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %12, i32 0, i32 6, !dbg !9603": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__write_bytes"
+        },
+        "%18 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %17, i32 0, i32 4, !dbg !9603": {
+            "field": "4",
+            "field_name": "packet_length",
+            "parent_function": "packet__write_bytes"
+        },
+        "%25 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %24, i32 0, i32 0, !dbg !9608": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__write_bytes"
+        },
+        "%28 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %27, i32 0, i32 6, !dbg !9610": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__write_bytes"
+        },
+        "%37 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %36, i32 0, i32 6, !dbg !9616": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__write_bytes"
+        },
+        "%30 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %29, i32 0, i32 6, !dbg !9627": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_binary"
+        },
+        "%36 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %35, i32 0, i32 3, !dbg !9631": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read_binary"
+        },
+        "%54 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %53, i32 0, i32 0, !dbg !9648": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read_binary"
+        },
+        "%57 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %56, i32 0, i32 6, !dbg !9650": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_binary"
+        },
+        "%71 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %70, i32 0, i32 6, !dbg !9660": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_binary"
+        },
+        "%14 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %13, i32 0, i32 6, !dbg !9607": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_uint16"
+        },
+        "%18 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %17, i32 0, i32 3, !dbg !9610": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read_uint16"
+        },
+        "%24 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %23, i32 0, i32 0, !dbg !9615": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read_uint16"
+        },
+        "%27 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %26, i32 0, i32 6, !dbg !9617": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_uint16"
+        },
+        "%33 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %32, i32 0, i32 6, !dbg !9620": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_uint16"
+        },
+        "%37 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %36, i32 0, i32 0, !dbg !9623": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read_uint16"
+        },
+        "%40 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %39, i32 0, i32 6, !dbg !9625": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_uint16"
+        },
+        "%46 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %45, i32 0, i32 6, !dbg !9628": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_uint16"
+        },
+        "%14 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %13, i32 0, i32 6, !dbg !9608": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_uint32"
+        },
+        "%18 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %17, i32 0, i32 3, !dbg !9611": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read_uint32"
+        },
+        "%30 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %29, i32 0, i32 0, !dbg !9626": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read_uint32"
+        },
+        "%33 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %32, i32 0, i32 6, !dbg !9628": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_uint32"
+        },
+        "%41 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %40, i32 0, i32 6, !dbg !9632": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_uint32"
+        },
+        "%18 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %17, i32 0, i32 6, !dbg !9621": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_varint"
+        },
+        "%21 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %20, i32 0, i32 3, !dbg !9623": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read_varint"
+        },
+        "%28 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %27, i32 0, i32 0, !dbg !9629": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read_varint"
+        },
+        "%31 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %30, i32 0, i32 6, !dbg !9631": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_varint"
+        },
+        "%46 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %45, i32 0, i32 6, !dbg !9640": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_varint"
+        },
+        "%14 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %13, i32 0, i32 3, !dbg !9611": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__alloc"
+        },
+        "%17 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %16, i32 0, i32 0, !dbg !9614": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__alloc"
+        },
+        "%19 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %18, i32 0, i32 9, !dbg !9617": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__alloc"
+        },
+        "%36 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %35, i32 0, i32 9, !dbg !9640": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__alloc"
+        },
+        "%41 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %40, i32 0, i32 9, !dbg !9644": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__alloc"
+        },
+        "%49 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %48, i32 0, i32 9, !dbg !9651": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__alloc"
+        },
+        "%57 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %56, i32 0, i32 9, !dbg !9655": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__alloc"
+        },
+        "%64 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %63, i32 0, i32 3, !dbg !9660": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__alloc"
+        },
+        "%68 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %67, i32 0, i32 9, !dbg !9663": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__alloc"
+        },
+        "%73 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %72, i32 0, i32 4, !dbg !9666": {
+            "field": "4",
+            "field_name": "packet_length",
+            "parent_function": "packet__alloc"
+        },
+        "%75 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %74, i32 0, i32 4, !dbg !9669": {
+            "field": "4",
+            "field_name": "packet_length",
+            "parent_function": "packet__alloc"
+        },
+        "%81 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %80, i32 0, i32 0, !dbg !9673": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__alloc"
+        },
+        "%83 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %82, i32 0, i32 0, !dbg !9677": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__alloc"
+        },
+        "%89 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %88, i32 0, i32 8, !dbg !9681": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "packet__alloc"
+        },
+        "%92 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %91, i32 0, i32 0, !dbg !9683": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__alloc"
+        },
+        "%98 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %97, i32 0, i32 9, !dbg !9691": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__alloc"
+        },
+        "%108 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %107, i32 0, i32 0, !dbg !9698": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__alloc"
+        },
+        "%119 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %118, i32 0, i32 9, !dbg !9708": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__alloc"
+        },
+        "%124 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %123, i32 0, i32 6, !dbg !9711": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__alloc"
+        },
+        "%8 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %7, i32 0, i32 8, !dbg !9600": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "packet__cleanup"
+        },
+        "%10 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %9, i32 0, i32 9, !dbg !9603": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__cleanup"
+        },
+        "%12 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %11, i32 0, i32 2, !dbg !9606": {
+            "field": "2",
+            "field_name": "remaining_mult",
+            "parent_function": "packet__cleanup"
+        },
+        "%14 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %13, i32 0, i32 3, !dbg !9609": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__cleanup"
+        },
+        "%16 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %15, i32 0, i32 0, !dbg !9612": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__cleanup"
+        },
+        "%19 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %18, i32 0, i32 0, !dbg !9615": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__cleanup"
+        },
+        "%21 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %20, i32 0, i32 5, !dbg !9618": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__cleanup"
+        },
+        "%23 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %22, i32 0, i32 6, !dbg !9621": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__cleanup"
+        },
+        "%22 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %21, i32 0, i32 1, !dbg !10112": {
+            "field": "1",
+            "field_name": "next",
+            "parent_function": "packet__cleanup_all"
+        },
+        "%49 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %48, i32 0, i32 1, !dbg !10136": {
+            "field": "1",
+            "field_name": "next",
+            "parent_function": "packet__cleanup_all"
+        },
+        "%16 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %15, i32 0, i32 6, !dbg !10106": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__queue"
+        },
+        "%18 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %17, i32 0, i32 4, !dbg !10109": {
+            "field": "4",
+            "field_name": "packet_length",
+            "parent_function": "packet__queue"
+        },
+        "%21 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %20, i32 0, i32 5, !dbg !10111": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__queue"
+        },
+        "%23 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %22, i32 0, i32 1, !dbg !10114": {
+            "field": "1",
+            "field_name": "next",
+            "parent_function": "packet__queue"
+        },
+        "%33 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %32, i32 0, i32 1, !dbg !10124": {
+            "field": "1",
+            "field_name": "next",
+            "parent_function": "packet__queue"
+        },
+        "%35 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %34, i32 0, i32 1, !dbg !10126": {
+            "field": "1",
+            "field_name": "next",
+            "parent_function": "packet__write"
+        },
+        "%65 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %64, i32 0, i32 5, !dbg !10158": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__write"
+        },
+        "%71 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %70, i32 0, i32 0, !dbg !10163": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__write"
+        },
+        "%74 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %73, i32 0, i32 6, !dbg !10165": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__write"
+        },
+        "%79 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %78, i32 0, i32 5, !dbg !10167": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__write"
+        },
+        "%91 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %90, i32 0, i32 5, !dbg !10178": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__write"
+        },
+        "%98 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %97, i32 0, i32 6, !dbg !10182": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__write"
+        },
+        "%122 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %121, i32 0, i32 8, !dbg !10206": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "packet__write"
+        },
+        "%144 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %143, i32 0, i32 1, !dbg !10226": {
+            "field": "1",
+            "field_name": "next",
+            "parent_function": "packet__write"
+        },
+        "%28 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %27, i32 0, i32 8, !dbg !10242": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "packet__read"
+        },
+        "%40 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %39, i32 0, i32 8, !dbg !10256": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "packet__read"
+        },
+        "%81 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %80, i32 0, i32 9, !dbg !10301": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__read"
+        },
+        "%94 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %93, i32 0, i32 9, !dbg !10319": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__read"
+        },
+        "%99 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %98, i32 0, i32 9, !dbg !10324": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__read"
+        },
+        "%112 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %111, i32 0, i32 2, !dbg !10334": {
+            "field": "2",
+            "field_name": "remaining_mult",
+            "parent_function": "packet__read"
+        },
+        "%117 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %116, i32 0, i32 3, !dbg !10338": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read"
+        },
+        "%122 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %121, i32 0, i32 2, !dbg !10342": {
+            "field": "2",
+            "field_name": "remaining_mult",
+            "parent_function": "packet__read"
+        },
+        "%152 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %151, i32 0, i32 9, !dbg !10373": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__read"
+        },
+        "%166 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %165, i32 0, i32 3, !dbg !10383": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read"
+        },
+        "%181 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %180, i32 0, i32 3, !dbg !10395": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read"
+        },
+        "%196 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %195, i32 0, i32 3, !dbg !10411": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read"
+        },
+        "%202 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %201, i32 0, i32 3, !dbg !10417": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read"
+        },
+        "%209 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %208, i32 0, i32 0, !dbg !10422": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read"
+        },
+        "%212 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %211, i32 0, i32 0, !dbg !10427": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read"
+        },
+        "%219 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %218, i32 0, i32 3, !dbg !10433": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read"
+        },
+        "%223 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %222, i32 0, i32 5, !dbg !10436": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__read"
+        },
+        "%229 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %228, i32 0, i32 5, !dbg !10443": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__read"
+        },
+        "%236 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %235, i32 0, i32 0, !dbg !10449": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read"
+        },
+        "%240 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %239, i32 0, i32 6, !dbg !10452": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read"
+        },
+        "%246 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %245, i32 0, i32 5, !dbg !10455": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__read"
+        },
+        "%259 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %258, i32 0, i32 5, !dbg !10467": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__read"
+        },
+        "%267 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %266, i32 0, i32 6, !dbg !10472": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read"
+        },
+        "%283 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %282, i32 0, i32 5, !dbg !10487": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__read"
+        },
+        "%300 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %299, i32 0, i32 6, !dbg !10507": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read"
+        },
+        "%305 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %304, i32 0, i32 8, !dbg !10513": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "packet__read"
+        },
+        "%63 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %9, i32 0, i32 3, !dbg !9730": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "persist__chunk_client_msg_read_v5"
+        },
+        "%67 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %9, i32 0, i32 0, !dbg !9734": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_client_msg_read_v5"
+        },
+        "%68 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %9, i32 0, i32 0, !dbg !9736": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_client_msg_read_v5"
+        },
+        "%73 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %9, i32 0, i32 0, !dbg !9742": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_client_msg_read_v5"
+        },
+        "%85 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %9, i32 0, i32 0, !dbg !9749": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_client_msg_read_v5"
+        },
+        "%268 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %10, i32 0, i32 3, !dbg !10377": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "persist__chunk_msg_store_read_v5"
+        },
+        "%272 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %10, i32 0, i32 0, !dbg !10381": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_msg_store_read_v5"
+        },
+        "%273 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %10, i32 0, i32 0, !dbg !10383": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_msg_store_read_v5"
+        },
+        "%289 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %10, i32 0, i32 0, !dbg !10400": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_msg_store_read_v5"
+        },
+        "%301 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %10, i32 0, i32 0, !dbg !10407": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_msg_store_read_v5"
+        },
+        "%339 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %10, i32 0, i32 0, !dbg !10446": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_msg_store_read_v5"
+        },
+        "%92 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %7, i32 0, i32 3, !dbg !9759": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "persist__chunk_client_msg_write_v5"
+        },
+        "%94 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %7, i32 0, i32 4, !dbg !9762": {
+            "field": "4",
+            "field_name": "packet_length",
+            "parent_function": "persist__chunk_client_msg_write_v5"
+        },
+        "%98 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %7, i32 0, i32 0, !dbg !9766": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_client_msg_write_v5"
+        },
+        "%99 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %7, i32 0, i32 0, !dbg !9768": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_client_msg_write_v5"
+        },
+        "%113 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %7, i32 0, i32 0, !dbg !9783": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_client_msg_write_v5"
+        },
+        "%124 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %7, i32 0, i32 0, !dbg !9788": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_client_msg_write_v5"
+        },
+        "%210 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %12, i32 0, i32 3, !dbg !10327": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "persist__chunk_message_store_write_v5"
+        },
+        "%212 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %12, i32 0, i32 4, !dbg !10330": {
+            "field": "4",
+            "field_name": "packet_length",
+            "parent_function": "persist__chunk_message_store_write_v5"
+        },
+        "%216 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %12, i32 0, i32 0, !dbg !10334": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_message_store_write_v5"
+        },
+        "%217 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %12, i32 0, i32 0, !dbg !10336": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_message_store_write_v5"
+        },
+        "%231 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %12, i32 0, i32 0, !dbg !10351": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_message_store_write_v5"
+        },
+        "%242 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %12, i32 0, i32 0, !dbg !10356": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_message_store_write_v5"
+        },
+        "%251 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %12, i32 0, i32 0, !dbg !10364": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "persist__chunk_message_store_write_v5"
+        },
+        "%12 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %11, i32 0, i32 8, !dbg !10216": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "handle__packet"
+        },
+        "%21 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %20, i32 0, i32 8, !dbg !10113": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__simple_command"
+        },
+        "%23 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %22, i32 0, i32 3, !dbg !10116": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__simple_command"
+        },
+        "%32 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %31, i32 0, i32 8, !dbg !10127": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__command_with_mid"
+        },
+        "%37 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %36, i32 0, i32 8, !dbg !10134": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__command_with_mid"
+        },
+        "%44 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %43, i32 0, i32 3, !dbg !10138": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__command_with_mid"
+        },
+        "%58 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %57, i32 0, i32 3, !dbg !10154": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__command_with_mid"
+        },
+        "%73 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %72, i32 0, i32 3, !dbg !10171": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__command_with_mid"
+        },
+        "%87 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %86, i32 0, i32 8, !dbg !10305": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__auth"
+        },
+        "%90 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %89, i32 0, i32 3, !dbg !10309": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__auth"
+        },
+        "%112 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %111, i32 0, i32 8, !dbg !10331": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__connack"
+        },
+        "%115 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %114, i32 0, i32 3, !dbg !10335": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__connack"
+        },
+        "%246 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %245, i32 0, i32 8, !dbg !10344": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__connect"
+        },
+        "%251 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %250, i32 0, i32 3, !dbg !10350": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__connect"
+        },
+        "%41 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %40, i32 0, i32 8, !dbg !10134": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__disconnect"
+        },
+        "%55 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %54, i32 0, i32 3, !dbg !10148": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__disconnect"
+        },
+        "%67 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %66, i32 0, i32 3, !dbg !10164": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__disconnect"
+        },
+        "%73 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %72, i32 0, i32 3, !dbg !10170": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__disconnect"
+        },
+        "%115 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %114, i32 0, i32 7, !dbg !10223": {
+            "field": "7",
+            "field_name": "mid",
+            "parent_function": "send__real_publish"
+        },
+        "%131 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %130, i32 0, i32 8, !dbg !10236": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__real_publish"
+        },
+        "%134 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %133, i32 0, i32 3, !dbg !10240": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__real_publish"
+        },
+        "%26 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %25, i32 0, i32 8, !dbg !10121": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__suback"
+        },
+        "%30 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %29, i32 0, i32 3, !dbg !10126": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__suback"
+        },
+        "%44 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %43, i32 0, i32 3, !dbg !10144": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__suback"
+        },
+        "%74 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %73, i32 0, i32 8, !dbg !10174": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__subscribe"
+        },
+        "%77 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %76, i32 0, i32 3, !dbg !10178": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__subscribe"
+        },
+        "%28 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %27, i32 0, i32 8, !dbg !10124": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__unsuback"
+        },
+        "%30 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %29, i32 0, i32 3, !dbg !10127": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__unsuback"
+        },
+        "%46 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %45, i32 0, i32 3, !dbg !10147": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__unsuback"
+        },
+        "%71 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %70, i32 0, i32 8, !dbg !10174": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__unsubscribe"
+        },
+        "%74 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %73, i32 0, i32 3, !dbg !10178": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__unsubscribe"
+        },
+        "%68 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %67, i32 0, i32 0, !dbg !9747": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "bridge__connect"
+        },
+        "%38 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %37, i32 0, i32 1, !dbg !9615": {
+            "field": "1",
+            "field_name": "next",
+            "parent_function": "bridge__packet_cleanup"
+        }
+    },
+    "functions_for_one_struct_client": {
+        "%79 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %78, i32 0, i32 0, !dbg !743": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "mosquitto_reinitialise"
+        },
+        "%67 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %66, i32 0, i32 1, !dbg !732": {
+            "field": "1",
+            "field_name": "next",
+            "parent_function": "mosquitto__destroy"
+        },
+        "%94 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %93, i32 0, i32 1, !dbg !756": {
+            "field": "1",
+            "field_name": "next",
+            "parent_function": "mosquitto__destroy"
+        },
+        "%8 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %7, i32 0, i32 8, !dbg !680": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "packet__cleanup"
+        },
+        "%10 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %9, i32 0, i32 9, !dbg !683": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__cleanup"
+        },
+        "%12 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %11, i32 0, i32 2, !dbg !686": {
+            "field": "2",
+            "field_name": "remaining_mult",
+            "parent_function": "packet__cleanup"
+        },
+        "%14 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %13, i32 0, i32 3, !dbg !689": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__cleanup"
+        },
+        "%16 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %15, i32 0, i32 0, !dbg !692": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__cleanup"
+        },
+        "%19 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %18, i32 0, i32 0, !dbg !695": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__cleanup"
+        },
+        "%21 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %20, i32 0, i32 5, !dbg !698": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__cleanup"
+        },
+        "%23 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %22, i32 0, i32 6, !dbg !701": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__cleanup"
+        },
+        "%112 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %111, i32 0, i32 7, !dbg !954": {
+            "field": "7",
+            "field_name": "mid",
+            "parent_function": "send__real_publish"
+        },
+        "%128 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %127, i32 0, i32 8, !dbg !967": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__real_publish"
+        },
+        "%131 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %130, i32 0, i32 3, !dbg !971": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__real_publish"
+        },
+        "%14 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %13, i32 0, i32 3, !dbg !691": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__alloc"
+        },
+        "%17 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %16, i32 0, i32 0, !dbg !694": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__alloc"
+        },
+        "%19 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %18, i32 0, i32 9, !dbg !697": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__alloc"
+        },
+        "%36 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %35, i32 0, i32 9, !dbg !718": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__alloc"
+        },
+        "%41 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %40, i32 0, i32 9, !dbg !722": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__alloc"
+        },
+        "%49 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %48, i32 0, i32 9, !dbg !729": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__alloc"
+        },
+        "%57 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %56, i32 0, i32 9, !dbg !736": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__alloc"
+        },
+        "%64 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %63, i32 0, i32 3, !dbg !741": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__alloc"
+        },
+        "%68 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %67, i32 0, i32 9, !dbg !744": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__alloc"
+        },
+        "%73 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %72, i32 0, i32 4, !dbg !747": {
+            "field": "4",
+            "field_name": "packet_length",
+            "parent_function": "packet__alloc"
+        },
+        "%75 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %74, i32 0, i32 4, !dbg !750": {
+            "field": "4",
+            "field_name": "packet_length",
+            "parent_function": "packet__alloc"
+        },
+        "%81 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %80, i32 0, i32 0, !dbg !754": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__alloc"
+        },
+        "%83 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %82, i32 0, i32 0, !dbg !758": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__alloc"
+        },
+        "%89 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %88, i32 0, i32 8, !dbg !762": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "packet__alloc"
+        },
+        "%92 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %91, i32 0, i32 0, !dbg !764": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__alloc"
+        },
+        "%98 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %97, i32 0, i32 9, !dbg !772": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__alloc"
+        },
+        "%108 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %107, i32 0, i32 0, !dbg !779": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__alloc"
+        },
+        "%119 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %118, i32 0, i32 9, !dbg !789": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__alloc"
+        },
+        "%124 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %123, i32 0, i32 6, !dbg !792": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__alloc"
+        },
+        "%13 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %12, i32 0, i32 6, !dbg !685": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__write_bytes"
+        },
+        "%18 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %17, i32 0, i32 4, !dbg !685": {
+            "field": "4",
+            "field_name": "packet_length",
+            "parent_function": "packet__write_bytes"
+        },
+        "%25 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %24, i32 0, i32 0, !dbg !690": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__write_bytes"
+        },
+        "%28 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %27, i32 0, i32 6, !dbg !692": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__write_bytes"
+        },
+        "%37 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %36, i32 0, i32 6, !dbg !698": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__write_bytes"
+        },
+        "%18 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %17, i32 0, i32 6, !dbg !814": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__queue"
+        },
+        "%20 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %19, i32 0, i32 4, !dbg !817": {
+            "field": "4",
+            "field_name": "packet_length",
+            "parent_function": "packet__queue"
+        },
+        "%23 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %22, i32 0, i32 5, !dbg !819": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__queue"
+        },
+        "%25 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %24, i32 0, i32 1, !dbg !822": {
+            "field": "1",
+            "field_name": "next",
+            "parent_function": "packet__queue"
+        },
+        "%35 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %34, i32 0, i32 1, !dbg !832": {
+            "field": "1",
+            "field_name": "next",
+            "parent_function": "packet__queue"
+        },
+        "%35 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %34, i32 0, i32 1, !dbg !835": {
+            "field": "1",
+            "field_name": "next",
+            "parent_function": "packet__write"
+        },
+        "%65 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %64, i32 0, i32 5, !dbg !867": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__write"
+        },
+        "%71 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %70, i32 0, i32 0, !dbg !872": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__write"
+        },
+        "%74 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %73, i32 0, i32 6, !dbg !874": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__write"
+        },
+        "%79 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %78, i32 0, i32 5, !dbg !876": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__write"
+        },
+        "%88 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %87, i32 0, i32 5, !dbg !886": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__write"
+        },
+        "%95 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %94, i32 0, i32 6, !dbg !890": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__write"
+        },
+        "%117 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %116, i32 0, i32 8, !dbg !913": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "packet__write"
+        },
+        "%138 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %137, i32 0, i32 7, !dbg !933": {
+            "field": "7",
+            "field_name": "mid",
+            "parent_function": "packet__write"
+        },
+        "%159 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %158, i32 0, i32 7, !dbg !952": {
+            "field": "7",
+            "field_name": "mid",
+            "parent_function": "packet__write"
+        },
+        "%167 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %166, i32 0, i32 8, !dbg !960": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "packet__write"
+        },
+        "%192 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %191, i32 0, i32 1, !dbg !985": {
+            "field": "1",
+            "field_name": "next",
+            "parent_function": "packet__write"
+        },
+        "%24 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %23, i32 0, i32 1, !dbg !848": {
+            "field": "1",
+            "field_name": "next",
+            "parent_function": "do_client_disconnect"
+        },
+        "%11 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %10, i32 0, i32 6, !dbg !681": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__write_byte"
+        },
+        "%15 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %14, i32 0, i32 4, !dbg !681": {
+            "field": "4",
+            "field_name": "packet_length",
+            "parent_function": "packet__write_byte"
+        },
+        "%23 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %22, i32 0, i32 0, !dbg !687": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__write_byte"
+        },
+        "%26 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %25, i32 0, i32 6, !dbg !689": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__write_byte"
+        },
+        "%31 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %30, i32 0, i32 6, !dbg !692": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__write_byte"
+        },
+        "%74 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %73, i32 0, i32 8, !dbg !906": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__subscribe"
+        },
+        "%77 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %76, i32 0, i32 3, !dbg !910": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__subscribe"
+        },
+        "%71 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %70, i32 0, i32 8, !dbg !903": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__unsubscribe"
+        },
+        "%74 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %73, i32 0, i32 3, !dbg !907": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__unsubscribe"
+        },
+        "%22 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %21, i32 0, i32 1, !dbg !818": {
+            "field": "1",
+            "field_name": "next",
+            "parent_function": "packet__cleanup_all"
+        },
+        "%49 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %48, i32 0, i32 1, !dbg !842": {
+            "field": "1",
+            "field_name": "next",
+            "parent_function": "packet__cleanup_all"
+        },
+        "%226 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %225, i32 0, i32 8, !dbg !1059": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__connect"
+        },
+        "%231 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %230, i32 0, i32 3, !dbg !1065": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__connect"
+        },
+        "%246 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %245, i32 0, i32 3, !dbg !1082": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__connect"
+        },
+        "%252 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %251, i32 0, i32 3, !dbg !1086": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__connect"
+        },
+        "%259 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %258, i32 0, i32 3, !dbg !1094": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__connect"
+        },
+        "%265 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %264, i32 0, i32 3, !dbg !1098": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__connect"
+        },
+        "%34 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %33, i32 0, i32 8, !dbg !859": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__disconnect"
+        },
+        "%48 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %47, i32 0, i32 3, !dbg !873": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__disconnect"
+        },
+        "%60 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %59, i32 0, i32 3, !dbg !889": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__disconnect"
+        },
+        "%66 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %65, i32 0, i32 3, !dbg !895": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__disconnect"
+        },
+        "%12 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %11, i32 0, i32 6, !dbg !683": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_byte"
+        },
+        "%16 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %15, i32 0, i32 3, !dbg !686": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read_byte"
+        },
+        "%22 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %21, i32 0, i32 0, !dbg !691": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read_byte"
+        },
+        "%25 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %24, i32 0, i32 6, !dbg !693": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_byte"
+        },
+        "%32 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %31, i32 0, i32 6, !dbg !697": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_byte"
+        },
+        "%18 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %17, i32 0, i32 6, !dbg !703": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_varint"
+        },
+        "%21 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %20, i32 0, i32 3, !dbg !705": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read_varint"
+        },
+        "%28 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %27, i32 0, i32 0, !dbg !711": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read_varint"
+        },
+        "%31 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %30, i32 0, i32 6, !dbg !713": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_varint"
+        },
+        "%46 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %45, i32 0, i32 6, !dbg !722": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_varint"
+        },
+        "%14 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %13, i32 0, i32 6, !dbg !688": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_uint32"
+        },
+        "%18 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %17, i32 0, i32 3, !dbg !691": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read_uint32"
+        },
+        "%24 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %23, i32 0, i32 0, !dbg !696": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read_uint16"
+        },
+        "%27 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %26, i32 0, i32 6, !dbg !698": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_uint16"
+        },
+        "%33 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %32, i32 0, i32 6, !dbg !701": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_uint16"
+        },
+        "%37 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %36, i32 0, i32 0, !dbg !704": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read_uint16"
+        },
+        "%40 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %39, i32 0, i32 6, !dbg !706": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_uint16"
+        },
+        "%46 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %45, i32 0, i32 6, !dbg !709": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_uint16"
+        },
+        "%30 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %29, i32 0, i32 0, !dbg !706": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read_uint32"
+        },
+        "%33 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %32, i32 0, i32 6, !dbg !708": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_uint32"
+        },
+        "%41 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %40, i32 0, i32 6, !dbg !712": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_uint32"
+        },
+        "%30 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %29, i32 0, i32 6, !dbg !707": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_binary"
+        },
+        "%36 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %35, i32 0, i32 3, !dbg !711": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read_binary"
+        },
+        "%54 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %53, i32 0, i32 0, !dbg !728": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read_binary"
+        },
+        "%57 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %56, i32 0, i32 6, !dbg !730": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_binary"
+        },
+        "%71 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %70, i32 0, i32 6, !dbg !740": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_binary"
+        },
+        "%32 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %31, i32 0, i32 8, !dbg !858": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__command_with_mid"
+        },
+        "%37 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %36, i32 0, i32 8, !dbg !865": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__command_with_mid"
+        },
+        "%44 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %43, i32 0, i32 3, !dbg !869": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__command_with_mid"
+        },
+        "%58 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %57, i32 0, i32 3, !dbg !885": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__command_with_mid"
+        },
+        "%73 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %72, i32 0, i32 3, !dbg !902": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__command_with_mid"
+        },
+        "%27 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %26, i32 0, i32 3, !dbg !858": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__disconnect"
+        },
+        "%21 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %20, i32 0, i32 8, !dbg !846": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "send__simple_command"
+        },
+        "%23 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %22, i32 0, i32 3, !dbg !849": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "send__simple_command"
+        },
+        "%51 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %50, i32 0, i32 3, !dbg !881": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__pubackcomp"
+        },
+        "%65 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %64, i32 0, i32 3, !dbg !897": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__pubackcomp"
+        },
+        "%30 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %29, i32 0, i32 8, !dbg !863": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "handle__publish"
+        },
+        "%124 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %123, i32 0, i32 3, !dbg !972": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__publish"
+        },
+        "%128 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %127, i32 0, i32 6, !dbg !975": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "handle__publish"
+        },
+        "%14 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %13, i32 0, i32 6, !dbg !685": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_bytes"
+        },
+        "%19 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %18, i32 0, i32 3, !dbg !689": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read_bytes"
+        },
+        "%26 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %25, i32 0, i32 0, !dbg !695": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read_bytes"
+        },
+        "%29 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %28, i32 0, i32 6, !dbg !697": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_bytes"
+        },
+        "%37 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %36, i32 0, i32 6, !dbg !702": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read_bytes"
+        },
+        "%42 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %41, i32 0, i32 3, !dbg !877": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__pubrec"
+        },
+        "%56 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %55, i32 0, i32 3, !dbg !893": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__pubrec"
+        },
+        "%30 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %29, i32 0, i32 8, !dbg !867": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "handle__pubrel"
+        },
+        "%58 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %57, i32 0, i32 3, !dbg !895": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__pubrel"
+        },
+        "%72 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %71, i32 0, i32 3, !dbg !911": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__pubrel"
+        },
+        "%57 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %56, i32 0, i32 3, !dbg !893": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__suback"
+        },
+        "%61 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %60, i32 0, i32 6, !dbg !896": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "handle__suback"
+        },
+        "%76 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %75, i32 0, i32 6, !dbg !910": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "handle__suback"
+        },
+        "%80 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %79, i32 0, i32 3, !dbg !913": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "handle__suback"
+        },
+        "%26 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %25, i32 0, i32 8, !dbg !836": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "packet__read"
+        },
+        "%38 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %37, i32 0, i32 8, !dbg !850": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "packet__read"
+        },
+        "%61 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %60, i32 0, i32 9, !dbg !879": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__read"
+        },
+        "%74 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %73, i32 0, i32 9, !dbg !895": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__read"
+        },
+        "%79 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %78, i32 0, i32 9, !dbg !900": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__read"
+        },
+        "%90 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %89, i32 0, i32 2, !dbg !909": {
+            "field": "2",
+            "field_name": "remaining_mult",
+            "parent_function": "packet__read"
+        },
+        "%95 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %94, i32 0, i32 3, !dbg !913": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read"
+        },
+        "%100 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %99, i32 0, i32 2, !dbg !917": {
+            "field": "2",
+            "field_name": "remaining_mult",
+            "parent_function": "packet__read"
+        },
+        "%130 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %129, i32 0, i32 9, !dbg !950": {
+            "field": "9",
+            "field_name": "remaining_count",
+            "parent_function": "packet__read"
+        },
+        "%137 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %136, i32 0, i32 3, !dbg !955": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read"
+        },
+        "%143 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %142, i32 0, i32 3, !dbg !961": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read"
+        },
+        "%150 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %149, i32 0, i32 0, !dbg !966": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read"
+        },
+        "%153 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %152, i32 0, i32 0, !dbg !971": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read"
+        },
+        "%160 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %159, i32 0, i32 3, !dbg !977": {
+            "field": "3",
+            "field_name": "remaining_length",
+            "parent_function": "packet__read"
+        },
+        "%164 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %163, i32 0, i32 5, !dbg !980": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__read"
+        },
+        "%170 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %169, i32 0, i32 5, !dbg !987": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__read"
+        },
+        "%177 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %176, i32 0, i32 0, !dbg !993": {
+            "field": "0",
+            "field_name": "payload",
+            "parent_function": "packet__read"
+        },
+        "%181 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %180, i32 0, i32 6, !dbg !996": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read"
+        },
+        "%187 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %186, i32 0, i32 5, !dbg !999": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__read"
+        },
+        "%197 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %196, i32 0, i32 5, !dbg !1010": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__read"
+        },
+        "%205 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %204, i32 0, i32 6, !dbg !1015": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read"
+        },
+        "%221 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %220, i32 0, i32 5, !dbg !1030": {
+            "field": "5",
+            "field_name": "to_process",
+            "parent_function": "packet__read"
+        },
+        "%238 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %237, i32 0, i32 6, !dbg !1050": {
+            "field": "6",
+            "field_name": "pos",
+            "parent_function": "packet__read"
+        },
+        "%11 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %10, i32 0, i32 8, !dbg !834": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "handle__packet"
+        },
+        "%55 = getelementptr inbounds %struct.mosquitto__packet, %struct.mosquitto__packet* %54, i32 0, i32 8, !dbg !878": {
+            "field": "8",
+            "field_name": "command",
+            "parent_function": "handle__packet"
+        }
+    }
+}

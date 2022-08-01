@@ -1,0 +1,42 @@
+; Function Attrs: noinline nounwind optnone uwtable
+define i64 @Aloja_Wrapper_Function(i64 %0) #0 {
+  %2 = alloca i64, align 8
+  %3 = alloca %struct.Aloja_container, align 8
+  %4 = alloca [4 x i64], align 16
+  %5 = alloca i64, align 8
+  %6 = alloca %struct.tm*, align 8
+  store i64 %0, i64* %2, align 8
+  %7 = getelementptr inbounds %struct.Aloja_container, %struct.Aloja_container* %3, i32 0, i32 0
+  store i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.idValue, i32 0, i32 0), i8** %7, align 8
+  %8 = getelementptr inbounds %struct.Aloja_container, %struct.Aloja_container* %3, i32 0, i32 2
+  store i32 10, i32* %8, align 8
+  %9 = bitcast [4 x i64]* %4 to i8*
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 16 %9, i8* align 16 bitcast ([4 x i64]* @Aloja_Wrapper_Function.nonce_list to i8*), i64 32, i1 false)
+  %10 = call i64 @time(i64* %5) #7
+  %11 = call %struct.tm* @gmtime(i64* %5) #7
+  store %struct.tm* %11, %struct.tm** %6, align 8
+  %12 = load %struct.tm*, %struct.tm** %6, align 8
+  %13 = getelementptr inbounds %struct.tm, %struct.tm* %12, i32 0, i32 2
+  %14 = load i32, i32* %13, align 8
+  %15 = srem i32 %14, 24
+  %16 = icmp sgt i32 %15, 12
+  br i1 %16, label %17, label %21
+
+17:                                               ; preds = %1
+  %18 = getelementptr inbounds [4 x i64], [4 x i64]* %4, i64 0, i64 0
+  %19 = load i64, i64* %18, align 16
+  %20 = getelementptr inbounds %struct.Aloja_container, %struct.Aloja_container* %3, i32 0, i32 1
+  store i64 %19, i64* %20, align 8
+  br label %25
+
+21:                                               ; preds = %1
+  %22 = getelementptr inbounds [4 x i64], [4 x i64]* %4, i64 0, i64 2
+  %23 = load i64, i64* %22, align 16
+  %24 = getelementptr inbounds %struct.Aloja_container, %struct.Aloja_container* %3, i32 0, i32 1
+  store i64 %23, i64* %24, align 8
+  br label %25
+
+25:                                               ; preds = %21, %17
+  %26 = load i64, i64* %2, align 4
+  ret i64 %26
+}

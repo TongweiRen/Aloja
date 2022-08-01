@@ -1,0 +1,40 @@
+{
+    "TP_structs": [
+        "command_desc_t"
+    ],
+    "command_desc_t": {
+        "functions_for_one_struct_server": {
+            "%326 = getelementptr inbounds [15 x %struct.command_desc_t], [15 x %struct.command_desc_t]* %15, i64 0, i64 0, !dbg !2076": {
+                "field": "0",
+                "field_name": "name",
+                "parent_function": "main"
+            },
+            "%79 = getelementptr inbounds %struct.command_desc_t, %struct.command_desc_t* %78, i32 0, i32 3, !dbg !1868": {
+                "field": "3",
+                "field_name": "callback",
+                "parent_function": "handle_command"
+            },
+            "%87 = getelementptr inbounds %struct.command_desc_t, %struct.command_desc_t* %86, i32 0, i32 4, !dbg !1874": {
+                "field": "4",
+                "field_name": "userData",
+                "parent_function": "handle_command"
+            },
+            "%79 = getelementptr inbounds %struct.command_desc_t, %struct.command_desc_t* %78, i32 0, i32 2, !dbg !1887": {
+                "field": "2",
+                "field_name": "longDesc",
+                "parent_function": "prv_displayHelp"
+            },
+            "%84 = getelementptr inbounds %struct.command_desc_t, %struct.command_desc_t* %83, i32 0, i32 2, !dbg !1889": {
+                "field": "2",
+                "field_name": "longDesc",
+                "parent_function": "prv_displayHelp"
+            },
+            "%88 = getelementptr inbounds %struct.command_desc_t, %struct.command_desc_t* %87, i32 0, i32 1, !dbg !1891": {
+                "field": "1",
+                "field_name": "shortDesc",
+                "parent_function": "prv_displayHelp"
+            }
+        },
+        "functions_for_one_struct_client": {}
+    }
+}

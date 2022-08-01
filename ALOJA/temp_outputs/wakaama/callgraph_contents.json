@@ -1,0 +1,613 @@
+{
+    "command_desc_t": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "coap_packet_t": {
+        "server_map": {
+            "block1_size": {
+                "parser": [
+                    "prv_send_next_block1",
+                    "prv_retry_block1",
+                    "coap_serialize_message",
+                    "coap_get_header_block1"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_header_block1"
+                ]
+            },
+            "block1_num": {
+                "parser": [
+                    "prv_send_next_block1",
+                    "prv_retry_block1",
+                    "coap_parse_message",
+                    "coap_get_header_block1"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_header_block1"
+                ]
+            },
+            "content_type": {
+                "parser": [
+                    "registration_handleRequest",
+                    "prv_resultCallback",
+                    "prv_obsCancelRequestCallback",
+                    "prv_obsRequestCallback",
+                    "observe_handleNotify",
+                    "coap_serialize_message",
+                    "coap_get_header_content_type"
+                ],
+                "constructor": [
+                    "prv_create_next_block_transaction",
+                    "coap_parse_message",
+                    "coap_set_header_content_type"
+                ]
+            },
+            "payload_len": {
+                "parser": [
+                    "registration_handleRequest",
+                    "prv_resultCallback",
+                    "prv_obsCancelRequestCallback",
+                    "prv_obsRequestCallback",
+                    "observe_handleNotify",
+                    "coap_serialize_get_size",
+                    "coap_serialize_message",
+                    "coap_get_post_variable",
+                    "coap_get_payload",
+                    "coap_set_payload"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_payload"
+                ]
+            },
+            "mid": {
+                "parser": [
+                    "coap_serialize_message",
+                    "observe_handleNotify",
+                    "transaction_handleResponse",
+                    "coap_parse_message"
+                ],
+                "constructor": [
+                    "coap_init_message"
+                ]
+            },
+            "type": {
+                "parser": [
+                    "observe_handleNotify",
+                    "transaction_handleResponse",
+                    "coap_serialize_message"
+                ],
+                "constructor": [
+                    "coap_init_message",
+                    "coap_parse_message"
+                ]
+            },
+            "uri_host_len": {
+                "parser": [
+                    "coap_set_header_uri_host",
+                    "coap_get_packet_uri_as_string",
+                    "coap_serialize_get_size",
+                    "coap_serialize_message",
+                    "coap_get_header_uri_host"
+                ],
+                "constructor": [
+                    "coap_set_header_uri_host",
+                    "coap_parse_message"
+                ]
+            },
+            "uri_port": {
+                "parser": [
+                    "coap_get_packet_uri_as_string",
+                    "coap_serialize_message",
+                    "coap_get_header_uri_port"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_header_uri_port"
+                ]
+            },
+            "location_query_len": {
+                "parser": [
+                    "coap_serialize_get_size",
+                    "coap_serialize_message",
+                    "coap_parse_message",
+                    "coap_get_header_location_query",
+                    "coap_set_header_location_query"
+                ],
+                "constructor": [
+                    "coap_set_header_location_query"
+                ]
+            },
+            "proxy_uri_len": {
+                "parser": [
+                    "coap_serialize_get_size",
+                    "coap_serialize_message",
+                    "coap_get_header_proxy_uri",
+                    "coap_set_header_proxy_uri"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_header_proxy_uri"
+                ]
+            },
+            "observe": {
+                "parser": [
+                    "coap_serialize_message",
+                    "coap_get_header_observe"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_header_observe"
+                ]
+            },
+            "max_age": {
+                "parser": [
+                    "coap_serialize_message",
+                    "coap_get_header_max_age"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_header_max_age"
+                ]
+            },
+            "block2_num": {
+                "parser": [
+                    "coap_parse_message",
+                    "coap_get_header_block2"
+                ],
+                "constructor": [
+                    "coap_set_header_block2"
+                ]
+            },
+            "block2_size": {
+                "parser": [
+                    "coap_serialize_message",
+                    "coap_get_header_block2"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_header_block2"
+                ]
+            },
+            "size": {
+                "parser": [
+                    "coap_serialize_message",
+                    "coap_get_header_size"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_header_size"
+                ]
+            },
+            "block2_offset": {
+                "parser": [
+                    "coap_get_header_block2"
+                ],
+                "constructor": [
+                    "coap_parse_message"
+                ]
+            },
+            "block1_offset": {
+                "parser": [
+                    "coap_get_header_block1"
+                ],
+                "constructor": [
+                    "coap_parse_message"
+                ]
+            }
+        },
+        "client_map": {
+            "mid": {
+                "parser": [
+                    "handle_reset",
+                    "observe_handleRequest",
+                    "transaction_handleResponse",
+                    "coap_parse_message",
+                    "coap_serialize_message"
+                ],
+                "constructor": [
+                    "observe_step",
+                    "coap_init_message"
+                ]
+            },
+            "block1_size": {
+                "parser": [
+                    "prv_send_next_block1",
+                    "prv_retry_block1",
+                    "coap_serialize_message",
+                    "coap_get_header_block1"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_header_block1"
+                ]
+            },
+            "block1_num": {
+                "parser": [
+                    "prv_send_next_block1",
+                    "prv_retry_block1",
+                    "prv_handleRegistrationUpdateReply",
+                    "prv_handleRegistrationReply",
+                    "coap_parse_message",
+                    "coap_get_header_block1"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_header_block1"
+                ]
+            },
+            "content_type": {
+                "parser": [
+                    "dm_handleRequest",
+                    "observe_handleRequest",
+                    "coap_serialize_message",
+                    "coap_get_header_content_type"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_header_content_type"
+                ]
+            },
+            "payload_len": {
+                "parser": [
+                    "dm_handleRequest",
+                    "coap_serialize_get_size",
+                    "coap_serialize_message",
+                    "coap_get_post_variable",
+                    "coap_get_payload",
+                    "coap_set_payload"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_payload"
+                ]
+            },
+            "type": {
+                "parser": [
+                    "transaction_handleResponse",
+                    "coap_serialize_message"
+                ],
+                "constructor": [
+                    "coap_init_message",
+                    "coap_parse_message"
+                ]
+            },
+            "uri_host_len": {
+                "parser": [
+                    "coap_set_header_uri_host",
+                    "coap_get_packet_uri_as_string",
+                    "coap_serialize_get_size",
+                    "coap_serialize_message",
+                    "coap_get_header_uri_host"
+                ],
+                "constructor": [
+                    "coap_set_header_uri_host",
+                    "coap_parse_message"
+                ]
+            },
+            "uri_port": {
+                "parser": [
+                    "coap_get_packet_uri_as_string",
+                    "coap_serialize_message",
+                    "coap_get_header_uri_port"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_header_uri_port"
+                ]
+            },
+            "location_query_len": {
+                "parser": [
+                    "coap_serialize_get_size",
+                    "coap_serialize_message",
+                    "coap_parse_message",
+                    "coap_get_header_location_query",
+                    "coap_set_header_location_query"
+                ],
+                "constructor": [
+                    "coap_set_header_location_query"
+                ]
+            },
+            "proxy_uri_len": {
+                "parser": [
+                    "coap_serialize_get_size",
+                    "coap_serialize_message",
+                    "coap_get_header_proxy_uri",
+                    "coap_set_header_proxy_uri"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_header_proxy_uri"
+                ]
+            },
+            "observe": {
+                "parser": [
+                    "coap_serialize_message",
+                    "coap_get_header_observe"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_header_observe"
+                ]
+            },
+            "max_age": {
+                "parser": [
+                    "coap_serialize_message",
+                    "coap_get_header_max_age"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_header_max_age"
+                ]
+            },
+            "block2_num": {
+                "parser": [
+                    "coap_parse_message",
+                    "coap_get_header_block2"
+                ],
+                "constructor": [
+                    "coap_set_header_block2"
+                ]
+            },
+            "block2_size": {
+                "parser": [
+                    "coap_serialize_message",
+                    "coap_get_header_block2"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_header_block2"
+                ]
+            },
+            "size": {
+                "parser": [
+                    "coap_serialize_message",
+                    "coap_get_header_size"
+                ],
+                "constructor": [
+                    "coap_parse_message",
+                    "coap_set_header_size"
+                ]
+            },
+            "block2_offset": {
+                "parser": [
+                    "coap_get_header_block2"
+                ],
+                "constructor": [
+                    "coap_parse_message"
+                ]
+            },
+            "block1_offset": {
+                "parser": [
+                    "coap_get_header_block1"
+                ],
+                "constructor": [
+                    "coap_parse_message"
+                ]
+            }
+        }
+    },
+    "_multi_option_t": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "lwm2m_uri_t": {
+        "server_map": {
+            "resourceId": {
+                "parser": [
+                    "prv_create_client",
+                    "prv_printUri",
+                    "uri_decode",
+                    "uri_toString",
+                    "prv_resultCallback",
+                    "prv_lwm2m_dm_write",
+                    "lwm2m_dm_delete",
+                    "lwm2m_dm_write_attributes",
+                    "prv_lwm2m_observe",
+                    "lwm2m_data_serialize"
+                ],
+                "constructor": [
+                    "uri_decode",
+                    "lwm2m_stringToUri"
+                ]
+            },
+            "objectId": {
+                "parser": [
+                    "prv_create_client",
+                    "prv_printUri",
+                    "uri_toString",
+                    "registration_handleRequest",
+                    "prv_resultCallback",
+                    "prv_findObservationByURI",
+                    "transaction_new",
+                    "json_parse",
+                    "senml_json_parse"
+                ],
+                "constructor": [
+                    "uri_decode",
+                    "lwm2m_stringToUri"
+                ]
+            },
+            "instanceId": {
+                "parser": [
+                    "prv_create_client",
+                    "prv_printUri",
+                    "uri_decode",
+                    "uri_toString",
+                    "registration_handleRequest",
+                    "prv_resultCallback",
+                    "prv_lwm2m_dm_create",
+                    "lwm2m_dm_delete",
+                    "prv_lwm2m_observe",
+                    "transaction_new",
+                    "json_parse",
+                    "senml_json_parse"
+                ],
+                "constructor": [
+                    "prv_create_client",
+                    "uri_decode",
+                    "lwm2m_stringToUri"
+                ]
+            },
+            "resourceInstanceId": {
+                "parser": [
+                    "prv_printUri",
+                    "prv_findObservationByURI",
+                    "transaction_new",
+                    "lwm2m_data_parse",
+                    "lwm2m_data_serialize"
+                ],
+                "constructor": [
+                    "uri_decode",
+                    "lwm2m_stringToUri",
+                    "json_serialize"
+                ]
+            }
+        },
+        "client_map": {
+            "objectId": {
+                "parser": [
+                    "observe_clear",
+                    "uri_toString",
+                    "object_checkReadable",
+                    "lwm2m_resource_value_changed",
+                    "object_write",
+                    "object_create",
+                    "object_delete",
+                    "object_discover",
+                    "prv_findObserved",
+                    "dm_handleRequest",
+                    "discover_serialize",
+                    "transaction_new",
+                    "senml_json_parse",
+                    "prv_parseItem",
+                    "prv_findAndCheckData"
+                ],
+                "constructor": [
+                    "uri_decode",
+                    "lwm2m_stringToUri",
+                    "discover_serialize"
+                ]
+            },
+            "instanceId": {
+                "parser": [
+                    "uri_decode",
+                    "object_write",
+                    "uri_toString",
+                    "object_execute",
+                    "lwm2m_resource_value_changed",
+                    "object_checkReadable",
+                    "object_readData",
+                    "discover_serialize",
+                    "object_create",
+                    "object_delete",
+                    "observe_clear",
+                    "object_discover",
+                    "dm_handleRequest",
+                    "prv_findObserved",
+                    "observe_setParameters",
+                    "observe_findByUri",
+                    "prv_findAndCheckData",
+                    "transaction_new",
+                    "senml_json_parse",
+                    "prv_parseItem"
+                ],
+                "constructor": [
+                    "uri_decode",
+                    "object_write",
+                    "discover_serialize",
+                    "object_create",
+                    "object_delete",
+                    "prv_serializeLinkData"
+                ]
+            },
+            "resourceId": {
+                "parser": [
+                    "uri_decode",
+                    "observe_findByUri",
+                    "uri_toString",
+                    "object_readData",
+                    "lwm2m_resource_value_changed",
+                    "object_discover",
+                    "observe_step",
+                    "object_write",
+                    "prv_findObserved",
+                    "dm_handleRequest",
+                    "discover_serialize",
+                    "observe_handleRequest",
+                    "observe_setParameters",
+                    "transaction_new",
+                    "lwm2m_data_parse",
+                    "lwm2m_data_serialize",
+                    "senml_json_parse",
+                    "prv_parseItem",
+                    "prv_findAndCheckData"
+                ],
+                "constructor": [
+                    "uri_decode",
+                    "lwm2m_stringToUri",
+                    "discover_serialize",
+                    "prv_serializeLinkData"
+                ]
+            },
+            "resourceInstanceId": {
+                "parser": [
+                    "uri_toString",
+                    "object_checkReadable",
+                    "lwm2m_resource_value_changed",
+                    "object_readData",
+                    "object_write",
+                    "dm_handleRequest",
+                    "prv_findObserved",
+                    "observe_findByUri",
+                    "lwm2m_data_parse",
+                    "observe_step",
+                    "transaction_new",
+                    "senml_json_parse",
+                    "prv_parseItem"
+                ],
+                "constructor": [
+                    "uri_decode",
+                    "lwm2m_stringToUri"
+                ]
+            }
+        }
+    },
+    "_lwm2m_context_": {
+        "server_map": {
+            "nextMID": {
+                "parser": [
+                    "lwm2m_handle_packet",
+                    "prv_send_new_block1",
+                    "prv_makeOperation",
+                    "lwm2m_dm_write_attributes",
+                    "lwm2m_dm_discover",
+                    "prv_lwm2m_observe",
+                    "prv_lwm2m_observe_cancel"
+                ],
+                "constructor": [
+                    "lwm2m_init"
+                ]
+            }
+        },
+        "client_map": {
+            "nextMID": {
+                "parser": [
+                    "lwm2m_handle_packet",
+                    "prv_send_get_block2",
+                    "prv_send_new_block1",
+                    "registration_deregister",
+                    "prv_register",
+                    "prv_updateRegistration",
+                    "observe_step"
+                ],
+                "constructor": [
+                    "lwm2m_init"
+                ]
+            }
+        }
+    }
+}

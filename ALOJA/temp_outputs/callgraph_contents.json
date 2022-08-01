@@ -1,0 +1,166 @@
+{
+    "mosquitto__packet": {
+        "server_map": {
+            "remaining_length": {
+                "parser": [
+                    "handle__auth",
+                    "handle__connect",
+                    "handle__disconnect",
+                    "handle__pubackcomp",
+                    "handle__publish",
+                    "handle__pubrec",
+                    "handle__suback",
+                    "handle__pubrel",
+                    "handle__subscribe",
+                    "handle__unsubscribe",
+                    "packet__read_uint32",
+                    "packet__read_varint",
+                    "packet__read",
+                    "send__command_with_mid"
+                ],
+                "constructor": [
+                    "send__auth",
+                    "send__connack",
+                    "send__connect",
+                    "send__disconnect",
+                    "send__simple_command",
+                    "send__suback",
+                    "send__real_publish",
+                    "send__unsuback",
+                    "send__subscribe",
+                    "send__unsubscribe"
+                ]
+            },
+            "pos": {
+                "parser": [
+                    "handle__connect",
+                    "handle__disconnect",
+                    "handle__publish",
+                    "handle__suback",
+                    "handle__subscribe",
+                    "handle__unsubscribe",
+                    "packet__write_byte",
+                    "packet__read_varint",
+                    "packet__read_uint32",
+                    "packet__write_bytes",
+                    "packet__write",
+                    "packet__read"
+                ],
+                "constructor": [
+                    "packet__alloc",
+                    "packet__cleanup",
+                    "packet__queue",
+                    "packet__read"
+                ]
+            },
+            "packet_length": {
+                "parser": [
+                    "packet__write_byte",
+                    "packet__queue",
+                    "packet__alloc"
+                ],
+                "constructor": [
+                    "packet__alloc"
+                ]
+            },
+            "remaining_mult": {
+                "parser": [
+                    "packet__read"
+                ],
+                "constructor": [
+                    "packet__cleanup"
+                ]
+            },
+            "to_process": {
+                "parser": [
+                    "packet__write",
+                    "packet__read"
+                ],
+                "constructor": [
+                    "packet__queue",
+                    "packet__read"
+                ]
+            }
+        },
+        "client_map": {
+            "remaining_mult": {
+                "parser": [
+                    "packet__read"
+                ],
+                "constructor": [
+                    "packet__cleanup"
+                ]
+            },
+            "remaining_length": {
+                "parser": [
+                    "packet__alloc",
+                    "send__disconnect",
+                    "packet__read_byte",
+                    "packet__read_varint",
+                    "packet__read_uint32",
+                    "packet__read_binary",
+                    "send__command_with_mid",
+                    "handle__pubrel",
+                    "handle__disconnect",
+                    "handle__pubackcomp",
+                    "handle__publish",
+                    "packet__read_bytes",
+                    "handle__pubrec",
+                    "handle__suback",
+                    "packet__read"
+                ],
+                "constructor": [
+                    "packet__alloc",
+                    "send__subscribe",
+                    "send__unsubscribe",
+                    "send__connect",
+                    "send__disconnect",
+                    "send__command_with_mid",
+                    "send__simple_command"
+                ]
+            },
+            "to_process": {
+                "parser": [
+                    "packet__write",
+                    "packet__read"
+                ],
+                "constructor": [
+                    "packet__cleanup",
+                    "packet__queue"
+                ]
+            },
+            "pos": {
+                "parser": [
+                    "packet__write_bytes",
+                    "packet__read_bytes",
+                    "packet__read_varint",
+                    "packet__write",
+                    "packet__write_byte",
+                    "packet__read_byte",
+                    "packet__read_uint16",
+                    "packet__read_uint32",
+                    "packet__read_binary",
+                    "handle__publish",
+                    "handle__suback",
+                    "packet__read"
+                ],
+                "constructor": [
+                    "packet__cleanup",
+                    "packet__alloc",
+                    "packet__read_varint"
+                ]
+            },
+            "packet_length": {
+                "parser": [
+                    "packet__alloc",
+                    "packet__write_bytes",
+                    "packet__queue",
+                    "packet__write_byte"
+                ],
+                "constructor": [
+                    "packet__alloc"
+                ]
+            }
+        }
+    }
+}

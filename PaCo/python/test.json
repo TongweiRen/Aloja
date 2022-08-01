@@ -1,0 +1,4044 @@
+{
+    "structToStructs_map": {
+        "mosquitto_msg_data": [
+            "mosquitto_client_msg"
+        ],
+        "mqtt5__property": [
+            "bridge_address"
+        ],
+        "mosquitto__config": [
+            "mosquitto__listener",
+            "mosquitto__security_options"
+        ],
+        "bridge_address": [],
+        "mosquitto__bridge_topic": [],
+        "mosquitto__acl": [],
+        "mosquitto__listener": [
+            "mosquitto__security_options",
+            "mosquitto__unpwd"
+        ],
+        "mosquitto__auth_plugin_config": [
+            "mosquitto_opt",
+            "mosquitto__auth_plugin"
+        ],
+        "mosquitto__auth_plugin": [],
+        "mosquitto__security_options": [
+            "mosquitto__acl",
+            "mosquitto__auth_plugin_config"
+        ],
+        "mosquitto__subhier": [
+            "mosquitto__subleaf",
+            "mosquitto__subshared",
+            "mosquitto_msg_store"
+        ],
+        "mosquitto__packet": [],
+        "will_delay_list": [
+            "mosquitto"
+        ],
+        "mosquitto_client_msg": [
+            "mosquitto_msg_store",
+            "mqtt5__property"
+        ],
+        "sub__token": [],
+        "mosquitto_opt": [],
+        "mosquitto_msg_store": [
+            "mosquitto__listener",
+            "mqtt5__property"
+        ],
+        "session_expiry_list": [
+            "mosquitto"
+        ],
+        "mosquitto__unpwd": [],
+        "mosquitto__subshared": [
+            "mosquitto__subleaf"
+        ],
+        "mosquitto_db": [
+            "mosquitto__subhier",
+            "mosquitto__unpwd",
+            "mosquitto",
+            "mosquitto_msg_store",
+            "mosquitto__config"
+        ],
+        "mosquitto__subleaf": [
+            "mosquitto"
+        ],
+        "mosquitto_acl_msg": [],
+        "mosquitto_message": [],
+        "mosquitto": [
+            "mosquitto__packet",
+            "mosquitto_message_all",
+            "will_delay_list",
+            "mosquitto_msg_data",
+            "mosquitto__listener",
+            "mosquitto__subhier",
+            "UT_hash_handle",
+            "session_expiry_list"
+        ],
+        "mosquitto_message_all": [
+            "mqtt5__property",
+            "mosquitto_message"
+        ]
+    },
+    "structToFunctions_map": {
+        "mosquitto_msg_data": [
+            "context__init",
+            "db__message_dequeue_first",
+            "db__message_delete_outgoing",
+            "db__message_remove",
+            "db__message_insert",
+            "db__ready_for_flight",
+            "db__ready_for_queue",
+            "db__message_update_outgoing",
+            "db__messages_delete",
+            "db__message_store_find",
+            "db__message_reconnect_reset_incoming",
+            "db__message_reconnect_reset_outgoing",
+            "db__message_release_incoming",
+            "db__message_write",
+            "connect__on_authorised",
+            "property__process_connect",
+            "send__connect",
+            "util__decrement_send_quota",
+            "util__increment_send_quota"
+        ],
+        "mqtt5__property": [
+            "handle__publish",
+            "property__process_disconnect",
+            "property__process_connect",
+            "property__process_will",
+            "property__read",
+            "property__read_all",
+            "mosquitto_property_free_all",
+            "mosquitto_property_check_all",
+            "mosquitto_property_read_int32",
+            "property__free",
+            "property__get_length",
+            "property__get_length_all",
+            "property__write",
+            "property__write_all",
+            "mosquitto_property_add_byte",
+            "property__add",
+            "mosquitto_property_add_int32",
+            "mosquitto_property_add_varint",
+            "mosquitto_property_add_binary",
+            "mosquitto_property_add_string",
+            "mosquitto_property_add_string_pair",
+            "property__get_property",
+            "mosquitto_property_read_string",
+            "mosquitto_property_read_byte",
+            "mosquitto_property_read_int16",
+            "mosquitto_property_read_varint",
+            "mosquitto_property_read_binary",
+            "mosquitto_property_read_string_pair",
+            "mosquitto_property_copy_all",
+            "send__real_publish",
+            "will__set"
+        ],
+        "mosquitto__config": [
+            "drop_privileges",
+            "main",
+            "config__init",
+            "config__init_reload",
+            "config__cleanup_plugins",
+            "config__cleanup",
+            "config__parse_args",
+            "config__read",
+            "config__check",
+            "config__copy",
+            "config__read_file_core",
+            "conf__set_cur_security_options",
+            "context__init",
+            "db__message_insert",
+            "db__messages_easy_queue",
+            "connect__on_authorised",
+            "handle__connect",
+            "handle__publish",
+            "log__init",
+            "log__vprintf",
+            "log__close",
+            "mosquitto_main_loop",
+            "do_disconnect",
+            "net__socket_accept",
+            "packet__read",
+            "mosquitto_security_module_init",
+            "mosquitto_security_module_cleanup",
+            "mosquitto_security_cleanup",
+            "mosquitto_security_init",
+            "mosquitto_acl_check",
+            "mosquitto_unpwd_check",
+            "mosquitto_psk_key_get",
+            "mosquitto_security_auth_start",
+            "mosquitto_security_auth_continue",
+            "mosquitto_security_init_default",
+            "mosquitto_security_cleanup_default",
+            "acl__cleanup",
+            "mosquitto_acl_check_default",
+            "acl__find_acls",
+            "mosquitto_unpwd_check_default",
+            "mosquitto_security_apply_default",
+            "mosquitto_psk_key_get_default",
+            "send__connack",
+            "session_expiry__add",
+            "subs__send",
+            "retain__process"
+        ],
+        "bridge_address": [
+            "property__read",
+            "property__free",
+            "property__get_length",
+            "property__write",
+            "mosquitto_property_add_binary",
+            "mosquitto_property_add_string",
+            "mosquitto_property_add_string_pair",
+            "mosquitto_property_read_binary",
+            "mosquitto_property_read_string",
+            "mosquitto_property_read_string_pair",
+            "mosquitto_property_copy_all"
+        ],
+        "mosquitto__bridge_topic": [],
+        "mosquitto__acl": [
+            "add__acl",
+            "add__acl_pattern",
+            "acl__cleanup_single",
+            "free__acl",
+            "mosquitto_acl_check_default",
+            "acl__find_acls",
+            "mosquitto_security_apply_default"
+        ],
+        "mosquitto__listener": [
+            "config__init",
+            "config__parse_args",
+            "config__read_file_core",
+            "conf__set_cur_security_options",
+            "connect__on_authorised",
+            "handle__connect",
+            "will__read",
+            "handle__publish",
+            "handle__subscribe",
+            "net__socket_accept",
+            "net__socket_listen",
+            "net__socket_close",
+            "mosquitto_acl_check",
+            "mosquitto_unpwd_check",
+            "mosquitto_psk_key_get",
+            "mosquitto_security_auth_start",
+            "mosquitto_security_auth_continue",
+            "mosquitto_acl_check_default",
+            "acl__find_acls",
+            "mosquitto_unpwd_check_default",
+            "mosquitto_security_apply_default",
+            "mosquitto_psk_key_get_default",
+            "send__publish"
+        ],
+        "mosquitto__auth_plugin_config": [
+            "config__cleanup_plugins",
+            "config__read_file_core",
+            "acl__check_single"
+        ],
+        "mosquitto__auth_plugin": [
+            "config__cleanup_plugins",
+            "config__read",
+            "config__read_file_core",
+            "security__load_v2",
+            "security__load_v3",
+            "security__load_v4",
+            "security__module_init_single",
+            "security__module_cleanup_single",
+            "security__init_single",
+            "security__cleanup_single",
+            "acl__check_single",
+            "mosquitto_unpwd_check",
+            "mosquitto_psk_key_get",
+            "mosquitto_security_auth_start",
+            "mosquitto_security_auth_continue"
+        ],
+        "mosquitto__security_options": [
+            "config__init",
+            "config__init_reload",
+            "config__cleanup_plugins",
+            "config__cleanup",
+            "config__parse_args",
+            "config__read",
+            "config__check",
+            "config__copy",
+            "config__read_file_core",
+            "handle__connect",
+            "security__module_init_single",
+            "security__module_cleanup_single",
+            "security__init_single",
+            "mosquitto_acl_check",
+            "mosquitto_unpwd_check",
+            "mosquitto_security_auth_start",
+            "mosquitto_psk_key_get",
+            "mosquitto_security_auth_continue",
+            "mosquitto_security_init_default",
+            "aclfile__parse",
+            "add__acl",
+            "add__acl_pattern",
+            "acl__cleanup_single",
+            "mosquitto_acl_check_default",
+            "acl__find_acls",
+            "mosquitto_security_apply_default"
+        ],
+        "mosquitto__subhier": [
+            "subhier_clean",
+            "sub__add_hier_entry",
+            "sub__add",
+            "sub__add_context",
+            "sub__add_shared",
+            "sub__add_normal",
+            "sub__remove_shared_leaf",
+            "sub__remove",
+            "sub__remove_recurse",
+            "sub__remove_shared",
+            "sub__remove_normal",
+            "sub__messages_queue",
+            "sub__search",
+            "retain__process",
+            "subs__process",
+            "subs__shared_process",
+            "tmp_remove_subs",
+            "sub__clean_session_shared",
+            "sub__tree_print",
+            "sub__retain_queue",
+            "retain__search"
+        ],
+        "mosquitto__packet": [
+            "context__init",
+            "context__cleanup",
+            "handle__auth",
+            "handle__connect",
+            "handle__disconnect",
+            "handle__pubackcomp",
+            "handle__publish",
+            "handle__pubrec",
+            "handle__pubrel",
+            "handle__suback",
+            "handle__subscribe",
+            "handle__unsubscribe",
+            "packet__read_byte",
+            "packet__write_byte",
+            "packet__read_bytes",
+            "packet__write_bytes",
+            "packet__read_binary",
+            "packet__read_uint16",
+            "packet__read_uint32",
+            "packet__read_varint",
+            "packet__alloc",
+            "packet__cleanup",
+            "packet__cleanup_all",
+            "packet__queue",
+            "packet__write",
+            "packet__read",
+            "handle__packet",
+            "send__auth",
+            "send__connack",
+            "send__connect",
+            "send__disconnect",
+            "send__simple_command",
+            "send__command_with_mid",
+            "send__real_publish",
+            "send__suback",
+            "send__subscribe",
+            "send__unsuback",
+            "send__unsubscribe"
+        ],
+        "will_delay_list": [
+            "will_delay__add",
+            "will_delay__cmp",
+            "will_delay__send_all",
+            "will_delay__check",
+            "will_delay__remove"
+        ],
+        "mosquitto_client_msg": [
+            "db__message_dequeue_first",
+            "db__message_delete_outgoing",
+            "db__message_remove",
+            "db__messages_delete_list",
+            "db__message_insert",
+            "db__message_update_outgoing",
+            "db__message_store_find",
+            "db__message_reconnect_reset_incoming",
+            "db__message_reconnect_reset_outgoing",
+            "db__message_release_incoming",
+            "db__message_write",
+            "connection_check_acl"
+        ],
+        "sub__token": [
+            "sub__add",
+            "sub__topic_tokenise",
+            "sub__topic_tokens_free",
+            "sub__add_context",
+            "sub__topic_append",
+            "sub__remove",
+            "sub__remove_recurse",
+            "sub__messages_queue",
+            "sub__search",
+            "sub__retain_queue",
+            "retain__search"
+        ],
+        "mosquitto_opt": [],
+        "mosquitto_msg_store": [
+            "db__msg_store_compact",
+            "db__msg_store_remove",
+            "db__msg_store_ref_dec",
+            "db__msg_store_add",
+            "db__msg_store_ref_inc",
+            "db__message_remove",
+            "db__message_insert",
+            "db__message_store",
+            "db__message_store_find",
+            "db__message_reconnect_reset_incoming",
+            "db__message_reconnect_reset_outgoing",
+            "db__message_release_incoming",
+            "db__message_write",
+            "connection_check_acl",
+            "handle__publish",
+            "subs__process",
+            "subs__send",
+            "retain__process"
+        ],
+        "session_expiry_list": [
+            "session_expiry__add",
+            "session_expiry__cmp",
+            "session_expiry__remove",
+            "session_expiry__remove_all",
+            "session_expiry__check"
+        ],
+        "mosquitto__unpwd": [
+            "psk__file_parse",
+            "pwfile__parse",
+            "unpwd__cleanup",
+            "mosquitto_unpwd_check_default",
+            "mosquitto_psk_key_get_default"
+        ],
+        "mosquitto__subshared": [
+            "sub__add_shared",
+            "sub__remove_shared_leaf",
+            "sub__remove_shared",
+            "subs__shared_process",
+            "sub__clean_session_shared"
+        ],
+        "mosquitto_db": [
+            "config__init_reload",
+            "config__parse_args",
+            "config__read",
+            "context__init",
+            "context__remove_from_by_id",
+            "context__add_to_disused",
+            "context__free_disused",
+            "db__open",
+            "db__close",
+            "db__msg_store_compact",
+            "db__msg_store_remove",
+            "db__msg_store_add",
+            "db__message_insert",
+            "db__messages_easy_queue",
+            "db__message_store",
+            "connect__on_authorised",
+            "handle__connect",
+            "handle__publish",
+            "handle__subscribe",
+            "handle__unsubscribe",
+            "mosquitto_main_loop",
+            "do_disconnect",
+            "loop_handle_reads_writes",
+            "net__socket_accept",
+            "net__socket_close",
+            "packet__read",
+            "mosquitto_security_module_init",
+            "mosquitto_security_module_cleanup",
+            "mosquitto_security_cleanup",
+            "mosquitto_security_init",
+            "mosquitto_acl_check",
+            "mosquitto_unpwd_check",
+            "mosquitto_psk_key_get",
+            "mosquitto_security_auth_start",
+            "mosquitto_security_auth_continue",
+            "mosquitto_security_init_default",
+            "aclfile__parse",
+            "psk__file_parse",
+            "mosquitto_security_cleanup_default",
+            "acl__cleanup",
+            "mosquitto_acl_check_default",
+            "acl__find_acls",
+            "mosquitto_unpwd_check_default",
+            "mosquitto_security_apply_default",
+            "mosquitto_psk_key_get_default",
+            "send__connack",
+            "session_expiry__add",
+            "sub__messages_queue",
+            "subs__send",
+            "sub__retain_queue",
+            "retain__process"
+        ],
+        "mosquitto__subleaf": [
+            "subhier_clean",
+            "connect__on_authorised",
+            "sub__add_normal",
+            "sub__add_leaf",
+            "sub__remove_shared_leaf",
+            "sub__remove_shared",
+            "sub__remove_normal",
+            "subs__process",
+            "subs__shared_process",
+            "subs__send",
+            "sub__clean_session",
+            "sub__clean_session_shared",
+            "sub__tree_print"
+        ],
+        "mosquitto_acl_msg": [
+            "mosquitto_acl_check",
+            "acl__check_single"
+        ],
+        "mosquitto_message": [
+            "context__send_will",
+            "connect__on_authorised",
+            "handle__connect",
+            "will__read",
+            "property__process_will",
+            "send__connect",
+            "will__set",
+            "will__clear"
+        ],
+        "mosquitto": [
+            "drop_privileges",
+            "main",
+            "alias__add",
+            "alias__find",
+            "alias__free_all",
+            "config__init",
+            "config__init_reload",
+            "config__cleanup_plugins",
+            "config__cleanup",
+            "config__parse_args",
+            "config__read",
+            "config__check",
+            "config__copy",
+            "config__read_file_core",
+            "conf__set_cur_security_options",
+            "context__init",
+            "context__cleanup",
+            "context__add_to_disused",
+            "context__send_will",
+            "context__remove_from_by_id",
+            "context__disconnect",
+            "context__free_disused",
+            "db__open",
+            "db__close",
+            "subhier_clean",
+            "db__msg_store_compact",
+            "db__msg_store_remove",
+            "db__msg_store_ref_dec",
+            "db__msg_store_add",
+            "db__msg_store_ref_inc",
+            "db__message_dequeue_first",
+            "db__messages_delete",
+            "db__message_delete_outgoing",
+            "db__message_remove",
+            "db__messages_delete_list",
+            "db__message_insert",
+            "db__ready_for_flight",
+            "db__ready_for_queue",
+            "db__message_update_outgoing",
+            "db__messages_easy_queue",
+            "db__message_store",
+            "db__message_store_find",
+            "db__message_reconnect_reset_outgoing",
+            "db__message_reconnect_reset_incoming",
+            "db__message_release_incoming",
+            "db__message_write",
+            "handle__auth",
+            "handle__connack",
+            "connection_check_acl",
+            "connect__on_authorised",
+            "handle__connect",
+            "will__read",
+            "handle__disconnect",
+            "handle__pingreq",
+            "handle__pingresp",
+            "handle__pubackcomp",
+            "handle__publish",
+            "handle__pubrec",
+            "handle__pubrel",
+            "handle__suback",
+            "handle__subscribe",
+            "handle__unsuback",
+            "handle__unsubscribe",
+            "log__init",
+            "log__vprintf",
+            "log__close",
+            "mosquitto_main_loop",
+            "do_disconnect",
+            "loop_handle_reads_writes",
+            "net__socket_accept",
+            "net__socket_listen",
+            "net__socket_close",
+            "net__socket_connect",
+            "net__write",
+            "packet__read_byte",
+            "packet__write_byte",
+            "packet__read_bytes",
+            "packet__write_bytes",
+            "packet__read_binary",
+            "packet__read_uint16",
+            "packet__read_uint32",
+            "packet__read_varint",
+            "packet__alloc",
+            "packet__cleanup",
+            "packet__cleanup_all",
+            "packet__queue",
+            "packet__write",
+            "packet__check_oversize",
+            "packet__read",
+            "property__process_connect",
+            "property__process_will",
+            "property__process_disconnect",
+            "mosquitto_client_address",
+            "mosquitto_client_clean_session",
+            "mosquitto_client_id",
+            "mosquitto_client_keepalive",
+            "mosquitto_client_protocol",
+            "mosquitto_client_sub_count",
+            "mosquitto_client_username",
+            "mosquitto_set_username",
+            "handle__packet",
+            "security__load_v2",
+            "security__load_v3",
+            "security__load_v4",
+            "mosquitto_security_module_init",
+            "security__module_init_single",
+            "mosquitto_security_module_cleanup",
+            "mosquitto_security_cleanup",
+            "security__module_cleanup_single",
+            "security__init_single",
+            "security__cleanup_single",
+            "mosquitto_security_init",
+            "mosquitto_acl_check",
+            "acl__check_single",
+            "mosquitto_unpwd_check",
+            "mosquitto_security_auth_start",
+            "mosquitto_psk_key_get",
+            "mosquitto_security_auth_continue",
+            "mosquitto_security_init_default",
+            "aclfile__parse",
+            "psk__file_parse",
+            "pwfile__parse",
+            "add__acl",
+            "add__acl_pattern",
+            "mosquitto_security_cleanup_default",
+            "acl__cleanup",
+            "unpwd__cleanup",
+            "acl__cleanup_single",
+            "free__acl",
+            "mosquitto_acl_check_default",
+            "acl__find_acls",
+            "mosquitto_unpwd_check_default",
+            "mosquitto_security_apply_default",
+            "mosquitto_psk_key_get_default",
+            "send__auth",
+            "send__connack",
+            "send__connect",
+            "send__disconnect",
+            "send__pingreq",
+            "send__simple_command",
+            "send__pingresp",
+            "send__pubrec",
+            "send__command_with_mid",
+            "send__pubrel",
+            "send__publish",
+            "send__real_publish",
+            "send__suback",
+            "send__subscribe",
+            "send__unsuback",
+            "send__unsubscribe",
+            "session_expiry__add",
+            "session_expiry__cmp",
+            "session_expiry__remove",
+            "session_expiry__remove_all",
+            "session_expiry__check",
+            "sub__add_hier_entry",
+            "sub__add",
+            "sub__add_context",
+            "sub__add_shared",
+            "sub__add_normal",
+            "sub__add_leaf",
+            "sub__remove_shared_leaf",
+            "sub__remove",
+            "sub__remove_recurse",
+            "sub__remove_shared",
+            "sub__remove_normal",
+            "sub__messages_queue",
+            "sub__search",
+            "retain__process",
+            "subs__process",
+            "subs__shared_process",
+            "subs__send",
+            "sub__clean_session",
+            "tmp_remove_subs",
+            "sub__clean_session_shared",
+            "sub__tree_print",
+            "sub__retain_queue",
+            "retain__search",
+            "mosquitto__check_keepalive",
+            "mosquitto__get_state",
+            "mosquitto__mid_generate",
+            "util__decrement_receive_quota",
+            "util__decrement_send_quota",
+            "util__increment_receive_quota",
+            "util__increment_send_quota",
+            "mosquitto__set_state",
+            "will_delay__add",
+            "will_delay__cmp",
+            "will_delay__send_all",
+            "will_delay__check",
+            "will_delay__remove",
+            "will__set",
+            "will__clear"
+        ],
+        "mosquitto_message_all": [
+            "context__send_will",
+            "connect__on_authorised",
+            "handle__connect",
+            "will__read",
+            "property__process_will",
+            "send__connect",
+            "will__set",
+            "will__clear"
+        ]
+    },
+    "functionToStructs_map": {
+        "context__init": [
+            {
+                "mosquitto_msg_data": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__packet": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "db__message_dequeue_first": [
+            {
+                "mosquitto_msg_data": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_client_msg": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "db__message_delete_outgoing": [
+            {
+                "mosquitto_msg_data": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_client_msg": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "db__message_remove": [
+            {
+                "mosquitto_msg_data": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_client_msg": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_msg_store": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "db__message_insert": [
+            {
+                "mosquitto_msg_data": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_client_msg": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_msg_store": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "db__ready_for_flight": [
+            {
+                "mosquitto_msg_data": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "db__ready_for_queue": [
+            {
+                "mosquitto_msg_data": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "db__message_update_outgoing": [
+            {
+                "mosquitto_msg_data": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_client_msg": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "db__messages_delete": [
+            {
+                "mosquitto_msg_data": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "db__message_store_find": [
+            {
+                "mosquitto_msg_data": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_client_msg": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_msg_store": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "db__message_reconnect_reset_incoming": [
+            {
+                "mosquitto_msg_data": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_client_msg": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_msg_store": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "db__message_reconnect_reset_outgoing": [
+            {
+                "mosquitto_msg_data": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_client_msg": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_msg_store": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "db__message_release_incoming": [
+            {
+                "mosquitto_msg_data": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_client_msg": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_msg_store": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "db__message_write": [
+            {
+                "mosquitto_msg_data": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_client_msg": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_msg_store": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "connect__on_authorised": [
+            {
+                "mosquitto_msg_data": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__listener": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__subleaf": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_message": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_message_all": []
+            }
+        ],
+        "property__process_connect": [
+            {
+                "mosquitto_msg_data": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "write"
+                ]
+            }
+        ],
+        "send__connect": [
+            {
+                "mosquitto_msg_data": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__packet": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_message": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_message_all": [
+                    "read"
+                ]
+            }
+        ],
+        "util__decrement_send_quota": [
+            {
+                "mosquitto_msg_data": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "util__increment_send_quota": [
+            {
+                "mosquitto_msg_data": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "handle__publish": [
+            {
+                "mqtt5__property": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__listener": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__packet": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_msg_store": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "property__process_disconnect": [
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "property__process_will": [
+            {
+                "mqtt5__property": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_message": []
+            },
+            {
+                "mosquitto": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_message_all": [
+                    "write"
+                ]
+            }
+        ],
+        "property__read": [
+            {
+                "mqtt5__property": [
+                    "write"
+                ]
+            },
+            {
+                "bridge_address": [
+                    "write"
+                ]
+            }
+        ],
+        "property__read_all": [
+            {
+                "mqtt5__property": [
+                    "write"
+                ]
+            }
+        ],
+        "mosquitto_property_free_all": [
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_property_check_all": [
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_property_read_int32": [
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            }
+        ],
+        "property__free": [
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            },
+            {
+                "bridge_address": [
+                    "read"
+                ]
+            }
+        ],
+        "property__get_length": [
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            },
+            {
+                "bridge_address": [
+                    "read"
+                ]
+            }
+        ],
+        "property__get_length_all": [
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            }
+        ],
+        "property__write": [
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            },
+            {
+                "bridge_address": [
+                    "read"
+                ]
+            }
+        ],
+        "property__write_all": [
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_property_add_byte": [
+            {
+                "mqtt5__property": [
+                    "write"
+                ]
+            }
+        ],
+        "property__add": [
+            {
+                "mqtt5__property": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "mosquitto_property_add_int32": [
+            {
+                "mqtt5__property": [
+                    "write"
+                ]
+            }
+        ],
+        "mosquitto_property_add_varint": [
+            {
+                "mqtt5__property": [
+                    "write"
+                ]
+            }
+        ],
+        "mosquitto_property_add_binary": [
+            {
+                "mqtt5__property": [
+                    "write"
+                ]
+            },
+            {
+                "bridge_address": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_property_add_string": [
+            {
+                "mqtt5__property": [
+                    "write"
+                ]
+            },
+            {
+                "bridge_address": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_property_add_string_pair": [
+            {
+                "mqtt5__property": [
+                    "write"
+                ]
+            },
+            {
+                "bridge_address": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "property__get_property": [
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_property_read_string": [
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            },
+            {
+                "bridge_address": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_property_read_byte": [
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_property_read_int16": [
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_property_read_varint": [
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_property_read_binary": [
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            },
+            {
+                "bridge_address": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_property_read_string_pair": [
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            },
+            {
+                "bridge_address": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_property_copy_all": [
+            {
+                "mqtt5__property": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "bridge_address": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "send__real_publish": [
+            {
+                "mqtt5__property": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__packet": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "will__set": [
+            {
+                "mqtt5__property": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_message": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_message_all": [
+                    "write"
+                ]
+            }
+        ],
+        "drop_privileges": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "main": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "config__init": [
+            {
+                "mosquitto__config": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__listener": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "config__init_reload": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "config__cleanup_plugins": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__auth_plugin_config": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__auth_plugin": []
+            },
+            {
+                "mosquitto__security_options": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "config__cleanup": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "config__parse_args": [
+            {
+                "mosquitto__config": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__listener": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "config__read": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__auth_plugin": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "config__check": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "config__copy": [
+            {
+                "mosquitto__config": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "config__read_file_core": [
+            {
+                "mosquitto__config": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__listener": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__auth_plugin_config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__auth_plugin": []
+            },
+            {
+                "mosquitto__security_options": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "conf__set_cur_security_options": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__listener": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "db__messages_easy_queue": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "handle__connect": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__listener": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__packet": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_message": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_message_all": []
+            }
+        ],
+        "log__init": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "log__vprintf": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "log__close": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "mosquitto_main_loop": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "do_disconnect": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "net__socket_accept": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__listener": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "packet__read": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__packet": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "mosquitto_security_module_init": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "mosquitto_security_module_cleanup": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "mosquitto_security_cleanup": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "mosquitto_security_init": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "mosquitto_acl_check": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__listener": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_acl_msg": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_unpwd_check": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__listener": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__auth_plugin": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_psk_key_get": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__listener": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__auth_plugin": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_security_auth_start": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__listener": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__auth_plugin": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_security_auth_continue": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__listener": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__auth_plugin": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_security_init_default": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "mosquitto_security_cleanup_default": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "acl__cleanup": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "write"
+                ]
+            }
+        ],
+        "mosquitto_acl_check_default": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__acl": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__listener": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "acl__find_acls": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__acl": []
+            },
+            {
+                "mosquitto__listener": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "mosquitto_unpwd_check_default": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__listener": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__unpwd": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_security_apply_default": [
+            {
+                "mosquitto__config": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__acl": []
+            },
+            {
+                "mosquitto__listener": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "mosquitto_psk_key_get_default": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__listener": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__unpwd": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "send__connack": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__packet": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "session_expiry__add": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "session_expiry_list": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "subs__send": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_msg_store": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__subleaf": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "retain__process": [
+            {
+                "mosquitto__config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__subhier": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_msg_store": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "write"
+                ]
+            }
+        ],
+        "add__acl": [
+            {
+                "mosquitto__acl": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "add__acl_pattern": [
+            {
+                "mosquitto__acl": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "acl__cleanup_single": [
+            {
+                "mosquitto__acl": []
+            },
+            {
+                "mosquitto__security_options": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "free__acl": [
+            {
+                "mosquitto__acl": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "will__read": [
+            {
+                "mosquitto__listener": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_message": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_message_all": []
+            }
+        ],
+        "handle__subscribe": [
+            {
+                "mosquitto__listener": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__packet": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": []
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "net__socket_listen": [
+            {
+                "mosquitto__listener": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "net__socket_close": [
+            {
+                "mosquitto__listener": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "send__publish": [
+            {
+                "mosquitto__listener": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "acl__check_single": [
+            {
+                "mosquitto__auth_plugin_config": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__auth_plugin": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_acl_msg": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "security__load_v2": [
+            {
+                "mosquitto__auth_plugin": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "security__load_v3": [
+            {
+                "mosquitto__auth_plugin": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "security__load_v4": [
+            {
+                "mosquitto__auth_plugin": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "security__module_init_single": [
+            {
+                "mosquitto__auth_plugin": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "security__module_cleanup_single": [
+            {
+                "mosquitto__auth_plugin": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "security__init_single": [
+            {
+                "mosquitto__auth_plugin": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__security_options": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "security__cleanup_single": [
+            {
+                "mosquitto__auth_plugin": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "aclfile__parse": [
+            {
+                "mosquitto__security_options": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "subhier_clean": [
+            {
+                "mosquitto__subhier": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__subleaf": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "sub__add_hier_entry": [
+            {
+                "mosquitto__subhier": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "sub__add": [
+            {
+                "mosquitto__subhier": []
+            },
+            {
+                "sub__token": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "sub__add_context": [
+            {
+                "mosquitto__subhier": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "sub__token": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "sub__add_shared": [
+            {
+                "mosquitto__subhier": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__subshared": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "sub__add_normal": [
+            {
+                "mosquitto__subhier": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__subleaf": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "sub__remove_shared_leaf": [
+            {
+                "mosquitto__subhier": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__subshared": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__subleaf": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "sub__remove": [
+            {
+                "mosquitto__subhier": []
+            },
+            {
+                "sub__token": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "sub__remove_recurse": [
+            {
+                "mosquitto__subhier": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "sub__token": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "sub__remove_shared": [
+            {
+                "mosquitto__subhier": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__subshared": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__subleaf": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "sub__remove_normal": [
+            {
+                "mosquitto__subhier": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__subleaf": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "sub__messages_queue": [
+            {
+                "mosquitto__subhier": []
+            },
+            {
+                "sub__token": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "sub__search": [
+            {
+                "mosquitto__subhier": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "sub__token": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "subs__process": [
+            {
+                "mosquitto__subhier": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_msg_store": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__subleaf": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "subs__shared_process": [
+            {
+                "mosquitto__subhier": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__subshared": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__subleaf": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "tmp_remove_subs": [
+            {
+                "mosquitto__subhier": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "sub__clean_session_shared": [
+            {
+                "mosquitto__subhier": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__subshared": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto__subleaf": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "sub__tree_print": [
+            {
+                "mosquitto__subhier": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto__subleaf": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "sub__retain_queue": [
+            {
+                "mosquitto__subhier": []
+            },
+            {
+                "sub__token": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "retain__search": [
+            {
+                "mosquitto__subhier": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "sub__token": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "context__cleanup": [
+            {
+                "mosquitto__packet": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "handle__auth": [
+            {
+                "mosquitto__packet": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "handle__disconnect": [
+            {
+                "mosquitto__packet": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "handle__pubackcomp": [
+            {
+                "mosquitto__packet": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "handle__pubrec": [
+            {
+                "mosquitto__packet": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "handle__pubrel": [
+            {
+                "mosquitto__packet": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "handle__suback": [
+            {
+                "mosquitto__packet": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "handle__unsubscribe": [
+            {
+                "mosquitto__packet": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "packet__read_byte": [
+            {
+                "mosquitto__packet": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "packet__write_byte": [
+            {
+                "mosquitto__packet": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "packet__read_bytes": [
+            {
+                "mosquitto__packet": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "packet__write_bytes": [
+            {
+                "mosquitto__packet": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "packet__read_binary": [
+            {
+                "mosquitto__packet": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "packet__read_uint16": [
+            {
+                "mosquitto__packet": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "packet__read_uint32": [
+            {
+                "mosquitto__packet": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "packet__read_varint": [
+            {
+                "mosquitto__packet": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "packet__alloc": [
+            {
+                "mosquitto__packet": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "packet__cleanup": [
+            {
+                "mosquitto__packet": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "packet__cleanup_all": [
+            {
+                "mosquitto__packet": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "packet__queue": [
+            {
+                "mosquitto__packet": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "packet__write": [
+            {
+                "mosquitto__packet": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "handle__packet": [
+            {
+                "mosquitto__packet": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "send__auth": [
+            {
+                "mosquitto__packet": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "send__disconnect": [
+            {
+                "mosquitto__packet": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "send__simple_command": [
+            {
+                "mosquitto__packet": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "send__command_with_mid": [
+            {
+                "mosquitto__packet": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "send__suback": [
+            {
+                "mosquitto__packet": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "send__subscribe": [
+            {
+                "mosquitto__packet": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "send__unsuback": [
+            {
+                "mosquitto__packet": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "send__unsubscribe": [
+            {
+                "mosquitto__packet": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "will_delay__add": [
+            {
+                "will_delay_list": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "will_delay__cmp": [
+            {
+                "will_delay_list": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "will_delay__send_all": [
+            {
+                "will_delay_list": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "write"
+                ]
+            }
+        ],
+        "will_delay__check": [
+            {
+                "will_delay_list": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "will_delay__remove": [
+            {
+                "will_delay_list": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "db__messages_delete_list": [
+            {
+                "mosquitto_client_msg": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "connection_check_acl": [
+            {
+                "mosquitto_client_msg": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_msg_store": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "sub__topic_tokenise": [
+            {
+                "sub__token": [
+                    "read"
+                ]
+            }
+        ],
+        "sub__topic_tokens_free": [
+            {
+                "sub__token": [
+                    "read"
+                ]
+            }
+        ],
+        "sub__topic_append": [
+            {
+                "sub__token": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "db__msg_store_compact": [
+            {
+                "mosquitto_msg_store": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "db__msg_store_remove": [
+            {
+                "mosquitto_msg_store": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "db__msg_store_ref_dec": [
+            {
+                "mosquitto_msg_store": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "db__msg_store_add": [
+            {
+                "mosquitto_msg_store": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "db__msg_store_ref_inc": [
+            {
+                "mosquitto_msg_store": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "db__message_store": [
+            {
+                "mosquitto_msg_store": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "session_expiry__cmp": [
+            {
+                "session_expiry_list": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "session_expiry__remove": [
+            {
+                "session_expiry_list": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "session_expiry__remove_all": [
+            {
+                "session_expiry_list": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "write"
+                ]
+            }
+        ],
+        "session_expiry__check": [
+            {
+                "session_expiry_list": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "psk__file_parse": [
+            {
+                "mosquitto__unpwd": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_db": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "pwfile__parse": [
+            {
+                "mosquitto__unpwd": [
+                    "write",
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "unpwd__cleanup": [
+            {
+                "mosquitto__unpwd": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "context__remove_from_by_id": [
+            {
+                "mosquitto_db": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "context__add_to_disused": [
+            {
+                "mosquitto_db": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "context__free_disused": [
+            {
+                "mosquitto_db": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "db__open": [
+            {
+                "mosquitto_db": [
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "db__close": [
+            {
+                "mosquitto_db": []
+            },
+            {
+                "mosquitto": []
+            }
+        ],
+        "loop_handle_reads_writes": [
+            {
+                "mosquitto_db": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "sub__add_leaf": [
+            {
+                "mosquitto__subleaf": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "sub__clean_session": [
+            {
+                "mosquitto__subleaf": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "context__send_will": [
+            {
+                "mosquitto_message": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            },
+            {
+                "mosquitto_message_all": [
+                    "read"
+                ]
+            }
+        ],
+        "will__clear": [
+            {
+                "mosquitto_message": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            },
+            {
+                "mosquitto_message_all": []
+            }
+        ],
+        "alias__add": [
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "alias__find": [
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "alias__free_all": [
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "context__disconnect": [
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "handle__connack": [
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "handle__pingreq": [
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "handle__pingresp": [
+            {
+                "mosquitto": [
+                    "write",
+                    "read"
+                ]
+            }
+        ],
+        "handle__unsuback": [
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "net__socket_connect": [
+            {
+                "mosquitto": [
+                    "write"
+                ]
+            }
+        ],
+        "net__write": [
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "packet__check_oversize": [
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_client_address": [
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_client_clean_session": [
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_client_id": [
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_client_keepalive": [
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_client_protocol": [
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_client_sub_count": [
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_client_username": [
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto_set_username": [
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "send__pingreq": [
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "send__pingresp": [
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "send__pubrec": [
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "send__pubrel": [
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto__check_keepalive": [
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "mosquitto__get_state": [
+            {
+                "mosquitto": [
+                    "read"
+                ]
+            }
+        ],
+        "mosquitto__mid_generate": [
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ],
+        "util__decrement_receive_quota": [
+            {
+                "mosquitto": []
+            }
+        ],
+        "util__increment_receive_quota": [
+            {
+                "mosquitto": []
+            }
+        ],
+        "mosquitto__set_state": [
+            {
+                "mosquitto": [
+                    "read",
+                    "write"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+; Function Attrs: noinline nounwind optnone uwtable
+define i64 @nonce_verify(i64 %0, i64 %1) #0 {
+  %3 = alloca i64, align 8
+  %4 = alloca i64, align 8
+  store i64 %0, i64* %3, align 8
+  store i64 %1, i64* %4, align 8
+  %5 = load i64, i64* %3, align 8
+  %6 = load i64, i64* %4, align 8
+  %7 = sub nsw i64 %5, %6
+  %8 = sdiv i64 %7, 2
+  store i64 %8, i64* %3, align 8
+  %9 = load i64, i64* %3, align 8
+  ret i64 %9
+}

@@ -1,0 +1,1102 @@
+{
+    "os_sockWaitset": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "ddsi_keyhash": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "ddsrt_md5_state_s": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "ddsi_serdata_pserop": {
+        "server_map": {
+            "pos": {
+                "parser": [
+                    "serdata_pserop_from_ser",
+                    "serdata_pserop_from_ser_iov"
+                ],
+                "constructor": [
+                    "serdata_pserop_from_ser"
+                ]
+            },
+            "identifier": {
+                "parser": [
+                    "serdata_pserop_to_ser_ref",
+                    "serdata_pserop_to_sample",
+                    "serdata_pserop_to_untyped"
+                ],
+                "constructor": [
+                    "serdata_pserop_from_ser_iov",
+                    "serdata_pserop_to_ser_ref",
+                    "serdata_pserop_to_untyped"
+                ]
+            }
+        },
+        "client_map": {
+            "pos": {
+                "parser": [
+                    "serdata_pserop_from_ser",
+                    "serdata_pserop_from_ser_iov",
+                    "serdata_pserop_fix"
+                ],
+                "constructor": [
+                    "serdata_pserop_from_ser"
+                ]
+            },
+            "identifier": {
+                "parser": [
+                    "serdata_pserop_to_ser_ref",
+                    "serdata_pserop_to_sample",
+                    "serdata_pserop_to_untyped",
+                    "serdata_pserop_fix"
+                ],
+                "constructor": [
+                    "serdata_pserop_from_ser_iov",
+                    "serdata_pserop_to_ser_ref",
+                    "serdata_pserop_to_untyped"
+                ]
+            }
+        }
+    },
+    "flagset": {
+        "server_map": {
+            "wanted": {
+                "parser": [
+                    "ddsi_plist_init_frommsg",
+                    "deser_locator"
+                ],
+                "constructor": [
+                    "plist_deser_generic",
+                    "ddsi_plist_init_frommsg",
+                    "plist_or_xqos_fini",
+                    "plist_deser_generic_srcoff",
+                    "plist_or_xqos_unalias"
+                ]
+            }
+        },
+        "client_map": {
+            "wanted": {
+                "parser": [
+                    "ddsi_plist_init_frommsg",
+                    "deser_locator"
+                ],
+                "constructor": [
+                    "plist_deser_generic",
+                    "plist_or_xqos_fini",
+                    "plist_deser_generic_srcoff",
+                    "plist_or_xqos_unalias"
+                ]
+            }
+        }
+    },
+    "dds_entity": {
+        "server_map": {
+            "m_kind": {
+                "parser": [
+                    "dds_reader_delete",
+                    "dds_writer_delete",
+                    "dds_topic_close",
+                    "dds_entity_participant_guid",
+                    "dds_create_topic_impl",
+                    "dds_data_allocator_fini",
+                    "dds_data_allocator_init",
+                    "dds_wait_for_acks",
+                    "dds_reader_ddsi2direct",
+                    "dds_create_reader_int",
+                    "dds_waitset_detach",
+                    "dds_get_subscriber",
+                    "dds_waitset_set_trigger",
+                    "dds_get_datareader",
+                    "dds_create_guardcondition",
+                    "dds_set_qos",
+                    "dds_instance_get_key",
+                    "dds_entity_deriver_create_statistics",
+                    "dds_entity_deriver_close",
+                    "dds_entity_deriver_set_qos",
+                    "dds_entity_deriver_refresh_statistics",
+                    "dds_get_children",
+                    "dds_readtake_status",
+                    "dds_get_qos",
+                    "dds_set_listener",
+                    "dds_set_status_mask",
+                    "dds_triggered",
+                    "dds_get_topic",
+                    "dds_readcdr_impl",
+                    "dds_return_loan",
+                    "dds_find_topic_scoped",
+                    "dds_get_name",
+                    "dds_get_type_name",
+                    "dds_read_impl",
+                    "dds_waitset_attach",
+                    "dds_waitset_attach_observer",
+                    "dds_waitset_wait_impl",
+                    "dds_get_mask",
+                    "dds_create_statistics",
+                    "dds_refresh_statistics"
+                ],
+                "constructor": [
+                    "dds_reader_delete",
+                    "dds_writer_delete",
+                    "dds_topic_close",
+                    "dds_entity_init",
+                    "dds_data_allocator_fini",
+                    "dds_waitset_set_trigger",
+                    "dds_entity_deriver_create_statistics",
+                    "dds_entity_deriver_set_qos",
+                    "dds_set_qos_locked_raw",
+                    "dds_get_type_name"
+                ]
+            },
+            "m_iid": {
+                "parser": [
+                    "dds_alloc_statistics",
+                    "dds_waitset_close",
+                    "dds_waitset_delete",
+                    "dds_get_instance_handle",
+                    "dds_waitset_get_entities",
+                    "dds_waitset_wait_impl",
+                    "dds_refresh_statistics"
+                ],
+                "constructor": [
+                    "dds_waitset_close",
+                    "dds_waitset_delete",
+                    "dds_waitset_get_entities",
+                    "dds_waitset_wait_impl"
+                ]
+            },
+            "m_cb_count": {
+                "parser": [
+                    "dds_entity_init",
+                    "dds_reader_data_available_cb"
+                ],
+                "constructor": [
+                    "dds_entity_init"
+                ]
+            },
+            "m_flags": {
+                "parser": [
+                    "dds_entity_init",
+                    "dds_entity_is_enabled",
+                    "dds_set_qos_locked_raw",
+                    "dds_enable"
+                ],
+                "constructor": [
+                    "dds_entity_init"
+                ]
+            }
+        },
+        "client_map": {
+            "m_kind": {
+                "parser": [
+                    "dds_reader_delete",
+                    "really_delete_pinned_closed_locked",
+                    "dds_entity_observer_unregister",
+                    "dds_writer_delete",
+                    "dds_topic_close",
+                    "dds_entity_participant_guid",
+                    "dds_create_topic_impl",
+                    "dds_data_allocator_fini",
+                    "dds_data_allocator_init",
+                    "dds_wait_for_acks",
+                    "dds_reader_ddsi2direct",
+                    "dds_create_reader_int",
+                    "dds_waitset_detach",
+                    "dds_get_subscriber",
+                    "dds_waitset_set_trigger",
+                    "dds_get_datareader",
+                    "dds_create_guardcondition",
+                    "dds_set_qos",
+                    "dds_instance_get_key",
+                    "dds_entity_deriver_create_statistics",
+                    "dds_entity_deriver_close",
+                    "dds_entity_deriver_set_qos",
+                    "dds_entity_deriver_refresh_statistics",
+                    "dds_get_children",
+                    "dds_readtake_status",
+                    "dds_get_qos",
+                    "dds_set_qos_locked_impl",
+                    "pushdown_topic_qos",
+                    "dds_set_qos_locked_raw",
+                    "dds_set_listener",
+                    "dds_set_status_mask",
+                    "dds_triggered",
+                    "dds_get_topic",
+                    "dds_readcdr_impl",
+                    "dds_return_loan",
+                    "dds_find_topic_scoped",
+                    "dds_get_name",
+                    "dds_get_type_name",
+                    "dds_read_impl",
+                    "dds_waitset_attach",
+                    "dds_waitset_attach_observer",
+                    "dds_waitset_wait_impl",
+                    "dds_get_mask",
+                    "dds_create_statistics",
+                    "dds_refresh_statistics"
+                ],
+                "constructor": [
+                    "dds_reader_delete",
+                    "dds_writer_delete",
+                    "dds_topic_close",
+                    "dds_entity_init",
+                    "dds_data_allocator_fini",
+                    "dds_waitset_set_trigger",
+                    "dds_entity_deriver_create_statistics",
+                    "dds_entity_deriver_set_qos",
+                    "dds_set_qos_locked_raw",
+                    "dds_get_type_name"
+                ]
+            },
+            "m_iid": {
+                "parser": [
+                    "dds_alloc_statistics",
+                    "dds_waitset_close",
+                    "dds_waitset_delete",
+                    "dds_get_instance_handle",
+                    "dds_waitset_get_entities",
+                    "dds_waitset_wait_impl",
+                    "dds_refresh_statistics"
+                ],
+                "constructor": [
+                    "dds_waitset_close",
+                    "dds_waitset_delete",
+                    "dds_waitset_get_entities",
+                    "dds_waitset_wait_impl"
+                ]
+            },
+            "m_cb_count": {
+                "parser": [
+                    "dds_entity_init",
+                    "dds_reader_data_available_cb"
+                ],
+                "constructor": [
+                    "dds_entity_init"
+                ]
+            },
+            "m_flags": {
+                "parser": [
+                    "dds_entity_init",
+                    "dds_entity_is_enabled",
+                    "dds_set_qos_locked_raw",
+                    "dds_enable"
+                ],
+                "constructor": [
+                    "dds_entity_init"
+                ]
+            }
+        }
+    },
+    "ddsi_guid": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "dds_reader_data_lifecycle_qospolicy": {
+        "server_map": {
+            "autopurge_nowriter_samples_delay": {
+                "parser": [
+                    "ddsrt_time_monotonic",
+                    "dds_rhc_default_unregister_wr"
+                ],
+                "constructor": [
+                    "ddsrt_cond_waitfor",
+                    "dds_sleepfor",
+                    "ddsrt_cond_waituntil",
+                    "dds_rhc_default_unregister_wr",
+                    "dds_rhc_unregister",
+                    "dds_rhc_register",
+                    "ddsrt_duration_to_timeval_ceil"
+                ]
+            },
+            "autopurge_disposed_samples_delay": {
+                "parser": [
+                    "ddsrt_time_monotonic",
+                    "dds_rhc_default_unregister_wr"
+                ],
+                "constructor": [
+                    "ddsrt_cond_waitfor",
+                    "dds_sleepfor",
+                    "ddsrt_select",
+                    "ddsrt_cond_waituntil",
+                    "dds_rhc_default_unregister_wr",
+                    "dds_rhc_unregister",
+                    "dds_rhc_register",
+                    "ddsrt_duration_to_timeval_ceil"
+                ]
+            }
+        },
+        "client_map": {
+            "autopurge_nowriter_samples_delay": {
+                "parser": [
+                    "ddsrt_time_monotonic",
+                    "dds_rhc_default_unregister_wr"
+                ],
+                "constructor": [
+                    "ddsrt_cond_waitfor",
+                    "dds_sleepfor",
+                    "ddsrt_cond_waituntil",
+                    "dds_rhc_unregister",
+                    "dds_rhc_register",
+                    "ddsrt_duration_to_timeval_ceil"
+                ]
+            },
+            "autopurge_disposed_samples_delay": {
+                "parser": [
+                    "ddsrt_time_monotonic",
+                    "dds_rhc_default_unregister_wr"
+                ],
+                "constructor": [
+                    "ddsrt_cond_waitfor",
+                    "dds_sleepfor",
+                    "ddsrt_select",
+                    "ddsrt_cond_waituntil",
+                    "dds_rhc_unregister",
+                    "dds_rhc_register",
+                    "ddsrt_duration_to_timeval_ceil"
+                ]
+            }
+        }
+    },
+    "nn_rsample_chain": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "ddsi_tran_conn": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "ddsi_tran_listener": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "ddsi_tcp_conn": {
+        "server_map": {
+            "m_peer_port": {
+                "parser": [
+                    "ddsi_tcp_close_conn"
+                ],
+                "constructor": [
+                    "ddsi_tcp_conn_write"
+                ]
+            },
+            "m_sock": {
+                "parser": [
+                    "ddsi_tcp_conn_write"
+                ],
+                "constructor": [
+                    "ddsi_tcp_block_write"
+                ]
+            }
+        },
+        "client_map": {
+            "m_peer_port": {
+                "parser": [
+                    "ddsi_tcp_close_conn"
+                ],
+                "constructor": [
+                    "ddsi_tcp_conn_write"
+                ]
+            },
+            "m_sock": {
+                "parser": [
+                    "ddsi_tcp_conn_write",
+                    "ddsi_tcp_cache_add",
+                    "ddsi_tcp_block_write",
+                    "ddsi_tcp_cache_remove"
+                ],
+                "constructor": [
+                    "ddsi_tcp_block_write"
+                ]
+            }
+        }
+    },
+    "ddsi_tran_factory_tcp": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "packet_mreq": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "ParticipantMessageData": {
+        "server_map": {
+            "kind": {
+                "parser": [
+                    "handle_pmd_message"
+                ],
+                "constructor": [
+                    "write_pmd_message"
+                ]
+            }
+        },
+        "client_map": {
+            "kind": {
+                "parser": [
+                    "handle_pmd_message"
+                ],
+                "constructor": [
+                    "write_pmd_message"
+                ]
+            }
+        }
+    },
+    "match_entities_range_key": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "nn_xmsg": {
+        "server_map": {
+            "sz": {
+                "parser": [
+                    "nn_xmsg_addpar_keyhash",
+                    "nn_xmsg_addpar_sentinel_bo",
+                    "nn_xmsg_add_timestamp",
+                    "nn_xmsg_payload",
+                    "nn_xpack_addmsg",
+                    "nn_xmsg_shrink",
+                    "nn_xmsg_addpar_sentinel_ifparam",
+                    "nn_xmsg_submsg_setnext",
+                    "nn_xmsg_add_entityid",
+                    "nn_xmsg_payload_to_plistsample",
+                    "nn_xmsg_addpar"
+                ],
+                "constructor": [
+                    "nn_xpack_addmsg"
+                ]
+            },
+            "maxsz": {
+                "parser": [
+                    "nn_xmsg_addpar_keyhash",
+                    "nn_xmsg_addpar_sentinel_bo",
+                    "nn_xmsg_add_timestamp",
+                    "nn_xmsg_free",
+                    "nn_xpack_addmsg",
+                    "nn_xmsg_addpar_sentinel_ifparam",
+                    "nn_xmsg_addpar_statusinfo",
+                    "nn_xmsg_add_entityid",
+                    "nn_xmsg_addpar"
+                ],
+                "constructor": [
+                    "nn_xmsg_free",
+                    "nn_xpack_addmsg",
+                    "nn_xmsg_addpar_sentinel_ifparam"
+                ]
+            },
+            "dstmode": {
+                "parser": [
+                    "nn_xmsg_free",
+                    "nn_xpack_addmsg",
+                    "nn_xmsg_merge_rexmit_destinations_wrlock_held",
+                    "nn_xmsg_getdst1prefix"
+                ],
+                "constructor": [
+                    "nn_xpack_addmsg",
+                    "nn_xmsg_setdstN",
+                    "nn_xmsg_setdstPWR",
+                    "nn_xmsg_setdst1"
+                ]
+            },
+            "kind": {
+                "parser": [
+                    "nn_xpack_addmsg",
+                    "nn_xmsg_kind",
+                    "nn_xmsg_setdstPWR"
+                ],
+                "constructor": [
+                    "nn_xpack_addmsg"
+                ]
+            },
+            "maxdelay": {
+                "parser": [
+                    "nn_xpack_addmsg"
+                ],
+                "constructor": [
+                    "nn_xpack_addmsg",
+                    "nn_xmsg_setmaxdelay"
+                ]
+            }
+        },
+        "client_map": {
+            "sz": {
+                "parser": [
+                    "nn_xmsg_addpar_keyhash",
+                    "nn_xmsg_addpar_sentinel_bo",
+                    "nn_xmsg_add_timestamp",
+                    "nn_xmsg_payload",
+                    "nn_xpack_addmsg",
+                    "nn_xmsg_shrink",
+                    "nn_xmsg_addpar_sentinel_ifparam",
+                    "nn_xmsg_submsg_setnext",
+                    "nn_xmsg_add_entityid",
+                    "nn_xmsg_payload_to_plistsample",
+                    "nn_xmsg_addpar"
+                ],
+                "constructor": [
+                    "nn_xpack_addmsg"
+                ]
+            },
+            "maxsz": {
+                "parser": [
+                    "nn_xmsg_addpar_keyhash",
+                    "nn_xmsg_addpar_sentinel_bo",
+                    "nn_xmsg_add_timestamp",
+                    "nn_xmsg_free",
+                    "nn_xpack_addmsg",
+                    "nn_xmsg_addpar_sentinel_ifparam",
+                    "nn_xmsg_addpar_statusinfo",
+                    "nn_xmsg_add_entityid",
+                    "nn_xmsg_addpar"
+                ],
+                "constructor": [
+                    "nn_xmsg_free",
+                    "nn_xpack_addmsg",
+                    "nn_xmsg_addpar_sentinel_ifparam"
+                ]
+            },
+            "dstmode": {
+                "parser": [
+                    "nn_xmsg_free",
+                    "nn_xpack_addmsg",
+                    "nn_xmsg_merge_rexmit_destinations_wrlock_held",
+                    "nn_xmsg_getdst1prefix"
+                ],
+                "constructor": [
+                    "nn_xpack_addmsg",
+                    "nn_xmsg_setdstN",
+                    "nn_xmsg_setdstPWR",
+                    "nn_xmsg_setdst1"
+                ]
+            },
+            "kind": {
+                "parser": [
+                    "nn_xpack_addmsg",
+                    "nn_xmsg_kind",
+                    "nn_xmsg_setdstPWR"
+                ],
+                "constructor": [
+                    "nn_xpack_addmsg"
+                ]
+            },
+            "maxdelay": {
+                "parser": [
+                    "nn_xpack_addmsg"
+                ],
+                "constructor": [
+                    "nn_xpack_addmsg",
+                    "nn_xmsg_setmaxdelay"
+                ]
+            }
+        }
+    },
+    "last_nack_summary": {
+        "server_map": {
+            "seq_base": {
+                "parser": [
+                    "make_and_resched_acknack"
+                ],
+                "constructor": [
+                    "get_AckNack_info"
+                ]
+            },
+            "frag_end_p1": {
+                "parser": [
+                    "make_and_resched_acknack"
+                ],
+                "constructor": [
+                    "get_AckNack_info"
+                ]
+            }
+        },
+        "client_map": {
+            "seq_base": {
+                "parser": [
+                    "make_and_resched_acknack"
+                ],
+                "constructor": [
+                    "get_AckNack_info"
+                ]
+            },
+            "frag_end_p1": {
+                "parser": [
+                    "make_and_resched_acknack"
+                ],
+                "constructor": [
+                    "get_AckNack_info"
+                ]
+            }
+        }
+    },
+    "ddsi_plist": {
+        "server_map": {
+            "aliased": {
+                "parser": [
+                    "serdata_plist_untyped_to_sample",
+                    "get_participant_builtin_topic_data",
+                    "sedp_write_endpoint_impl",
+                    "builtins_dqueue_handler",
+                    "deliver_user_data"
+                ],
+                "constructor": [
+                    "serdata_plist_untyped_to_sample",
+                    "ddsi_plist_init_frommsg",
+                    "builtins_dqueue_handler",
+                    "deliver_user_data",
+                    "nn_xmsg_payload_to_plistsample"
+                ]
+            },
+            "present": {
+                "parser": [
+                    "get_participant_builtin_topic_data",
+                    "insert_sample_in_whc",
+                    "sedp_write_endpoint_impl",
+                    "add_xlocator_to_ps",
+                    "spdp_dispose_unregister_with_wr",
+                    "builtins_dqueue_handler",
+                    "new_participant_guid",
+                    "deliver_user_data",
+                    "remote_make_sample",
+                    "xevent_thread",
+                    "dds_create_participant",
+                    "dds_create_topic"
+                ],
+                "constructor": [
+                    "ddsi_plist_init_frommsg",
+                    "handle_sedp",
+                    "xevent_thread",
+                    "nn_xmsg_payload_to_plistsample"
+                ]
+            },
+            "builtin_endpoint_set": {
+                "parser": [
+                    "builtins_dqueue_handler"
+                ],
+                "constructor": [
+                    "get_participant_builtin_topic_data"
+                ]
+            },
+            "domain_id": {
+                "parser": [
+                    "builtins_dqueue_handler"
+                ],
+                "constructor": [
+                    "get_participant_builtin_topic_data",
+                    "builtins_dqueue_handler"
+                ]
+            },
+            "participant_lease_duration": {
+                "parser": [
+                    "dds_serdata_builtin_from_endpoint",
+                    "builtins_dqueue_handler",
+                    "new_participant_guid"
+                ],
+                "constructor": [
+                    "get_participant_builtin_topic_data",
+                    "new_participant_guid",
+                    "dds_create_participant"
+                ]
+            },
+            "cyclone_receive_buffer_size": {
+                "parser": [
+                    "new_proxy_participant"
+                ],
+                "constructor": [
+                    "get_participant_builtin_topic_data"
+                ]
+            }
+        },
+        "client_map": {
+            "aliased": {
+                "parser": [
+                    "serdata_plist_untyped_to_sample",
+                    "ddsi_plist_init_frommsg",
+                    "get_participant_builtin_topic_data",
+                    "sedp_write_endpoint_impl",
+                    "builtins_dqueue_handler",
+                    "deliver_user_data"
+                ],
+                "constructor": [
+                    "serdata_plist_untyped_to_sample",
+                    "ddsi_plist_init_frommsg",
+                    "deliver_user_data",
+                    "nn_xmsg_payload_to_plistsample"
+                ]
+            },
+            "present": {
+                "parser": [
+                    "ddsi_plist_init_frommsg",
+                    "get_participant_builtin_topic_data",
+                    "insert_sample_in_whc",
+                    "sedp_write_endpoint_impl",
+                    "add_xlocator_to_ps",
+                    "spdp_dispose_unregister_with_wr",
+                    "builtins_dqueue_handler",
+                    "new_proxy_participant",
+                    "handle_sedp",
+                    "new_proxy_writer",
+                    "new_proxy_reader",
+                    "proxy_endpoint_common_init",
+                    "new_participant_guid",
+                    "deliver_user_data",
+                    "remote_make_sample",
+                    "xevent_thread",
+                    "dds_create_participant",
+                    "dds_create_topic"
+                ],
+                "constructor": [
+                    "ddsi_plist_init_frommsg",
+                    "handle_sedp",
+                    "xevent_thread",
+                    "nn_xmsg_payload_to_plistsample"
+                ]
+            },
+            "builtin_endpoint_set": {
+                "parser": [
+                    "builtins_dqueue_handler"
+                ],
+                "constructor": [
+                    "get_participant_builtin_topic_data"
+                ]
+            },
+            "domain_id": {
+                "parser": [
+                    "builtins_dqueue_handler"
+                ],
+                "constructor": [
+                    "get_participant_builtin_topic_data",
+                    "builtins_dqueue_handler"
+                ]
+            },
+            "participant_lease_duration": {
+                "parser": [
+                    "dds_serdata_builtin_from_endpoint",
+                    "builtins_dqueue_handler",
+                    "new_participant_guid"
+                ],
+                "constructor": [
+                    "get_participant_builtin_topic_data",
+                    "new_participant_guid",
+                    "dds_create_participant"
+                ]
+            },
+            "cyclone_receive_buffer_size": {
+                "parser": [
+                    "new_proxy_participant"
+                ],
+                "constructor": [
+                    "get_participant_builtin_topic_data"
+                ]
+            }
+        }
+    },
+    "status_cb_data": {
+        "server_map": {
+            "handle": {
+                "parser": [
+                    "gc_delete_reader",
+                    "gc_delete_writer",
+                    "gc_delete_proxy_reader",
+                    "gc_delete_proxy_writer",
+                    "dds_rhc_default_deadline_missed_cb",
+                    "dds_writer_status_cb"
+                ],
+                "constructor": [
+                    "reader_update_notify_pwr_alive_state",
+                    "gc_delete_reader",
+                    "writer_set_notalive_locked",
+                    "gc_delete_writer",
+                    "gc_delete_proxy_reader",
+                    "gc_delete_proxy_writer",
+                    "connect_writer_with_reader_wrapper",
+                    "reader_add_connection",
+                    "writer_add_connection",
+                    "dds_rhc_default_deadline_missed_cb",
+                    "dds_rhc_default_store",
+                    "add_sample"
+                ]
+            },
+            "raw_status_id": {
+                "parser": [
+                    "gc_delete_reader",
+                    "gc_delete_writer",
+                    "gc_delete_proxy_reader",
+                    "gc_delete_proxy_writer",
+                    "dds_rhc_default_deadline_missed_cb",
+                    "dds_writer_status_cb"
+                ],
+                "constructor": [
+                    "reader_update_notify_pwr_alive_state",
+                    "gc_delete_reader",
+                    "writer_set_notalive_locked",
+                    "gc_delete_writer",
+                    "gc_delete_proxy_reader",
+                    "gc_delete_proxy_writer",
+                    "connect_writer_with_reader_wrapper",
+                    "connect_writer_with_proxy_reader_wrapper",
+                    "connect_proxy_writer_with_reader_wrapper",
+                    "reader_add_connection",
+                    "writer_add_connection",
+                    "dds_rhc_default_deadline_missed_cb",
+                    "dds_rhc_default_store",
+                    "add_sample"
+                ]
+            },
+            "extra": {
+                "parser": [
+                    "gc_delete_writer",
+                    "gc_delete_proxy_writer",
+                    "dds_rhc_default_deadline_missed_cb",
+                    "dds_writer_status_cb"
+                ],
+                "constructor": [
+                    "reader_update_notify_pwr_alive_state",
+                    "gc_delete_writer",
+                    "gc_delete_proxy_writer",
+                    "connect_writer_with_reader_wrapper",
+                    "connect_writer_with_proxy_reader_wrapper",
+                    "connect_proxy_writer_with_reader_wrapper",
+                    "reader_add_connection",
+                    "dds_rhc_default_deadline_missed_cb",
+                    "dds_rhc_default_store",
+                    "add_sample"
+                ]
+            }
+        },
+        "client_map": {
+            "handle": {
+                "parser": [
+                    "gc_delete_reader",
+                    "gc_delete_writer",
+                    "gc_delete_proxy_reader",
+                    "gc_delete_proxy_writer",
+                    "dds_rhc_default_deadline_missed_cb",
+                    "dds_writer_status_cb",
+                    "dds_reader_status_cb"
+                ],
+                "constructor": [
+                    "reader_update_notify_pwr_alive_state",
+                    "gc_delete_reader",
+                    "writer_set_notalive_locked",
+                    "gc_delete_writer",
+                    "gc_delete_proxy_reader",
+                    "gc_delete_proxy_writer",
+                    "connect_writer_with_reader_wrapper",
+                    "reader_add_connection",
+                    "writer_add_connection",
+                    "dds_rhc_default_deadline_missed_cb",
+                    "add_sample"
+                ]
+            },
+            "raw_status_id": {
+                "parser": [
+                    "gc_delete_reader",
+                    "gc_delete_writer",
+                    "gc_delete_proxy_reader",
+                    "gc_delete_proxy_writer",
+                    "dds_rhc_default_deadline_missed_cb",
+                    "dds_writer_status_cb",
+                    "dds_reader_status_cb"
+                ],
+                "constructor": [
+                    "reader_update_notify_pwr_alive_state",
+                    "gc_delete_reader",
+                    "writer_set_notalive_locked",
+                    "gc_delete_writer",
+                    "gc_delete_proxy_reader",
+                    "gc_delete_proxy_writer",
+                    "connect_writer_with_reader_wrapper",
+                    "reader_add_connection",
+                    "writer_add_connection",
+                    "dds_rhc_default_deadline_missed_cb",
+                    "add_sample"
+                ]
+            },
+            "extra": {
+                "parser": [
+                    "gc_delete_writer",
+                    "gc_delete_proxy_writer",
+                    "dds_rhc_default_deadline_missed_cb",
+                    "dds_writer_status_cb",
+                    "dds_reader_status_cb"
+                ],
+                "constructor": [
+                    "reader_update_notify_pwr_alive_state",
+                    "gc_delete_writer",
+                    "gc_delete_proxy_writer",
+                    "connect_writer_with_reader_wrapper",
+                    "connect_writer_with_proxy_reader_wrapper",
+                    "reader_add_connection",
+                    "dds_rhc_default_deadline_missed_cb",
+                    "add_sample"
+                ]
+            }
+        }
+    },
+    "nn_lat_estim": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "ddsrt_log_cfg": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "dds_liveliness_changed_status": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "dds_sample_rejected_status": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "dds_requested_deadline_missed_status": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "ddsrt_log_cfg_common": {
+        "server_map": {
+            "tracemask": {
+                "parser": [
+                    "create_thread_int"
+                ],
+                "constructor": [
+                    "create_thread_int",
+                    "ddsrt_threadattr_init"
+                ]
+            },
+            "mask": {
+                "parser": [
+                    "create_thread_int"
+                ],
+                "constructor": [
+                    "create_thread_int",
+                    "ddsrt_threadattr_init"
+                ]
+            },
+            "domid": {
+                "parser": [
+                    "create_thread_int"
+                ],
+                "constructor": [
+                    "create_thread_int",
+                    "ddsrt_threadattr_init"
+                ]
+            }
+        },
+        "client_map": {
+            "tracemask": {
+                "parser": [
+                    "create_thread_int",
+                    "ddsrt_thread_create"
+                ],
+                "constructor": [
+                    "ddsrt_threadattr_init"
+                ]
+            },
+            "mask": {
+                "parser": [
+                    "create_thread_int",
+                    "ddsrt_thread_create"
+                ],
+                "constructor": [
+                    "ddsrt_threadattr_init"
+                ]
+            },
+            "domid": {
+                "parser": [
+                    "create_thread_int",
+                    "ddsrt_thread_create"
+                ],
+                "constructor": [
+                    "ddsrt_threadattr_init"
+                ]
+            }
+        }
+    },
+    "dds_topic_filter": {
+        "server_map": {},
+        "client_map": {}
+    },
+    "dds_attachment": {
+        "server_map": {
+            "handle": {
+                "parser": [
+                    "dds_waitset_close",
+                    "dds_waitset_get_entities",
+                    "dds_waitset_observer",
+                    "dds_waitset_delete_observer"
+                ],
+                "constructor": [
+                    "dds_waitset_attach_observer"
+                ]
+            },
+            "arg": {
+                "parser": [
+                    "dds_waitset_wait_impl"
+                ],
+                "constructor": [
+                    "dds_waitset_attach_observer"
+                ]
+            }
+        },
+        "client_map": {
+            "handle": {
+                "parser": [
+                    "dds_waitset_close",
+                    "dds_waitset_get_entities",
+                    "dds_waitset_observer",
+                    "dds_waitset_delete_observer"
+                ],
+                "constructor": [
+                    "dds_waitset_attach_observer"
+                ]
+            },
+            "arg": {
+                "parser": [
+                    "dds_waitset_wait_impl"
+                ],
+                "constructor": [
+                    "dds_waitset_attach_observer"
+                ]
+            }
+        }
+    },
+    "ddsrt_ifaddrs": {
+        "server_map": {
+            "index": {
+                "parser": [
+                    "find_own_ip"
+                ],
+                "constructor": [
+                    "ddsi_vnet_enumerate_interfaces"
+                ]
+            },
+            "flags": {
+                "parser": [
+                    "find_own_ip"
+                ],
+                "constructor": [
+                    "ddsi_vnet_enumerate_interfaces"
+                ]
+            }
+        },
+        "client_map": {
+            "index": {
+                "parser": [
+                    "find_own_ip"
+                ],
+                "constructor": [
+                    "ddsi_vnet_enumerate_interfaces"
+                ]
+            },
+            "flags": {
+                "parser": [
+                    "find_own_ip"
+                ],
+                "constructor": [
+                    "ddsi_vnet_enumerate_interfaces"
+                ]
+            }
+        }
+    }
+}

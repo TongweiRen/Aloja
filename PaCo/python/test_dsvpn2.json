@@ -1,0 +1,1069 @@
+{
+    "TP_structs": [
+        "Context_"
+    ],
+    "functions_for_one_struct_server": {
+        "%19 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 13, !dbg !284": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "main"
+        },
+        "%47 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 5, !dbg !304": {
+            "field": "5",
+            "field_name": "server_ip_or_name",
+            "parent_function": "main"
+        },
+        "%48 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 5, !dbg !306": {
+            "field": "5",
+            "field_name": "server_ip_or_name",
+            "parent_function": "main"
+        },
+        "%52 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 13, !dbg !310": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "main"
+        },
+        "%72 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 6, !dbg !323": {
+            "field": "6",
+            "field_name": "server_port",
+            "parent_function": "main"
+        },
+        "%88 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 0, !dbg !333": {
+            "field": "0",
+            "field_name": "wanted_if_name",
+            "parent_function": "main"
+        },
+        "%98 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 13, !dbg !342": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "main"
+        },
+        "%109 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 1, !dbg !345": {
+            "field": "1",
+            "field_name": "local_tun_ip",
+            "parent_function": "main"
+        },
+        "%119 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 13, !dbg !354": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "main"
+        },
+        "%130 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 2, !dbg !357": {
+            "field": "2",
+            "field_name": "remote_tun_ip",
+            "parent_function": "main"
+        },
+        "%146 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 8, !dbg !367": {
+            "field": "8",
+            "field_name": "wanted_ext_gw_ip",
+            "parent_function": "main"
+        },
+        "%147 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 8, !dbg !369": {
+            "field": "8",
+            "field_name": "wanted_ext_gw_ip",
+            "parent_function": "main"
+        },
+        "%151 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 8, !dbg !371": {
+            "field": "8",
+            "field_name": "wanted_ext_gw_ip",
+            "parent_function": "main"
+        },
+        "%157 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 10, !dbg !374": {
+            "field": "10",
+            "field_name": "ext_gw_ip",
+            "parent_function": "main"
+        },
+        "%170 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 13, !dbg !384": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "main"
+        },
+        "%178 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 7, !dbg !393": {
+            "field": "7",
+            "field_name": "ext_if_name",
+            "parent_function": "main"
+        },
+        "%181 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 13, !dbg !397": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "main"
+        },
+        "%188 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 12, !dbg !405": {
+            "field": "12",
+            "field_name": "if_name",
+            "parent_function": "main"
+        },
+        "%190 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 0, !dbg !407": {
+            "field": "0",
+            "field_name": "wanted_if_name",
+            "parent_function": "main"
+        },
+        "%193 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 14, !dbg !409": {
+            "field": "14",
+            "field_name": "tun_fd",
+            "parent_function": "main"
+        },
+        "%194 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 14, !dbg !411": {
+            "field": "14",
+            "field_name": "tun_fd",
+            "parent_function": "main"
+        },
+        "%199 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 12, !dbg !418": {
+            "field": "12",
+            "field_name": "if_name",
+            "parent_function": "main"
+        },
+        "%202 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 12, !dbg !421": {
+            "field": "12",
+            "field_name": "if_name",
+            "parent_function": "main"
+        },
+        "%208 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 18, !dbg !430": {
+            "field": "18",
+            "field_name": "firewall_rules_set",
+            "parent_function": "main"
+        },
+        "%209 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 5, !dbg !432": {
+            "field": "5",
+            "field_name": "server_ip_or_name",
+            "parent_function": "main"
+        },
+        "%213 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 11, !dbg !436": {
+            "field": "11",
+            "field_name": "server_ip",
+            "parent_function": "main"
+        },
+        "%215 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 5, !dbg !438": {
+            "field": "5",
+            "field_name": "server_ip_or_name",
+            "parent_function": "main"
+        },
+        "%222 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 13, !dbg !445": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "main"
+        },
+        "%22 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i32 0, i32 22, !dbg !295": {
+            "field": "22",
+            "field_name": "uc_st",
+            "parent_function": "load_key_file"
+        },
+        "%4 = getelementptr inbounds %struct.Context_, %struct.Context_* %3, i32 0, i32 1, !dbg !265": {
+            "field": "1",
+            "field_name": "local_tun_ip",
+            "parent_function": "get_tun6_addresses"
+        },
+        "%8 = getelementptr inbounds %struct.Context_, %struct.Context_* %7, i32 0, i32 2, !dbg !268": {
+            "field": "2",
+            "field_name": "remote_tun_ip",
+            "parent_function": "get_tun6_addresses"
+        },
+        "%12 = getelementptr inbounds %struct.Context_, %struct.Context_* %11, i32 0, i32 3, !dbg !271": {
+            "field": "3",
+            "field_name": "local_tun_ip6",
+            "parent_function": "get_tun6_addresses"
+        },
+        "%14 = getelementptr inbounds %struct.Context_, %struct.Context_* %13, i32 0, i32 4, !dbg !274": {
+            "field": "4",
+            "field_name": "remote_tun_ip6",
+            "parent_function": "get_tun6_addresses"
+        },
+        "%17 = getelementptr inbounds %struct.Context_, %struct.Context_* %16, i32 0, i32 3, !dbg !279": {
+            "field": "3",
+            "field_name": "local_tun_ip6",
+            "parent_function": "firewall_rules"
+        },
+        "%23 = getelementptr inbounds %struct.Context_, %struct.Context_* %22, i32 0, i32 4, !dbg !282": {
+            "field": "4",
+            "field_name": "remote_tun_ip6",
+            "parent_function": "firewall_rules"
+        },
+        "%29 = getelementptr inbounds %struct.Context_, %struct.Context_* %28, i32 0, i32 1, !dbg !285": {
+            "field": "1",
+            "field_name": "local_tun_ip",
+            "parent_function": "firewall_rules"
+        },
+        "%35 = getelementptr inbounds %struct.Context_, %struct.Context_* %34, i32 0, i32 2, !dbg !288": {
+            "field": "2",
+            "field_name": "remote_tun_ip",
+            "parent_function": "firewall_rules"
+        },
+        "%41 = getelementptr inbounds %struct.Context_, %struct.Context_* %40, i32 0, i32 11, !dbg !291": {
+            "field": "11",
+            "field_name": "server_ip",
+            "parent_function": "firewall_rules"
+        },
+        "%47 = getelementptr inbounds %struct.Context_, %struct.Context_* %46, i32 0, i32 6, !dbg !294": {
+            "field": "6",
+            "field_name": "server_port",
+            "parent_function": "firewall_rules"
+        },
+        "%53 = getelementptr inbounds %struct.Context_, %struct.Context_* %52, i32 0, i32 7, !dbg !297": {
+            "field": "7",
+            "field_name": "ext_if_name",
+            "parent_function": "firewall_rules"
+        },
+        "%59 = getelementptr inbounds %struct.Context_, %struct.Context_* %58, i32 0, i32 10, !dbg !300": {
+            "field": "10",
+            "field_name": "ext_gw_ip",
+            "parent_function": "firewall_rules"
+        },
+        "%65 = getelementptr inbounds %struct.Context_, %struct.Context_* %64, i32 0, i32 12, !dbg !303": {
+            "field": "12",
+            "field_name": "if_name",
+            "parent_function": "firewall_rules"
+        },
+        "%71 = getelementptr inbounds %struct.Context_, %struct.Context_* %70, i32 0, i32 18, !dbg !311": {
+            "field": "18",
+            "field_name": "firewall_rules_set",
+            "parent_function": "firewall_rules"
+        },
+        "%81 = getelementptr inbounds %struct.Context_, %struct.Context_* %80, i32 0, i32 13, !dbg !320": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "firewall_rules"
+        },
+        "%93 = getelementptr inbounds %struct.Context_, %struct.Context_* %92, i32 0, i32 13, !dbg !324": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "firewall_rules"
+        },
+        "%142 = getelementptr inbounds %struct.Context_, %struct.Context_* %141, i32 0, i32 18, !dbg !366": {
+            "field": "18",
+            "field_name": "firewall_rules_set",
+            "parent_function": "firewall_rules"
+        },
+        "%7 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 16, !dbg !268": {
+            "field": "16",
+            "field_name": "listen_fd",
+            "parent_function": "doit"
+        },
+        "%9 = getelementptr inbounds %struct.Context_, %struct.Context_* %8, i32 0, i32 15, !dbg !271": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "doit"
+        },
+        "%11 = getelementptr inbounds %struct.Context_, %struct.Context_* %10, i32 0, i32 21, !dbg !274": {
+            "field": "21",
+            "field_name": "uc_kx_st",
+            "parent_function": "doit"
+        },
+        "%15 = getelementptr inbounds %struct.Context_, %struct.Context_* %14, i32 0, i32 21, !dbg !277": {
+            "field": "21",
+            "field_name": "uc_kx_st",
+            "parent_function": "doit"
+        },
+        "%19 = getelementptr inbounds %struct.Context_, %struct.Context_* %18, i32 0, i32 14, !dbg !280": {
+            "field": "14",
+            "field_name": "tun_fd",
+            "parent_function": "doit"
+        },
+        "%26 = getelementptr inbounds %struct.Context_, %struct.Context_* %25, i32 0, i32 13, !dbg !284": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "doit"
+        },
+        "%31 = getelementptr inbounds %struct.Context_, %struct.Context_* %30, i32 0, i32 5, !dbg !289": {
+            "field": "5",
+            "field_name": "server_ip_or_name",
+            "parent_function": "doit"
+        },
+        "%34 = getelementptr inbounds %struct.Context_, %struct.Context_* %33, i32 0, i32 6, !dbg !291": {
+            "field": "6",
+            "field_name": "server_port",
+            "parent_function": "doit"
+        },
+        "%38 = getelementptr inbounds %struct.Context_, %struct.Context_* %37, i32 0, i32 16, !dbg !294": {
+            "field": "16",
+            "field_name": "listen_fd",
+            "parent_function": "doit"
+        },
+        "%43 = getelementptr inbounds %struct.Context_, %struct.Context_* %42, i32 0, i32 21, !dbg !302": {
+            "field": "21",
+            "field_name": "uc_kx_st",
+            "parent_function": "doit"
+        },
+        "%47 = getelementptr inbounds %struct.Context_, %struct.Context_* %46, i32 0, i32 16, !dbg !305": {
+            "field": "16",
+            "field_name": "listen_fd",
+            "parent_function": "doit"
+        },
+        "%55 = getelementptr inbounds %struct.Context_, %struct.Context_* %54, i32 0, i32 13, !dbg !310": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "doit"
+        },
+        "%7 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 13, !dbg !273": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "client_reconnect"
+        },
+        "%21 = getelementptr inbounds %struct.Context_, %struct.Context_* %20, i32 0, i32 21, !dbg !272": {
+            "field": "21",
+            "field_name": "uc_kx_st",
+            "parent_function": "event_loop"
+        },
+        "%24 = getelementptr inbounds %struct.Context_, %struct.Context_* %23, i32 0, i32 20, !dbg !279": {
+            "field": "20",
+            "field_name": "fds",
+            "parent_function": "event_loop"
+        },
+        "%49 = getelementptr inbounds %struct.Context_, %struct.Context_* %48, i32 0, i32 16, !dbg !310": {
+            "field": "16",
+            "field_name": "listen_fd",
+            "parent_function": "event_loop"
+        },
+        "%57 = getelementptr inbounds %struct.Context_, %struct.Context_* %56, i32 0, i32 15, !dbg !322": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "event_loop"
+        },
+        "%62 = getelementptr inbounds %struct.Context_, %struct.Context_* %61, i32 0, i32 15, !dbg !327": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "event_loop"
+        },
+        "%69 = getelementptr inbounds %struct.Context_, %struct.Context_* %68, i32 0, i32 15, !dbg !333": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "event_loop"
+        },
+        "%80 = getelementptr inbounds %struct.Context_, %struct.Context_* %79, i32 0, i32 15, !dbg !345": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "event_loop"
+        },
+        "%114 = getelementptr inbounds %struct.Context_, %struct.Context_* %113, i32 0, i32 14, !dbg !367": {
+            "field": "14",
+            "field_name": "tun_fd",
+            "parent_function": "event_loop"
+        },
+        "%124 = getelementptr inbounds %struct.Context_, %struct.Context_* %123, i32 0, i32 17, !dbg !381": {
+            "field": "17",
+            "field_name": "congestion",
+            "parent_function": "event_loop"
+        },
+        "%129 = getelementptr inbounds %struct.Context_, %struct.Context_* %128, i32 0, i32 17, !dbg !385": {
+            "field": "17",
+            "field_name": "congestion",
+            "parent_function": "event_loop"
+        },
+        "%132 = getelementptr inbounds %struct.Context_, %struct.Context_* %131, i32 0, i32 15, !dbg !390": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "event_loop"
+        },
+        "%153 = getelementptr inbounds %struct.Context_, %struct.Context_* %152, i32 0, i32 15, !dbg !414": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "event_loop"
+        },
+        "%164 = getelementptr inbounds %struct.Context_, %struct.Context_* %163, i32 0, i32 17, !dbg !427": {
+            "field": "17",
+            "field_name": "congestion",
+            "parent_function": "event_loop"
+        },
+        "%172 = getelementptr inbounds %struct.Context_, %struct.Context_* %171, i32 0, i32 15, !dbg !439": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "event_loop"
+        },
+        "%221 = getelementptr inbounds %struct.Context_, %struct.Context_* %220, i32 0, i32 15, !dbg !490": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "event_loop"
+        },
+        "%287 = getelementptr inbounds %struct.Context_, %struct.Context_* %286, i32 0, i32 14, !dbg !553": {
+            "field": "14",
+            "field_name": "tun_fd",
+            "parent_function": "event_loop"
+        },
+        "%44 = getelementptr inbounds %struct.Context_, %struct.Context_* %43, i32 0, i32 17, !dbg !328": {
+            "field": "17",
+            "field_name": "congestion",
+            "parent_function": "tcp_accept"
+        },
+        "%51 = getelementptr inbounds %struct.Context_, %struct.Context_* %50, i32 0, i32 15, !dbg !337": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "tcp_accept"
+        },
+        "%56 = getelementptr inbounds %struct.Context_, %struct.Context_* %55, i32 0, i32 9, !dbg !341": {
+            "field": "9",
+            "field_name": "client_ip",
+            "parent_function": "tcp_accept"
+        },
+        "%64 = getelementptr inbounds %struct.Context_, %struct.Context_* %63, i32 0, i32 9, !dbg !349": {
+            "field": "9",
+            "field_name": "client_ip",
+            "parent_function": "tcp_accept"
+        },
+        "%83 = getelementptr inbounds %struct.Context_, %struct.Context_* %82, i32 0, i32 9, !dbg !371": {
+            "field": "9",
+            "field_name": "client_ip",
+            "parent_function": "tcp_accept"
+        },
+        "%18 = getelementptr inbounds %struct.Context_, %struct.Context_* %17, i32 0, i32 22, !dbg !299": {
+            "field": "22",
+            "field_name": "uc_st",
+            "parent_function": "server_key_exchange"
+        },
+        "%81 = getelementptr inbounds %struct.Context_, %struct.Context_* %80, i32 0, i32 13, !dbg !375": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "server_key_exchange"
+        },
+        "%5 = getelementptr inbounds %struct.Context_, %struct.Context_* %4, i32 0, i32 15, !dbg !267": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_disconnect"
+        },
+        "%11 = getelementptr inbounds %struct.Context_, %struct.Context_* %10, i32 0, i32 15, !dbg !273": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_disconnect"
+        },
+        "%15 = getelementptr inbounds %struct.Context_, %struct.Context_* %14, i32 0, i32 15, !dbg !276": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_disconnect"
+        },
+        "%17 = getelementptr inbounds %struct.Context_, %struct.Context_* %16, i32 0, i32 21, !dbg !279": {
+            "field": "21",
+            "field_name": "uc_kx_st",
+            "parent_function": "client_disconnect"
+        },
+        "%7 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 20, !dbg !270": {
+            "field": "20",
+            "field_name": "fds",
+            "parent_function": "client_connect"
+        },
+        "%10 = getelementptr inbounds %struct.Context_, %struct.Context_* %9, i32 0, i32 20, !dbg !274": {
+            "field": "20",
+            "field_name": "fds",
+            "parent_function": "client_connect"
+        },
+        "%14 = getelementptr inbounds %struct.Context_, %struct.Context_* %13, i32 0, i32 8, !dbg !279": {
+            "field": "8",
+            "field_name": "wanted_ext_gw_ip",
+            "parent_function": "client_connect"
+        },
+        "%23 = getelementptr inbounds %struct.Context_, %struct.Context_* %22, i32 0, i32 10, !dbg !288": {
+            "field": "10",
+            "field_name": "ext_gw_ip",
+            "parent_function": "client_connect"
+        },
+        "%29 = getelementptr inbounds %struct.Context_, %struct.Context_* %28, i32 0, i32 10, !dbg !294": {
+            "field": "10",
+            "field_name": "ext_gw_ip",
+            "parent_function": "client_connect"
+        },
+        "%36 = getelementptr inbounds %struct.Context_, %struct.Context_* %35, i32 0, i32 10, !dbg !300": {
+            "field": "10",
+            "field_name": "ext_gw_ip",
+            "parent_function": "client_connect"
+        },
+        "%50 = getelementptr inbounds %struct.Context_, %struct.Context_* %49, i32 0, i32 13, !dbg !312": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "client_connect"
+        },
+        "%58 = getelementptr inbounds %struct.Context_, %struct.Context_* %57, i32 0, i32 11, !dbg !315": {
+            "field": "11",
+            "field_name": "server_ip",
+            "parent_function": "client_connect"
+        },
+        "%61 = getelementptr inbounds %struct.Context_, %struct.Context_* %60, i32 0, i32 6, !dbg !317": {
+            "field": "6",
+            "field_name": "server_port",
+            "parent_function": "client_connect"
+        },
+        "%65 = getelementptr inbounds %struct.Context_, %struct.Context_* %64, i32 0, i32 15, !dbg !320": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_connect"
+        },
+        "%67 = getelementptr inbounds %struct.Context_, %struct.Context_* %66, i32 0, i32 15, !dbg !324": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_connect"
+        },
+        "%73 = getelementptr inbounds %struct.Context_, %struct.Context_* %72, i32 0, i32 15, !dbg !331": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_connect"
+        },
+        "%76 = getelementptr inbounds %struct.Context_, %struct.Context_* %75, i32 0, i32 15, !dbg !333": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_connect"
+        },
+        "%82 = getelementptr inbounds %struct.Context_, %struct.Context_* %81, i32 0, i32 17, !dbg !338": {
+            "field": "17",
+            "field_name": "congestion",
+            "parent_function": "client_connect"
+        },
+        "%95 = getelementptr inbounds %struct.Context_, %struct.Context_* %94, i32 0, i32 21, !dbg !355": {
+            "field": "21",
+            "field_name": "uc_kx_st",
+            "parent_function": "client_connect"
+        },
+        "%99 = getelementptr inbounds %struct.Context_, %struct.Context_* %98, i32 0, i32 15, !dbg !358": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_connect"
+        },
+        "%15 = getelementptr inbounds %struct.Context_, %struct.Context_* %14, i32 0, i32 22, !dbg !295": {
+            "field": "22",
+            "field_name": "uc_st",
+            "parent_function": "client_key_exchange"
+        },
+        "%29 = getelementptr inbounds %struct.Context_, %struct.Context_* %28, i32 0, i32 15, !dbg !311": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_key_exchange"
+        },
+        "%38 = getelementptr inbounds %struct.Context_, %struct.Context_* %37, i32 0, i32 15, !dbg !322": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_key_exchange"
+        },
+        "%58 = getelementptr inbounds %struct.Context_, %struct.Context_* %57, i32 0, i32 13, !dbg !346": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "client_key_exchange"
+        }
+    },
+    "functions_for_one_struct_client": {
+        "%19 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 13, !dbg !284": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "main"
+        },
+        "%47 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 5, !dbg !304": {
+            "field": "5",
+            "field_name": "server_ip_or_name",
+            "parent_function": "main"
+        },
+        "%48 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 5, !dbg !306": {
+            "field": "5",
+            "field_name": "server_ip_or_name",
+            "parent_function": "main"
+        },
+        "%52 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 13, !dbg !310": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "main"
+        },
+        "%72 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 6, !dbg !323": {
+            "field": "6",
+            "field_name": "server_port",
+            "parent_function": "main"
+        },
+        "%88 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 0, !dbg !333": {
+            "field": "0",
+            "field_name": "wanted_if_name",
+            "parent_function": "main"
+        },
+        "%98 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 13, !dbg !342": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "main"
+        },
+        "%109 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 1, !dbg !345": {
+            "field": "1",
+            "field_name": "local_tun_ip",
+            "parent_function": "main"
+        },
+        "%119 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 13, !dbg !354": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "main"
+        },
+        "%130 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 2, !dbg !357": {
+            "field": "2",
+            "field_name": "remote_tun_ip",
+            "parent_function": "main"
+        },
+        "%146 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 8, !dbg !367": {
+            "field": "8",
+            "field_name": "wanted_ext_gw_ip",
+            "parent_function": "main"
+        },
+        "%147 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 8, !dbg !369": {
+            "field": "8",
+            "field_name": "wanted_ext_gw_ip",
+            "parent_function": "main"
+        },
+        "%151 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 8, !dbg !371": {
+            "field": "8",
+            "field_name": "wanted_ext_gw_ip",
+            "parent_function": "main"
+        },
+        "%157 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 10, !dbg !374": {
+            "field": "10",
+            "field_name": "ext_gw_ip",
+            "parent_function": "main"
+        },
+        "%170 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 13, !dbg !384": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "main"
+        },
+        "%178 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 7, !dbg !393": {
+            "field": "7",
+            "field_name": "ext_if_name",
+            "parent_function": "main"
+        },
+        "%181 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 13, !dbg !397": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "main"
+        },
+        "%188 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 12, !dbg !405": {
+            "field": "12",
+            "field_name": "if_name",
+            "parent_function": "main"
+        },
+        "%190 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 0, !dbg !407": {
+            "field": "0",
+            "field_name": "wanted_if_name",
+            "parent_function": "main"
+        },
+        "%193 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 14, !dbg !409": {
+            "field": "14",
+            "field_name": "tun_fd",
+            "parent_function": "main"
+        },
+        "%194 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 14, !dbg !411": {
+            "field": "14",
+            "field_name": "tun_fd",
+            "parent_function": "main"
+        },
+        "%199 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 12, !dbg !418": {
+            "field": "12",
+            "field_name": "if_name",
+            "parent_function": "main"
+        },
+        "%202 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 12, !dbg !421": {
+            "field": "12",
+            "field_name": "if_name",
+            "parent_function": "main"
+        },
+        "%208 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 18, !dbg !430": {
+            "field": "18",
+            "field_name": "firewall_rules_set",
+            "parent_function": "main"
+        },
+        "%209 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 5, !dbg !432": {
+            "field": "5",
+            "field_name": "server_ip_or_name",
+            "parent_function": "main"
+        },
+        "%213 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 11, !dbg !436": {
+            "field": "11",
+            "field_name": "server_ip",
+            "parent_function": "main"
+        },
+        "%215 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 5, !dbg !438": {
+            "field": "5",
+            "field_name": "server_ip_or_name",
+            "parent_function": "main"
+        },
+        "%222 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 13, !dbg !445": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "main"
+        },
+        "%22 = getelementptr inbounds %struct.Context_, %struct.Context_* %21, i32 0, i32 22, !dbg !295": {
+            "field": "22",
+            "field_name": "uc_st",
+            "parent_function": "load_key_file"
+        },
+        "%4 = getelementptr inbounds %struct.Context_, %struct.Context_* %3, i32 0, i32 1, !dbg !265": {
+            "field": "1",
+            "field_name": "local_tun_ip",
+            "parent_function": "get_tun6_addresses"
+        },
+        "%8 = getelementptr inbounds %struct.Context_, %struct.Context_* %7, i32 0, i32 2, !dbg !268": {
+            "field": "2",
+            "field_name": "remote_tun_ip",
+            "parent_function": "get_tun6_addresses"
+        },
+        "%12 = getelementptr inbounds %struct.Context_, %struct.Context_* %11, i32 0, i32 3, !dbg !271": {
+            "field": "3",
+            "field_name": "local_tun_ip6",
+            "parent_function": "get_tun6_addresses"
+        },
+        "%14 = getelementptr inbounds %struct.Context_, %struct.Context_* %13, i32 0, i32 4, !dbg !274": {
+            "field": "4",
+            "field_name": "remote_tun_ip6",
+            "parent_function": "get_tun6_addresses"
+        },
+        "%17 = getelementptr inbounds %struct.Context_, %struct.Context_* %16, i32 0, i32 3, !dbg !279": {
+            "field": "3",
+            "field_name": "local_tun_ip6",
+            "parent_function": "firewall_rules"
+        },
+        "%23 = getelementptr inbounds %struct.Context_, %struct.Context_* %22, i32 0, i32 4, !dbg !282": {
+            "field": "4",
+            "field_name": "remote_tun_ip6",
+            "parent_function": "firewall_rules"
+        },
+        "%29 = getelementptr inbounds %struct.Context_, %struct.Context_* %28, i32 0, i32 1, !dbg !285": {
+            "field": "1",
+            "field_name": "local_tun_ip",
+            "parent_function": "firewall_rules"
+        },
+        "%35 = getelementptr inbounds %struct.Context_, %struct.Context_* %34, i32 0, i32 2, !dbg !288": {
+            "field": "2",
+            "field_name": "remote_tun_ip",
+            "parent_function": "firewall_rules"
+        },
+        "%41 = getelementptr inbounds %struct.Context_, %struct.Context_* %40, i32 0, i32 11, !dbg !291": {
+            "field": "11",
+            "field_name": "server_ip",
+            "parent_function": "firewall_rules"
+        },
+        "%47 = getelementptr inbounds %struct.Context_, %struct.Context_* %46, i32 0, i32 6, !dbg !294": {
+            "field": "6",
+            "field_name": "server_port",
+            "parent_function": "firewall_rules"
+        },
+        "%53 = getelementptr inbounds %struct.Context_, %struct.Context_* %52, i32 0, i32 7, !dbg !297": {
+            "field": "7",
+            "field_name": "ext_if_name",
+            "parent_function": "firewall_rules"
+        },
+        "%59 = getelementptr inbounds %struct.Context_, %struct.Context_* %58, i32 0, i32 10, !dbg !300": {
+            "field": "10",
+            "field_name": "ext_gw_ip",
+            "parent_function": "firewall_rules"
+        },
+        "%65 = getelementptr inbounds %struct.Context_, %struct.Context_* %64, i32 0, i32 12, !dbg !303": {
+            "field": "12",
+            "field_name": "if_name",
+            "parent_function": "firewall_rules"
+        },
+        "%71 = getelementptr inbounds %struct.Context_, %struct.Context_* %70, i32 0, i32 18, !dbg !311": {
+            "field": "18",
+            "field_name": "firewall_rules_set",
+            "parent_function": "firewall_rules"
+        },
+        "%81 = getelementptr inbounds %struct.Context_, %struct.Context_* %80, i32 0, i32 13, !dbg !320": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "firewall_rules"
+        },
+        "%93 = getelementptr inbounds %struct.Context_, %struct.Context_* %92, i32 0, i32 13, !dbg !324": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "firewall_rules"
+        },
+        "%142 = getelementptr inbounds %struct.Context_, %struct.Context_* %141, i32 0, i32 18, !dbg !366": {
+            "field": "18",
+            "field_name": "firewall_rules_set",
+            "parent_function": "firewall_rules"
+        },
+        "%7 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 16, !dbg !268": {
+            "field": "16",
+            "field_name": "listen_fd",
+            "parent_function": "doit"
+        },
+        "%9 = getelementptr inbounds %struct.Context_, %struct.Context_* %8, i32 0, i32 15, !dbg !271": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "doit"
+        },
+        "%11 = getelementptr inbounds %struct.Context_, %struct.Context_* %10, i32 0, i32 21, !dbg !274": {
+            "field": "21",
+            "field_name": "uc_kx_st",
+            "parent_function": "doit"
+        },
+        "%15 = getelementptr inbounds %struct.Context_, %struct.Context_* %14, i32 0, i32 21, !dbg !277": {
+            "field": "21",
+            "field_name": "uc_kx_st",
+            "parent_function": "doit"
+        },
+        "%19 = getelementptr inbounds %struct.Context_, %struct.Context_* %18, i32 0, i32 14, !dbg !280": {
+            "field": "14",
+            "field_name": "tun_fd",
+            "parent_function": "doit"
+        },
+        "%26 = getelementptr inbounds %struct.Context_, %struct.Context_* %25, i32 0, i32 13, !dbg !284": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "doit"
+        },
+        "%31 = getelementptr inbounds %struct.Context_, %struct.Context_* %30, i32 0, i32 5, !dbg !289": {
+            "field": "5",
+            "field_name": "server_ip_or_name",
+            "parent_function": "doit"
+        },
+        "%34 = getelementptr inbounds %struct.Context_, %struct.Context_* %33, i32 0, i32 6, !dbg !291": {
+            "field": "6",
+            "field_name": "server_port",
+            "parent_function": "doit"
+        },
+        "%38 = getelementptr inbounds %struct.Context_, %struct.Context_* %37, i32 0, i32 16, !dbg !294": {
+            "field": "16",
+            "field_name": "listen_fd",
+            "parent_function": "doit"
+        },
+        "%43 = getelementptr inbounds %struct.Context_, %struct.Context_* %42, i32 0, i32 21, !dbg !302": {
+            "field": "21",
+            "field_name": "uc_kx_st",
+            "parent_function": "doit"
+        },
+        "%47 = getelementptr inbounds %struct.Context_, %struct.Context_* %46, i32 0, i32 16, !dbg !305": {
+            "field": "16",
+            "field_name": "listen_fd",
+            "parent_function": "doit"
+        },
+        "%55 = getelementptr inbounds %struct.Context_, %struct.Context_* %54, i32 0, i32 13, !dbg !310": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "doit"
+        },
+        "%7 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 13, !dbg !273": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "client_reconnect"
+        },
+        "%21 = getelementptr inbounds %struct.Context_, %struct.Context_* %20, i32 0, i32 21, !dbg !272": {
+            "field": "21",
+            "field_name": "uc_kx_st",
+            "parent_function": "event_loop"
+        },
+        "%24 = getelementptr inbounds %struct.Context_, %struct.Context_* %23, i32 0, i32 20, !dbg !279": {
+            "field": "20",
+            "field_name": "fds",
+            "parent_function": "event_loop"
+        },
+        "%49 = getelementptr inbounds %struct.Context_, %struct.Context_* %48, i32 0, i32 16, !dbg !310": {
+            "field": "16",
+            "field_name": "listen_fd",
+            "parent_function": "event_loop"
+        },
+        "%57 = getelementptr inbounds %struct.Context_, %struct.Context_* %56, i32 0, i32 15, !dbg !322": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "event_loop"
+        },
+        "%62 = getelementptr inbounds %struct.Context_, %struct.Context_* %61, i32 0, i32 15, !dbg !327": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "event_loop"
+        },
+        "%69 = getelementptr inbounds %struct.Context_, %struct.Context_* %68, i32 0, i32 15, !dbg !333": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "event_loop"
+        },
+        "%80 = getelementptr inbounds %struct.Context_, %struct.Context_* %79, i32 0, i32 15, !dbg !345": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "event_loop"
+        },
+        "%114 = getelementptr inbounds %struct.Context_, %struct.Context_* %113, i32 0, i32 14, !dbg !367": {
+            "field": "14",
+            "field_name": "tun_fd",
+            "parent_function": "event_loop"
+        },
+        "%124 = getelementptr inbounds %struct.Context_, %struct.Context_* %123, i32 0, i32 17, !dbg !381": {
+            "field": "17",
+            "field_name": "congestion",
+            "parent_function": "event_loop"
+        },
+        "%129 = getelementptr inbounds %struct.Context_, %struct.Context_* %128, i32 0, i32 17, !dbg !385": {
+            "field": "17",
+            "field_name": "congestion",
+            "parent_function": "event_loop"
+        },
+        "%132 = getelementptr inbounds %struct.Context_, %struct.Context_* %131, i32 0, i32 15, !dbg !390": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "event_loop"
+        },
+        "%153 = getelementptr inbounds %struct.Context_, %struct.Context_* %152, i32 0, i32 15, !dbg !414": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "event_loop"
+        },
+        "%164 = getelementptr inbounds %struct.Context_, %struct.Context_* %163, i32 0, i32 17, !dbg !427": {
+            "field": "17",
+            "field_name": "congestion",
+            "parent_function": "event_loop"
+        },
+        "%172 = getelementptr inbounds %struct.Context_, %struct.Context_* %171, i32 0, i32 15, !dbg !439": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "event_loop"
+        },
+        "%221 = getelementptr inbounds %struct.Context_, %struct.Context_* %220, i32 0, i32 15, !dbg !490": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "event_loop"
+        },
+        "%287 = getelementptr inbounds %struct.Context_, %struct.Context_* %286, i32 0, i32 14, !dbg !553": {
+            "field": "14",
+            "field_name": "tun_fd",
+            "parent_function": "event_loop"
+        },
+        "%44 = getelementptr inbounds %struct.Context_, %struct.Context_* %43, i32 0, i32 17, !dbg !328": {
+            "field": "17",
+            "field_name": "congestion",
+            "parent_function": "tcp_accept"
+        },
+        "%51 = getelementptr inbounds %struct.Context_, %struct.Context_* %50, i32 0, i32 15, !dbg !337": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "tcp_accept"
+        },
+        "%56 = getelementptr inbounds %struct.Context_, %struct.Context_* %55, i32 0, i32 9, !dbg !341": {
+            "field": "9",
+            "field_name": "client_ip",
+            "parent_function": "tcp_accept"
+        },
+        "%64 = getelementptr inbounds %struct.Context_, %struct.Context_* %63, i32 0, i32 9, !dbg !349": {
+            "field": "9",
+            "field_name": "client_ip",
+            "parent_function": "tcp_accept"
+        },
+        "%83 = getelementptr inbounds %struct.Context_, %struct.Context_* %82, i32 0, i32 9, !dbg !371": {
+            "field": "9",
+            "field_name": "client_ip",
+            "parent_function": "tcp_accept"
+        },
+        "%18 = getelementptr inbounds %struct.Context_, %struct.Context_* %17, i32 0, i32 22, !dbg !299": {
+            "field": "22",
+            "field_name": "uc_st",
+            "parent_function": "server_key_exchange"
+        },
+        "%81 = getelementptr inbounds %struct.Context_, %struct.Context_* %80, i32 0, i32 13, !dbg !375": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "server_key_exchange"
+        },
+        "%5 = getelementptr inbounds %struct.Context_, %struct.Context_* %4, i32 0, i32 15, !dbg !267": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_disconnect"
+        },
+        "%11 = getelementptr inbounds %struct.Context_, %struct.Context_* %10, i32 0, i32 15, !dbg !273": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_disconnect"
+        },
+        "%15 = getelementptr inbounds %struct.Context_, %struct.Context_* %14, i32 0, i32 15, !dbg !276": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_disconnect"
+        },
+        "%17 = getelementptr inbounds %struct.Context_, %struct.Context_* %16, i32 0, i32 21, !dbg !279": {
+            "field": "21",
+            "field_name": "uc_kx_st",
+            "parent_function": "client_disconnect"
+        },
+        "%7 = getelementptr inbounds %struct.Context_, %struct.Context_* %6, i32 0, i32 20, !dbg !270": {
+            "field": "20",
+            "field_name": "fds",
+            "parent_function": "client_connect"
+        },
+        "%10 = getelementptr inbounds %struct.Context_, %struct.Context_* %9, i32 0, i32 20, !dbg !274": {
+            "field": "20",
+            "field_name": "fds",
+            "parent_function": "client_connect"
+        },
+        "%14 = getelementptr inbounds %struct.Context_, %struct.Context_* %13, i32 0, i32 8, !dbg !279": {
+            "field": "8",
+            "field_name": "wanted_ext_gw_ip",
+            "parent_function": "client_connect"
+        },
+        "%23 = getelementptr inbounds %struct.Context_, %struct.Context_* %22, i32 0, i32 10, !dbg !288": {
+            "field": "10",
+            "field_name": "ext_gw_ip",
+            "parent_function": "client_connect"
+        },
+        "%29 = getelementptr inbounds %struct.Context_, %struct.Context_* %28, i32 0, i32 10, !dbg !294": {
+            "field": "10",
+            "field_name": "ext_gw_ip",
+            "parent_function": "client_connect"
+        },
+        "%36 = getelementptr inbounds %struct.Context_, %struct.Context_* %35, i32 0, i32 10, !dbg !300": {
+            "field": "10",
+            "field_name": "ext_gw_ip",
+            "parent_function": "client_connect"
+        },
+        "%50 = getelementptr inbounds %struct.Context_, %struct.Context_* %49, i32 0, i32 13, !dbg !312": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "client_connect"
+        },
+        "%58 = getelementptr inbounds %struct.Context_, %struct.Context_* %57, i32 0, i32 11, !dbg !315": {
+            "field": "11",
+            "field_name": "server_ip",
+            "parent_function": "client_connect"
+        },
+        "%61 = getelementptr inbounds %struct.Context_, %struct.Context_* %60, i32 0, i32 6, !dbg !317": {
+            "field": "6",
+            "field_name": "server_port",
+            "parent_function": "client_connect"
+        },
+        "%65 = getelementptr inbounds %struct.Context_, %struct.Context_* %64, i32 0, i32 15, !dbg !320": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_connect"
+        },
+        "%67 = getelementptr inbounds %struct.Context_, %struct.Context_* %66, i32 0, i32 15, !dbg !324": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_connect"
+        },
+        "%73 = getelementptr inbounds %struct.Context_, %struct.Context_* %72, i32 0, i32 15, !dbg !331": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_connect"
+        },
+        "%76 = getelementptr inbounds %struct.Context_, %struct.Context_* %75, i32 0, i32 15, !dbg !333": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_connect"
+        },
+        "%82 = getelementptr inbounds %struct.Context_, %struct.Context_* %81, i32 0, i32 17, !dbg !338": {
+            "field": "17",
+            "field_name": "congestion",
+            "parent_function": "client_connect"
+        },
+        "%95 = getelementptr inbounds %struct.Context_, %struct.Context_* %94, i32 0, i32 21, !dbg !355": {
+            "field": "21",
+            "field_name": "uc_kx_st",
+            "parent_function": "client_connect"
+        },
+        "%99 = getelementptr inbounds %struct.Context_, %struct.Context_* %98, i32 0, i32 15, !dbg !358": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_connect"
+        },
+        "%15 = getelementptr inbounds %struct.Context_, %struct.Context_* %14, i32 0, i32 22, !dbg !295": {
+            "field": "22",
+            "field_name": "uc_st",
+            "parent_function": "client_key_exchange"
+        },
+        "%29 = getelementptr inbounds %struct.Context_, %struct.Context_* %28, i32 0, i32 15, !dbg !311": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_key_exchange"
+        },
+        "%38 = getelementptr inbounds %struct.Context_, %struct.Context_* %37, i32 0, i32 15, !dbg !322": {
+            "field": "15",
+            "field_name": "client_fd",
+            "parent_function": "client_key_exchange"
+        },
+        "%58 = getelementptr inbounds %struct.Context_, %struct.Context_* %57, i32 0, i32 13, !dbg !346": {
+            "field": "13",
+            "field_name": "is_server",
+            "parent_function": "client_key_exchange"
+        }
+    }
+}
